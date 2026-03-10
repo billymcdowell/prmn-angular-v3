@@ -1,0 +1,122 @@
+# Theming Tokens — AI-Native Design System
+
+This document describes the **design tokens** used across the UI library. All components consume these tokens for colors, typography, radius, and shadows. Override tokens in `:root` or `.dark` to theme the entire system.
+
+---
+
+## Overview
+
+- **Source:** `projects/ui/src/styles/theme.css`
+- **Consumption:** Tailwind `@theme inline` maps CSS variables to Tailwind utilities (e.g. `bg-background`, `text-primary`, `rounded-lg`).
+- **Dark mode:** Apply the `.dark` class to an ancestor (e.g. `<html class="dark">`) to switch to dark token values.
+
+---
+
+## Color Tokens
+
+### Semantic colors (light / dark)
+
+| Token | Light default | Usage |
+|-------|----------------|--------|
+| `--background` | `hsl(0 0% 100%)` | Page/app background |
+| `--foreground` | `hsl(0 0% 0%)` | Primary text |
+| `--card` | `hsl(0 0% 100%)` | Card backgrounds |
+| `--card-foreground` | `hsl(0 0% 0%)` | Text on cards |
+| `--popover` | `hsl(0 0% 100%)` | Popover/dropdown backgrounds |
+| `--popover-foreground` | `hsl(0 0% 0%)` | Text in popovers |
+| `--primary` | `hsl(0 100% 60%)` | Primary actions, links, focus ring |
+| `--primary-foreground` | `hsl(0 0% 100%)` | Text on primary |
+| `--secondary` | `hsl(60 100% 50%)` | Secondary actions, muted buttons |
+| `--secondary-foreground` | `hsl(0 0% 0%)` | Text on secondary |
+| `--muted` | `hsl(0 0% 94.1176%)` | Muted backgrounds (e.g. disabled, subtle areas) |
+| `--muted-foreground` | `hsl(0 0% 20%)` | Secondary text, placeholders |
+| `--accent` | `hsl(216 100% 50%)` | Accent/highlight (e.g. hover, selected) |
+| `--accent-foreground` | `hsl(0 0% 100%)` | Text on accent |
+| `--destructive` | `hsl(0 0% 0%)` | Destructive actions (delete, remove) |
+| `--destructive-foreground` | `hsl(0 0% 100%)` | Text on destructive |
+| `--border` | `hsl(0 0% 0%)` | Borders, dividers |
+| `--input` | `hsl(0 0% 0%)` | Input borders |
+| `--ring` | `hsl(0 100% 60%)` | Focus ring (outline) |
+
+### Chart colors
+
+| Token | Usage |
+|-------|--------|
+| `--chart-1` … `--chart-5` | Data visualization (charts, graphs). Defaults: primary-like, secondary-like, accent-like, green, magenta. |
+
+### Sidebar-specific
+
+| Token | Usage |
+|-------|--------|
+| `--sidebar` | Sidebar background |
+| `--sidebar-foreground` | Sidebar text |
+| `--sidebar-primary` | Sidebar primary (e.g. active item) |
+| `--sidebar-primary-foreground` | Text on sidebar primary |
+| `--sidebar-accent` | Sidebar hover/selected accent |
+| `--sidebar-accent-foreground` | Text on sidebar accent |
+| `--sidebar-border` | Sidebar borders |
+| `--sidebar-ring` | Sidebar focus ring |
+
+---
+
+## Typography
+
+| Token | Default | Usage |
+|-------|---------|--------|
+| `--font-sans` | DM Sans, sans-serif | Body and UI (imported from Google Fonts) |
+| `--font-serif` | ui-serif, Georgia, … | Serif text |
+| `--font-mono` | Space Mono, monospace | Code, OTP, numbers |
+
+---
+
+## Radius
+
+| Token | Formula | Usage |
+|-------|---------|--------|
+| `--radius` | Base (e.g. `0px`) | Single source of truth |
+| `--radius-sm` | `calc(var(--radius) - 4px)` | Small elements (badges, tags) |
+| `--radius-md` | `calc(var(--radius) - 2px)` | Inputs, buttons |
+| `--radius-lg` | `var(--radius)` | Cards, modals |
+| `--radius-xl` | `calc(var(--radius) + 4px)` | Large surfaces |
+
+Tailwind: `rounded-sm`, `rounded-md`, `rounded-lg`, `rounded-xl` map to these.
+
+---
+
+## Shadows
+
+Base shadow control (used to build scale):
+
+- `--shadow-x`, `--shadow-y`, `--shadow-blur`, `--shadow-spread`, `--shadow-opacity`, `--shadow-color`
+
+Preset shadows (light and dark both defined):
+
+- `--shadow-2xs`, `--shadow-xs`, `--shadow-sm`, `--shadow`, `--shadow-md`, `--shadow-lg`, `--shadow-xl`, `--shadow-2xl`
+
+Tailwind: `shadow-sm`, `shadow`, `shadow-md`, etc. use these variables. The default theme uses a hard-offset style (e.g. 4px 4px 0px) for a distinct look.
+
+---
+
+## Spacing & tracking
+
+- `--spacing`: `0.25rem` (base unit).
+- `--tracking-normal`: `0em`.
+
+---
+
+## Base layer
+
+In `theme.css`, `@layer base` applies:
+
+- `*`: `border-border outline-ring/50` (default border and focus outline from tokens).
+- `body`: `bg-background text-foreground`.
+
+---
+
+## How to theme
+
+1. **Global override:** In your app, import or override `theme.css` and set `:root` and `.dark` variables before the design system is used.
+2. **Scoped theme:** Wrap a section in a container and set CSS variables on that container (e.g. `--primary: hsl(220 70% 50%);`) to create a local theme.
+3. **Dark mode:** Toggle `.dark` on `<html>` (or a wrapper) to switch to dark token values; no need to change each component.
+
+For component-level customization, use Tailwind classes that reference these tokens (e.g. `bg-primary`, `text-muted-foreground`, `rounded-lg`) so they stay consistent with the token system.

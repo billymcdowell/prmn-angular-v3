@@ -2728,18 +2728,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n\targs: { variant: 'default' },\n\trender: (args) => ({\n\t\tprops: args,\n\t\ttemplate: `\n\t\t\t<div hlmAlert [variant]=\"variant\">\n\t\t\t\t<hlm-alert-title>Alert title</hlm-alert-title>\n\t\t\t\t<p hlmAlertDescription>This is the default alert with a title and description.</p>\n\t\t\t</div>\n\t\t`,\n\t\tmoduleMetadata: { imports: defaultImports },\n\t}),\n}",
-                "rawdescription": "Default variant: neutral background, suitable for general information.",
-                "description": "<p>Default variant: neutral background, suitable for general information.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2747,6 +2735,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <hlm-alert-dialog>\n        <button hlmAlertDialogTrigger hlmBtn variant=\"outline\">Open dialog</button>\n        <hlm-alert-dialog-content *hlmAlertDialogPortal=\"let ctx\">\n          <hlm-alert-dialog-header>\n            <h2 hlmAlertDialogTitle>Are you absolutely sure?</h2>\n            <p hlmAlertDialogDescription>\n              This action cannot be undone. This will permanently delete your account and remove your data from our servers.\n            </p>\n          </hlm-alert-dialog-header>\n          <hlm-alert-dialog-footer>\n            <button hlmAlertDialogCancel (click)=\"ctx.close()\">Cancel</button>\n            <button hlmAlertDialogAction (click)=\"ctx.close()\">Continue</button>\n          </hlm-alert-dialog-footer>\n        </hlm-alert-dialog-content>\n      </hlm-alert-dialog>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. \"Continue\", \"Confirm\").",
                 "description": "<p>Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. &quot;Continue&quot;, &quot;Confirm&quot;).</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n\targs: { variant: 'default' },\n\trender: (args) => ({\n\t\tprops: args,\n\t\ttemplate: `\n\t\t\t<div hlmAlert [variant]=\"variant\">\n\t\t\t\t<hlm-alert-title>Alert title</hlm-alert-title>\n\t\t\t\t<p hlmAlertDescription>This is the default alert with a title and description.</p>\n\t\t\t</div>\n\t\t`,\n\t\tmoduleMetadata: { imports: defaultImports },\n\t}),\n}",
+                "rawdescription": "Default variant: neutral background, suitable for general information.",
+                "description": "<p>Default variant: neutral background, suitable for general information.</p>\n"
             },
             {
                 "name": "Default",
@@ -3194,18 +3194,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmSidebarWrapper>\n        <hlm-sidebar>\n          <hlm-sidebar-header>\n            <span class=\"font-semibold\">App</span>\n          </hlm-sidebar-header>\n          <hlm-sidebar-content>\n            <hlm-sidebar-menu>\n              <hlm-sidebar-group>\n                <hlm-sidebar-group-label>Main</hlm-sidebar-group-label>\n                <hlm-sidebar-group-content>\n                  <hlm-sidebar-menu-item>\n                    <button hlmSidebarMenuButton>\n                      <ng-icon name=\"lucideHome\" />\n                      <span>Home</span>\n                    </button>\n                  </hlm-sidebar-menu-item>\n                  <hlm-sidebar-menu-item>\n                    <button hlmSidebarMenuButton>\n                      <ng-icon name=\"lucideFileText\" />\n                      <span>Documents</span>\n                    </button>\n                  </hlm-sidebar-menu-item>\n                </hlm-sidebar-group-content>\n              </hlm-sidebar-group>\n            </hlm-sidebar-menu>\n          </hlm-sidebar-content>\n          <hlm-sidebar-footer>\n            <button hlmSidebarMenuButton>\n              <ng-icon name=\"lucideSettings\" />\n              <span>Settings</span>\n            </button>\n          </hlm-sidebar-footer>\n        </hlm-sidebar>\n        <hlm-sidebar-inset>\n          <header class=\"flex h-14 items-center gap-2 border-b px-4\">\n            <button hlmSidebarTrigger aria-label=\"Toggle sidebar\"></button>\n            <span class=\"text-sm font-medium\">Main content</span>\n          </header>\n          <main class=\"flex-1 p-4\">\n            <p class=\"text-muted-foreground text-sm\">Page content goes here. Sidebar can be toggled with the trigger.</p>\n          </main>\n        </hlm-sidebar-inset>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports, providers: iconProviders },\n  }),\n}",
-                "rawdescription": "Default sidebar with header, menu group, items, and footer. Use sidebar trigger to toggle (desktop: collapse, mobile: open sheet).",
-                "description": "<p>Default sidebar with header, menu group, items, and footer. Use sidebar trigger to toggle (desktop: collapse, mobile: open sheet).</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3213,6 +3201,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmSkeleton class=\"h-12 w-full rounded-md\"></div>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Basic skeleton block. Use with fixed or percentage width/height as needed.",
                 "description": "<p>Basic skeleton block. Use with fixed or percentage width/height as needed.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmSidebarWrapper>\n        <hlm-sidebar>\n          <hlm-sidebar-header>\n            <span class=\"font-semibold\">App</span>\n          </hlm-sidebar-header>\n          <hlm-sidebar-content>\n            <hlm-sidebar-menu>\n              <hlm-sidebar-group>\n                <hlm-sidebar-group-label>Main</hlm-sidebar-group-label>\n                <hlm-sidebar-group-content>\n                  <hlm-sidebar-menu-item>\n                    <button hlmSidebarMenuButton>\n                      <ng-icon name=\"lucideHome\" />\n                      <span>Home</span>\n                    </button>\n                  </hlm-sidebar-menu-item>\n                  <hlm-sidebar-menu-item>\n                    <button hlmSidebarMenuButton>\n                      <ng-icon name=\"lucideFileText\" />\n                      <span>Documents</span>\n                    </button>\n                  </hlm-sidebar-menu-item>\n                </hlm-sidebar-group-content>\n              </hlm-sidebar-group>\n            </hlm-sidebar-menu>\n          </hlm-sidebar-content>\n          <hlm-sidebar-footer>\n            <button hlmSidebarMenuButton>\n              <ng-icon name=\"lucideSettings\" />\n              <span>Settings</span>\n            </button>\n          </hlm-sidebar-footer>\n        </hlm-sidebar>\n        <hlm-sidebar-inset>\n          <header class=\"flex h-14 items-center gap-2 border-b px-4\">\n            <button hlmSidebarTrigger aria-label=\"Toggle sidebar\"></button>\n            <span class=\"text-sm font-medium\">Main content</span>\n          </header>\n          <main class=\"flex-1 p-4\">\n            <p class=\"text-muted-foreground text-sm\">Page content goes here. Sidebar can be toggled with the trigger.</p>\n          </main>\n        </hlm-sidebar-inset>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports, providers: iconProviders },\n  }),\n}",
+                "rawdescription": "Default sidebar with header, menu group, items, and footer. Use sidebar trigger to toggle (desktop: collapse, mobile: open sheet).",
+                "description": "<p>Default sidebar with header, menu group, items, and footer. Use sidebar trigger to toggle (desktop: collapse, mobile: open sheet).</p>\n"
             },
             {
                 "name": "Default",
@@ -3410,21 +3410,21 @@
                 "name": "defaultImports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmAlertImports]"
-            },
-            {
-                "name": "defaultImports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmAlertDialogImports, HlmButtonImports]"
+            },
+            {
+                "name": "defaultImports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmAlertImports]"
             },
             {
                 "name": "defaultImports",
@@ -3580,21 +3580,21 @@
                 "name": "defaultImports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmSidebarImports, HlmIconImports]"
-            },
-            {
-                "name": "defaultImports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmSkeletonImports]"
+            },
+            {
+                "name": "defaultImports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmSidebarImports, HlmIconImports]"
             },
             {
                 "name": "defaultImports",
@@ -3702,18 +3702,6 @@
                 "name": "Destructive",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n\targs: { variant: 'destructive' },\n\trender: (args) => ({\n\t\tprops: args,\n\t\ttemplate: `\n\t\t\t<div hlmAlert [variant]=\"variant\">\n\t\t\t\t<hlm-alert-title>Error</hlm-alert-title>\n\t\t\t\t<p hlmAlertDescription>Your session has expired. Please sign in again.</p>\n\t\t\t</div>\n\t\t`,\n\t\tmoduleMetadata: { imports: defaultImports },\n\t}),\n}",
-                "rawdescription": "Destructive variant: for errors, warnings, or critical messages.",
-                "description": "<p>Destructive variant: for errors, warnings, or critical messages.</p>\n"
-            },
-            {
-                "name": "Destructive",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3721,6 +3709,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <hlm-alert-dialog>\n        <button hlmAlertDialogTrigger hlmBtn variant=\"destructive\">Delete account</button>\n        <hlm-alert-dialog-content *hlmAlertDialogPortal=\"let ctx\">\n          <hlm-alert-dialog-header>\n            <h2 hlmAlertDialogTitle>Delete account</h2>\n            <p hlmAlertDialogDescription>\n              This will permanently delete your account and all associated data. You cannot undo this action.\n            </p>\n          </hlm-alert-dialog-header>\n          <hlm-alert-dialog-footer>\n            <button hlmAlertDialogCancel (click)=\"ctx.close()\">Cancel</button>\n            <button hlmAlertDialogAction variant=\"destructive\" (click)=\"ctx.close()\">Delete</button>\n          </hlm-alert-dialog-footer>\n        </hlm-alert-dialog-content>\n      </hlm-alert-dialog>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Destructive action: use variant=\"destructive\" on the primary button for\ndelete, remove, or irreversible actions. Cancel stays outline.",
                 "description": "<p>Destructive action: use variant=&quot;destructive&quot; on the primary button for\ndelete, remove, or irreversible actions. Cancel stays outline.</p>\n"
+            },
+            {
+                "name": "Destructive",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n\targs: { variant: 'destructive' },\n\trender: (args) => ({\n\t\tprops: args,\n\t\ttemplate: `\n\t\t\t<div hlmAlert [variant]=\"variant\">\n\t\t\t\t<hlm-alert-title>Error</hlm-alert-title>\n\t\t\t\t<p hlmAlertDescription>Your session has expired. Please sign in again.</p>\n\t\t\t</div>\n\t\t`,\n\t\tmoduleMetadata: { imports: defaultImports },\n\t}),\n}",
+                "rawdescription": "Destructive variant: for errors, warnings, or critical messages.",
+                "description": "<p>Destructive variant: for errors, warnings, or critical messages.</p>\n"
             },
             {
                 "name": "Destructive",
@@ -5058,18 +5058,6 @@
                 "name": "LongContent",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n\targs: { variant: 'default' },\n\trender: (args) => ({\n\t\tprops: args,\n\t\ttemplate: `\n\t\t\t<div hlmAlert [variant]=\"variant\">\n\t\t\t\t<ng-icon hlmAlertIcon name=\"lucideInfo\" />\n\t\t\t\t<hlm-alert-title>Privacy policy update</hlm-alert-title>\n\t\t\t\t<div hlmAlertDescription>\n\t\t\t\t\t<p>We've updated our privacy policy effective next month. Key changes include how we handle analytics data and cookie consent.</p>\n\t\t\t\t\t<p>Please review the full policy and accept the new terms to continue using the service.</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t`,\n\t\tmoduleMetadata: {\n\t\t\timports: [...defaultImports, HlmIconImports],\n\t\t\tproviders: iconProviders,\n\t\t},\n\t}),\n}",
-                "rawdescription": "Long content: multiple paragraphs or detailed text.",
-                "description": "<p>Long content: multiple paragraphs or detailed text.</p>\n"
-            },
-            {
-                "name": "LongContent",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -5077,6 +5065,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <hlm-alert-dialog>\n        <button hlmAlertDialogTrigger hlmBtn variant=\"outline\">Terms and conditions</button>\n        <hlm-alert-dialog-content *hlmAlertDialogPortal=\"let ctx\" class=\"max-h-[80vh] overflow-y-auto\">\n          <hlm-alert-dialog-header>\n            <h2 hlmAlertDialogTitle>Terms and conditions</h2>\n            <p hlmAlertDialogDescription>\n              Please read the following terms carefully. By continuing, you agree to be bound by these terms.\n            </p>\n          </hlm-alert-dialog-header>\n          <div class=\"text-muted-foreground text-sm space-y-3 py-2\">\n            <p>1. You agree to use this service only for lawful purposes and in accordance with these terms.</p>\n            <p>2. You must not use the service in any way that could damage, disable, or overburden the service.</p>\n            <p>3. We reserve the right to modify or discontinue the service at any time without notice.</p>\n            <p>4. Your use of the service is at your sole risk. The service is provided \"as is\" without warranties.</p>\n            <p>5. We may terminate or suspend your access immediately, without prior notice, for any reason.</p>\n          </div>\n          <hlm-alert-dialog-footer>\n            <button hlmAlertDialogCancel (click)=\"ctx.close()\">Cancel</button>\n            <button hlmAlertDialogAction (click)=\"ctx.close()\">I agree</button>\n          </hlm-alert-dialog-footer>\n        </hlm-alert-dialog-content>\n      </hlm-alert-dialog>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Long content: description or body content that scrolls.\nThe content area will scroll when text exceeds max height; header and footer stay fixed.",
                 "description": "<p>Long content: description or body content that scrolls.\nThe content area will scroll when text exceeds max height; header and footer stay fixed.</p>\n"
+            },
+            {
+                "name": "LongContent",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n\targs: { variant: 'default' },\n\trender: (args) => ({\n\t\tprops: args,\n\t\ttemplate: `\n\t\t\t<div hlmAlert [variant]=\"variant\">\n\t\t\t\t<ng-icon hlmAlertIcon name=\"lucideInfo\" />\n\t\t\t\t<hlm-alert-title>Privacy policy update</hlm-alert-title>\n\t\t\t\t<div hlmAlertDescription>\n\t\t\t\t\t<p>We've updated our privacy policy effective next month. Key changes include how we handle analytics data and cookie consent.</p>\n\t\t\t\t\t<p>Please review the full policy and accept the new terms to continue using the service.</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t`,\n\t\tmoduleMetadata: {\n\t\t\timports: [...defaultImports, HlmIconImports],\n\t\t\tproviders: iconProviders,\n\t\t},\n\t}),\n}",
+                "rawdescription": "Long content: multiple paragraphs or detailed text.",
+                "description": "<p>Long content: multiple paragraphs or detailed text.</p>\n"
             },
             {
                 "name": "LongContent",
@@ -5288,21 +5288,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmAlert>",
-                "defaultValue": "{\n\ttitle: 'Components/Alert',\n\tcomponent: HlmAlert,\n\tparameters: {\n\t\tdocs: {\n\t\t\tdescription: {\n\t\t\t\tcomponent:\n\t\t\t\t\t'Alert for important messages. Use variant \"default\" for neutral info and \"destructive\" for errors or warnings. Optional: hlmAlertTitle, hlmAlertDescription, hlmAlertIcon.',\n\t\t\t},\n\t\t},\n\t},\n\targTypes: {\n\t\tvariant: {\n\t\t\tcontrol: 'select',\n\t\t\toptions: ['default', 'destructive'],\n\t\t\tdescription: 'Visual style of the alert.',\n\t\t},\n\t},\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HlmAlertDialog>",
                 "defaultValue": "{\n  component: HlmAlertDialog,\n  title: 'Components/Alert Dialog',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'A modal dialog that interrupts the user with important content and expects a response. Use for confirmations, warnings, or critical decisions. Built from trigger, portal content, header (title + description), and footer (cancel + action buttons).',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmAlert>",
+                "defaultValue": "{\n\ttitle: 'Components/Alert',\n\tcomponent: HlmAlert,\n\tparameters: {\n\t\tdocs: {\n\t\t\tdescription: {\n\t\t\t\tcomponent:\n\t\t\t\t\t'Alert for important messages. Use variant \"default\" for neutral info and \"destructive\" for errors or warnings. Optional: hlmAlertTitle, hlmAlertDescription, hlmAlertIcon.',\n\t\t\t},\n\t\t},\n\t},\n\targTypes: {\n\t\tvariant: {\n\t\t\tcontrol: 'select',\n\t\t\toptions: ['default', 'destructive'],\n\t\t\tdescription: 'Visual style of the alert.',\n\t\t},\n\t},\n}"
             },
             {
                 "name": "meta",
@@ -5738,21 +5738,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmSidebar>",
-                "defaultValue": "{\n  component: HlmSidebar,\n  title: 'Components/Sidebar',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'App sidebar with header, menu groups, menu items, footer, and optional trigger. Supports collapsible (offcanvas, icon, none), variant (sidebar, floating, inset), and side (left, right). On mobile, renders as a sheet.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HlmSkeleton>",
                 "defaultValue": "{\n  component: HlmSkeleton,\n  title: 'Components/Skeleton',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Placeholder that shows a pulsing animation while content is loading. Use for cards, avatars, text lines, or custom shapes. Respects prefers-reduced-motion (motion-safe:animate-pulse).',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmSidebar>",
+                "defaultValue": "{\n  component: HlmSidebar,\n  title: 'Components/Sidebar',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'App sidebar with header, menu groups, menu items, footer, and optional trigger. Supports collapsible (offcanvas, icon, none), variant (sidebar, floating, inset), and side (left, right). On mobile, renders as a sheet.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -8190,8 +8190,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<AlertVariants>",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "rawtype": "StoryObj<HlmAlertDialog>",
+                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8201,8 +8201,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmAlertDialog>",
-                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                "rawtype": "StoryObj<AlertVariants>",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8685,8 +8685,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmSidebar>",
-                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
+                "rawtype": "StoryObj<HlmSkeleton>",
+                "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8696,8 +8696,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmSkeleton>",
-                "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
+                "rawtype": "StoryObj<HlmSidebar>",
+                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -15223,19 +15223,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/alert/hlm-alert.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<AlertVariants>",
-                    "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts": [
                 {
                     "name": "Story",
@@ -15243,6 +15230,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmAlertDialog>",
                     "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/alert/hlm-alert.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<AlertVariants>",
+                    "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15808,19 +15808,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmSidebar>",
-                    "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts": [
                 {
                     "name": "Story",
@@ -15828,6 +15815,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmSkeleton>",
                     "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmSidebar>",
+                    "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",

@@ -1,0 +1,33 @@
+# Navigation Menu
+
+**Storybook:** `Components/Navigation Menu`
+
+## Overview
+
+Horizontal or vertical nav with optional dropdown panels. Use nav[hlmNavigationMenu], ul[hlmNavigationMenuList], li[hlmNavigationMenuItem], button[hlmNavigationMenuTrigger], *hlmNavigationMenuPortal with hlmNavigationMenuContent, and a[hlmNavigationMenuLink]. Supports value/delayDuration/skipDelayDuration/orientation.
+
+## When to use
+
+- Primary site/app navigation with optional mega-menu or dropdown panels (e.g. "Products" opens a panel with links and description).
+- When you need both direct links and rich dropdown content.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `nav hlmNavigationMenu` | Root. |
+| `ul hlmNavigationMenuList` | List of items. |
+| `li hlmNavigationMenuItem` | Item. |
+| `button hlmNavigationMenuTrigger` | Trigger that opens panel. |
+| `*hlmNavigationMenuPortal` | Portal for panel. |
+| `hlmNavigationMenuContent` | Panel content. |
+| `a hlmNavigationMenuLink` | Direct link (no panel). |
+
+## Variants & options
+
+- **value**, **delayDuration**, **skipDelayDuration**, **orientation**.
+
+## Related
+
+- [Menubar](menubar.mdx) — app menu bar.
+- [Breadcrumb](breadcrumb.mdx) — secondary nav path.

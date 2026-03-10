@@ -1,0 +1,30 @@
+# Collapsible
+
+**Storybook:** `Components/Collapsible`
+
+## Overview
+
+Collapsible panel that can be expanded or collapsed. Use with `hlmCollapsible`, `button[hlmCollapsibleTrigger]`, and `hlm-collapsible-content`. Supports controlled expanded state and disabled.
+
+## When to use
+
+- Single section expand/collapse (e.g. "Advanced options", "More details").
+- When you need one panel only; for multiple sections use [Accordion](accordion.mdx).
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `div hlmCollapsible` | Container; optional `[(expanded)]` for two-way binding. |
+| `button hlmCollapsibleTrigger` | Toggle button. |
+| `hlm-collapsible-content` | Collapsible body. |
+
+## Variants & options
+
+- **disabled** on trigger to prevent toggling.
+- Control programmatically with `expanded` binding.
+
+## Related
+
+- [Accordion](accordion.mdx) — multiple sections, single or multiple open.
+- [Tabs](tabs.mdx) — switch panels without stacking.

@@ -1,0 +1,32 @@
+# Avatar
+
+**Storybook:** `Components/Avatar`
+
+## Overview
+
+User avatar: image with fallback when the image fails or is loading. Use `hlm-avatar`, `hlm-avatar-image` (img), and `hlm-avatar-fallback`. Optional: `hlm-avatar-badge`, `hlm-avatar-group`, `hlm-avatar-group-count`. Sizes: default, sm, lg.
+
+## When to use
+
+- User profile pictures in headers, comments, assignee pickers, or lists.
+- Fallback to initials or icon when no image.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-avatar` | Container; set `size="default" \| "sm" \| "lg"`. |
+| `hlm-avatar-image` (on `img`) | Image source. |
+| `hlm-avatar-fallback` | Shown when image fails or is loading (e.g. initials). |
+| `hlm-avatar-badge` | Optional status indicator. |
+| `hlm-avatar-group` | Group of overlapping avatars. |
+| `hlm-avatar-group-count` | "+N" when more than shown. |
+
+## Variants & options
+
+- **size:** `default` | `sm` | `lg`.
+
+## Related
+
+- [Dropdown Menu](dropdown-menu.mdx) — user menu from avatar.
+- [Item](item.mdx) — list row that can include avatar.

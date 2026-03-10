@@ -1,0 +1,35 @@
+# Dialog
+
+**Storybook:** `Components/Dialog`
+
+## Overview
+
+Modal dialog built with overlay, portal, header, title, description, footer, trigger, and close. Use for confirmations, forms, or focused content.
+
+## When to use
+
+- Forms (create/edit), confirmations, or any focused task that should block the rest of the page.
+- When you need a close button and optional footer actions.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-dialog` | Root. |
+| `button hlmDialogTrigger` | Opens dialog. |
+| `hlm-dialog-portal` | Portals content. |
+| `hlm-dialog-content` | Modal panel. |
+| `hlm-dialog-header` | Header section. |
+| `hlmDialogTitle` | Title. |
+| `hlmDialogDescription` | Description. |
+| `hlm-dialog-footer` | Footer (e.g. Cancel / Submit). |
+| `hlmDialogClose` | Close button. |
+
+## Variants & options
+
+- Control open state; use for forms with validation and submit/cancel.
+
+## Related
+
+- [Alert Dialog](alert-dialog.mdx) — confirmation/warning modal.
+- [Sheet](sheet.mdx) — slide-out panel.

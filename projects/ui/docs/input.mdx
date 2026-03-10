@@ -1,0 +1,29 @@
+# Input
+
+**Storybook:** `Components/Input`
+
+## Overview
+
+Text input directive with error variant (auto from control validity, or force true). Use `hlmInput` on input elements. Works with hlm-form-field for label, hint, and error.
+
+## When to use
+
+- Single-line text: name, email, search, etc.
+- Use inside [Form Field](form-field.mdx) for label + hint + error.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `input hlmInput` | Styled input; supports `[error]="true"` or auto from form. |
+
+## Variants & options
+
+- **error:** `true` to force error styling; with BrnFormFieldControl, error can follow control validity.
+- Supports disabled, readonly, placeholder, and standard input types.
+
+## Related
+
+- [Input Group](input-group.mdx) — addons before/after.
+- [Form Field](form-field.mdx) — label + hint + error.
+- [Textarea](textarea.mdx) — multi-line.

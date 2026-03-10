@@ -1,0 +1,29 @@
+# Toggle Group
+
+**Storybook:** `Components/Toggle Group`
+
+## Overview
+
+Group of toggle buttons with single or multiple selection. Use type="single" (one value) or type="multiple" (array). Variants and sizes match toggle (default, outline; default, sm, lg). Use spacing to add gap between items.
+
+## When to use
+
+- Segmented control (e.g. Left / Center / Right alignment) or multi-select toggles (e.g. bold + italic).
+- When you need mutually exclusive or multi-select toggle buttons.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `div hlmToggleGroup` | Container; set `type="single"` or `"multiple"`, `variant`, `size`. |
+| `button hlmToggleGroupItem` | Item; set value. |
+
+## Variants & options
+
+- **type:** single | multiple. **variant**, **size** as [Toggle](toggle.mdx). **spacing** for gap.
+
+## Related
+
+- [Toggle](toggle.mdx) — single toggle.
+- [Button Group](button-group.mdx) — grouped buttons (no selection state).
+- [Radio Group](radio-group.mdx) — single selection form control.

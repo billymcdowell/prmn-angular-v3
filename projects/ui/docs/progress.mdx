@@ -1,0 +1,29 @@
+# Progress
+
+**Storybook:** `Components/Progress`
+
+## Overview
+
+Progress bar showing completion. Use hlm-progress (or [hlmProgress]) with [value] and optional [max]. Wrap the fill with [hlmProgressIndicator] or hlm-progress-indicator. Omit value for indeterminate (animated) state.
+
+## When to use
+
+- File upload, step completion, or any determinate progress (0–100%).
+- Indeterminate for loading when progress is unknown.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-progress` / `[hlmProgress]` | Root; set `[value]`, `[max]`. |
+| `[hlmProgressIndicator]` / `hlm-progress-indicator` | Fill element. |
+
+## Variants & options
+
+- **value** / **max** for determinate; omit for indeterminate (animated).
+- Optional aria attributes for accessibility.
+
+## Related
+
+- [Skeleton](skeleton.mdx) — loading placeholder.
+- [Spinner](spinner.mdx) — circular loading.

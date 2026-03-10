@@ -1,0 +1,113 @@
+# UI Design System — AI-Native Skill
+
+This skill describes the **Angular UI design system** in `projects/ui`. Use it when building or refactoring UI: choose components, apply theming tokens, and compose layouts from the documented primitives.
+
+---
+
+## When to use this skill
+
+- **Building UI:** You need buttons, forms, modals, tables, navigation, or feedback (toasts, loading).
+- **Theming:** You need to change colors, radius, shadows, or typography across the app.
+- **Choosing components:** You need to pick the right primitive (e.g. Select vs Autocomplete vs Combobox).
+- **Composing layouts:** You need auth, dashboard, settings, marketing, or data-table patterns.
+
+**Trigger phrases:** "use the design system", "use the UI library", "add a button/form/modal/table", "theme the app", "which component for X", "layout for login/dashboard/settings".
+
+---
+
+## Documentation index
+
+All docs live in **`projects/ui/docs/`**. Each markdown file includes: overview, when to use, key elements/API, variants, and related components.
+
+### Theming (top-level)
+
+| Doc | Description |
+|-----|-------------|
+| [docs/THEMING-TOKENS.mdx](docs/THEMING-TOKENS.mdx) | **Design tokens:** colors, typography, radius, shadows, spacing. Override in `:root` / `.dark` to theme the whole system. |
+
+### Components (Storybook: Components/*)
+
+| Doc | Component |
+|-----|-----------|
+| [docs/accordion.mdx](docs/accordion.mdx) | Accordion |
+| [docs/alert.mdx](docs/alert.mdx) | Alert |
+| [docs/alert-dialog.mdx](docs/alert-dialog.mdx) | Alert Dialog |
+| [docs/aspect-ratio.mdx](docs/aspect-ratio.mdx) | Aspect Ratio |
+| [docs/autocomplete.mdx](docs/autocomplete.mdx) | Autocomplete |
+| [docs/avatar.mdx](docs/avatar.mdx) | Avatar |
+| [docs/badge.mdx](docs/badge.mdx) | Badge |
+| [docs/breadcrumb.mdx](docs/breadcrumb.mdx) | Breadcrumb |
+| [docs/button.mdx](docs/button.mdx) | Button |
+| [docs/button-group.mdx](docs/button-group.mdx) | Button Group |
+| [docs/calendar.mdx](docs/calendar.mdx) | Calendar |
+| [docs/calendar-range.mdx](docs/calendar-range.mdx) | Calendar Range |
+| [docs/card.mdx](docs/card.mdx) | Card |
+| [docs/carousel.mdx](docs/carousel.mdx) | Carousel |
+| [docs/checkbox.mdx](docs/checkbox.mdx) | Checkbox |
+| [docs/collapsible.mdx](docs/collapsible.mdx) | Collapsible |
+| [docs/combobox.mdx](docs/combobox.mdx) | Combobox |
+| [docs/command.mdx](docs/command.mdx) | Command |
+| [docs/context-menu.mdx](docs/context-menu.mdx) | Context Menu |
+| [docs/date-picker.mdx](docs/date-picker.mdx) | Date Picker |
+| [docs/date-picker-multi.mdx](docs/date-picker-multi.mdx) | Date Picker Multi |
+| [docs/date-range-picker.mdx](docs/date-range-picker.mdx) | Date Range Picker |
+| [docs/dialog.mdx](docs/dialog.mdx) | Dialog |
+| [docs/dropdown-menu.mdx](docs/dropdown-menu.mdx) | Dropdown Menu |
+| [docs/empty.mdx](docs/empty.mdx) | Empty |
+| [docs/field.mdx](docs/field.mdx) | Field |
+| [docs/form-field.mdx](docs/form-field.mdx) | Form Field |
+| [docs/hover-card.mdx](docs/hover-card.mdx) | Hover Card |
+| [docs/icon.mdx](docs/icon.mdx) | Icon |
+| [docs/input.mdx](docs/input.mdx) | Input |
+| [docs/input-group.mdx](docs/input-group.mdx) | Input Group |
+| [docs/input-otp.mdx](docs/input-otp.mdx) | Input OTP |
+| [docs/item.mdx](docs/item.mdx) | Item |
+| [docs/kbd.mdx](docs/kbd.mdx) | Kbd |
+| [docs/label.mdx](docs/label.mdx) | Label |
+| [docs/menubar.mdx](docs/menubar.mdx) | Menubar |
+| [docs/native-select.mdx](docs/native-select.mdx) | Native Select |
+| [docs/navigation-menu.mdx](docs/navigation-menu.mdx) | Navigation Menu |
+| [docs/pagination.mdx](docs/pagination.mdx) | Pagination |
+| [docs/popover.mdx](docs/popover.mdx) | Popover |
+| [docs/progress.mdx](docs/progress.mdx) | Progress |
+| [docs/radio-group.mdx](docs/radio-group.mdx) | Radio Group |
+| [docs/resizable.mdx](docs/resizable.mdx) | Resizable |
+| [docs/scroll-area.mdx](docs/scroll-area.mdx) | Scroll Area |
+| [docs/select.mdx](docs/select.mdx) | Select |
+| [docs/separator.mdx](docs/separator.mdx) | Separator |
+| [docs/sheet.mdx](docs/sheet.mdx) | Sheet |
+| [docs/sidebar.mdx](docs/sidebar.mdx) | Sidebar |
+| [docs/skeleton.mdx](docs/skeleton.mdx) | Skeleton |
+| [docs/slider.mdx](docs/slider.mdx) | Slider |
+| [docs/sonner.mdx](docs/sonner.mdx) | Sonner (Toaster) |
+| [docs/spinner.mdx](docs/spinner.mdx) | Spinner |
+| [docs/switch.mdx](docs/switch.mdx) | Switch |
+| [docs/table.mdx](docs/table.mdx) | Table |
+| [docs/tabs.mdx](docs/tabs.mdx) | Tabs |
+| [docs/textarea.mdx](docs/textarea.mdx) | Textarea |
+| [docs/toggle.mdx](docs/toggle.mdx) | Toggle |
+| [docs/toggle-group.mdx](docs/toggle-group.mdx) | Toggle Group |
+| [docs/tooltip.mdx](docs/tooltip.mdx) | Tooltip |
+| [docs/typography.mdx](docs/typography.mdx) | Typography |
+
+### Examples & layouts (Storybook: Examples/*)
+
+| Doc | Description |
+|-----|-------------|
+| [docs/showcase.mdx](docs/showcase.mdx) | **Showcase** — overview of common components and composition. |
+| [docs/auth-layout.mdx](docs/auth-layout.mdx) | **Auth layout** — login/signup: centered card, form, alerts. |
+| [docs/dashboard-layout.mdx](docs/dashboard-layout.mdx) | **Dashboard layout** — header, filters, cards, table, pagination. |
+| [docs/data-table-layout.mdx](docs/data-table-layout.mdx) | **Data table layout** — toolbar, filters, bulk actions, table, pagination. |
+| [docs/marketing-layout.mdx](docs/marketing-layout.mdx) | **Marketing layout** — hero, badges, cards, tabs (landing). |
+| [docs/settings-layout.mdx](docs/settings-layout.mdx) | **Settings layout** — tabs, forms, switches, cards (preferences). |
+
+---
+
+## Quick reference
+
+- **Tokens:** [docs/THEMING-TOKENS.mdx](docs/THEMING-TOKENS.mdx) — colors, fonts, radius, shadows; override in `theme.css` or app.
+- **Storybook:** Run the app’s Storybook to see live examples (paths match `Components/*` and `Examples/*`).
+- **Imports:** Components are under `projects/ui/src/lib/<component>`; use the documented directives and elements from each component’s doc.
+- **Forms:** Prefer [Form Field](docs/form-field.mdx) + [Input](docs/input.mdx) / [Textarea](docs/textarea.mdx) / [Select](docs/select.mdx) / [Checkbox](docs/checkbox.mdx) / [Switch](docs/switch.mdx) for consistent labels, hints, and errors.
+
+When asked to implement or theme UI, read the relevant doc(s) above and use the listed APIs and tokens so that output stays consistent with this design system.

@@ -1,0 +1,32 @@
+# Field
+
+**Storybook:** `Components/Field`
+
+## Overview
+
+Low-level field layout primitives used to build accessible form fields and groups with labels, descriptions and error messages. Combine `hlm-field`, `hlm-field-content`, `hlm-field-description`, `hlm-field-error`, `hlm-field-set`, and `hlm-field-group` for more complex layouts.
+
+## When to use
+
+- Building custom form layouts (e.g. inline labels, grouped fields) while keeping consistent spacing and error placement.
+- When [Form Field](form-field.mdx) is too opinionated.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-field` | Wrapper. |
+| `hlm-field-content` | Control area. |
+| `hlm-field-description` | Hint text. |
+| `hlm-field-error` | Error message. |
+| `hlm-field-set` | Group of inputs (e.g. radio). |
+| `hlm-field-group` | Multiple fields together. |
+
+## Variants & options
+
+- Compose as needed; ensure label is associated with control (e.g. [for] or aria).
+
+## Related
+
+- [Form Field](form-field.mdx) — higher-level wrapper with label + control + hint/error.
+- [Label](label.mdx) — label styling.

@@ -1,0 +1,29 @@
+# Resizable
+
+**Storybook:** `Components/Resizable`
+
+## Overview
+
+Resizable panel group built on `@spartan-ng/brain/resizable`. Use `hlm-resizable-group` with `hlm-resizable-panel` and `hlm-resizable-handle` to create split views.
+
+## When to use
+
+- Split panes (e.g. sidebar + main, code + preview, two columns) that users can resize by dragging.
+- When you need persistent or session-stored sizes.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-resizable-group` | Container; set direction (horizontal/vertical). |
+| `hlm-resizable-panel` | Each panel; set default size, min/max. |
+| `hlm-resizable-handle` | Draggable handle between panels. |
+
+## Variants & options
+
+- Direction, default sizes, min/max per panel; optional persistence.
+
+## Related
+
+- [Sidebar](sidebar.mdx) — app sidebar (may be resizable).
+- [Sheet](sheet.mdx) — slide-out panel.

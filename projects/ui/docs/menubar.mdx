@@ -1,0 +1,29 @@
+# Menubar
+
+**Storybook:** `Components/Menubar`
+
+## Overview
+
+Top-level application navigation built on the Angular CDK menu primitives. Combine `hlm-menubar` with `button[hlmMenubarTrigger]` and `cdkMenu` panels for accessible, keyboard-friendly menus.
+
+## When to use
+
+- App-level menu bar (File, Edit, View, etc.) or primary nav with dropdowns.
+- When you need keyboard navigation and nested menus.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-menubar` | Root. |
+| `button hlmMenubarTrigger` | Menu trigger (e.g. "File"). |
+| CDK menu panels | Content; use CDK menu items. |
+
+## Variants & options
+
+- Supports nested menus and keyboard (arrow keys, Enter, Escape).
+
+## Related
+
+- [Dropdown Menu](dropdown-menu.mdx) — single dropdown.
+- [Navigation Menu](navigation-menu.mdx) — nav with optional panels.

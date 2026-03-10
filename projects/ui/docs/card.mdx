@@ -1,0 +1,33 @@
+# Card
+
+**Storybook:** `Components/Card`
+
+## Overview
+
+Card container with optional header, content, footer, and action. Use size `default` or `sm`. Sub-components: hlm-card-header, hlm-card-title, hlm-card-description, hlm-card-content, hlm-card-footer, hlm-card-action.
+
+## When to use
+
+- Content grouping (dashboard widgets, product cards, settings sections).
+- Consistent padding and borders; use header for title/description, footer for actions.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-card` | Root; set `[size]="'default' \| 'sm'"`. |
+| `hlm-card-header` | Header section. |
+| `hlm-card-title` | Title. |
+| `hlmCardDescription` (on `p`) | Subtitle/description. |
+| `hlmCardContent` (on `div`) | Main body. |
+| `hlm-card-footer` | Footer (e.g. buttons). |
+| `hlm-card-action` | Optional action slot. |
+
+## Variants & options
+
+- **size:** `default` | `sm` (reduced padding and smaller title).
+
+## Related
+
+- [Aspect Ratio](aspect-ratio.mdx) — media area inside card.
+- [Button](button.mdx) — actions in footer.

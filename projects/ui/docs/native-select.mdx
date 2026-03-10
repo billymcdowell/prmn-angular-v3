@@ -1,0 +1,29 @@
+# Native Select
+
+**Storybook:** `Components/Native Select`
+
+## Overview
+
+Native HTML select with Hlm styling. Supports size (default, sm), disabled, invalid state, and optgroups. Use with hlmNativeSelectOption on options and hlmNativeSelectOptGroup on optgroup.
+
+## When to use
+
+- Simple dropdown when you don't need custom option rendering or search; better accessibility and less JS than custom select on some devices.
+- When list is small and static.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `select hlmNativeSelect` | Styled native select; set `size`. |
+| `option hlmNativeSelectOption` | Options. |
+| `optgroup hlmNativeSelectOptGroup` | Option groups. |
+
+## Variants & options
+
+- **size:** `default` | `sm`. **disabled**, invalid state.
+
+## Related
+
+- [Select](select.mdx) — custom-styled select (non-native).
+- [Autocomplete](autocomplete.mdx) — searchable.

@@ -1,0 +1,30 @@
+# Alert
+
+**Storybook:** `Components/Alert`
+
+## Overview
+
+Alert for important messages. Use variant `default` for neutral info and `destructive` for errors or warnings. Optional: `hlmAlertTitle`, `hlmAlertDescription`, `hlmAlertIcon`.
+
+## When to use
+
+- Inline notices (info, success, warning, error) on a page or inside a card.
+- After form submit or background action (e.g. "Saved" or "Something went wrong").
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `div hlmAlert` | Container; set `variant="default"` or `variant="destructive"`. |
+| `hlmAlertTitle` | Optional title line. |
+| `hlmAlertDescription` | Optional description. |
+| `hlmAlertIcon` (on icon) | Optional leading icon. |
+
+## Variants & options
+
+- **variant:** `default` (neutral) | `destructive` (error/warning).
+
+## Related
+
+- [Alert Dialog](alert-dialog.mdx) — modal confirmation/warning.
+- [Sonner (Toaster)](sonner.mdx) — toast notifications.

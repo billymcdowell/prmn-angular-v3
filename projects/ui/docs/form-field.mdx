@@ -1,0 +1,32 @@
+# Form Field
+
+**Storybook:** `Components/Form Field`
+
+## Overview
+
+Form field wrapper that shows label, control, and either hlm-hint or hlm-error based on control validity. Requires a BrnFormFieldControl (e.g. hlmInput, hlmTextarea) inside.
+
+## When to use
+
+- Standard form rows: label on top, control, hint or error below.
+- When you want automatic error display from Angular form validation.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-form-field` | Wrapper. |
+| `label hlmLabel` | Label (associate with control). |
+| Control | `hlmInput`, `hlmTextarea`, or other BrnFormFieldControl. |
+| `hlm-hint` | Hint text (shown when valid). |
+| `hlm-error` | Error message (shown when invalid). |
+
+## Variants & options
+
+- Error state is driven by control validity; use with reactive forms or ngModel.
+
+## Related
+
+- [Input](input.mdx), [Textarea](textarea.mdx), [Select](select.mdx) — controls.
+- [Field](field.mdx) — low-level layout.
+- [Label](label.mdx) — label styling.

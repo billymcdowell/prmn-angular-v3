@@ -1,0 +1,29 @@
+# Button
+
+**Storybook:** `Components/Button`
+
+## Overview
+
+Button or link styled as a button. Supports variants (default, destructive, outline, secondary, ghost, link) and sizes (xs, sm, default, lg, icon, icon-xs, icon-sm, icon-lg). Use `hlmBtn` on `button` or `a` elements.
+
+## When to use
+
+- Primary and secondary actions; use default for main CTA, outline/secondary for secondary actions, destructive for delete/remove, ghost for toolbar-style, link for text-like actions.
+- Icon-only for toolbars or compact UI.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `button hlmBtn` / `a hlmBtn` | Button or link; set `variant`, `size`. |
+
+## Variants & options
+
+- **variant:** `default` | `destructive` | `outline` | `secondary` | `ghost` | `link`.
+- **size:** `xs` | `sm` | (default) | `lg` | `icon` | `icon-xs` | `icon-sm` | `icon-lg`.
+- Use `ng-icon` inside for leading/trailing icons; pair with `aria-label` for icon-only.
+
+## Related
+
+- [Button Group](button-group.mdx) — grouped buttons.
+- [Alert Dialog](alert-dialog.mdx), [Dialog](dialog.mdx) — dialogs with button actions.

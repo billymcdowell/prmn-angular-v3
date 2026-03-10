@@ -1,0 +1,36 @@
+# Command
+
+**Storybook:** `Components/Command`
+
+## Overview
+
+Command palette: searchable list of actions. Use `hlm-command` with `hlm-command-input`, `hlm-command-list`, `hlm-command-group`, `hlm-command-group-label`, `hlm-command-item`. Optional: `hlm-command-shortcut`, `hlm-command-separator`, `hlm-command-empty`. Use `hlm-command-dialog` to show the palette in a modal.
+
+## When to use
+
+- Global or context-specific command palette (e.g. Cmd+K to open, type to filter actions).
+- Quick navigation, run action, or search.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-command` | Root. |
+| `hlm-command-input` | Search input. |
+| `hlm-command-list` | List container. |
+| `hlm-command-group` | Group of items. |
+| `hlm-command-group-label` | Group label. |
+| `hlm-command-item` | Action row. |
+| `hlm-command-shortcut` | Keyboard shortcut display. |
+| `hlm-command-separator` | Divider. |
+| `hlm-command-empty` | No results state. |
+| `hlm-command-dialog` | Wraps command in a dialog. |
+
+## Variants & options
+
+- Typically shown in a dialog; bind open state and handle item selection.
+
+## Related
+
+- [Dialog](dialog.mdx) — modal container.
+- [Autocomplete](autocomplete.mdx) — searchable list for selection.

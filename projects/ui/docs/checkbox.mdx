@@ -1,0 +1,28 @@
+# Checkbox
+
+**Storybook:** `Components/Checkbox`
+
+## Overview
+
+Checkbox with checked, unchecked, and indeterminate states. Supports disabled, required, and works with ngModel/forms. Use aria-label or aria-labelledby for accessibility.
+
+## When to use
+
+- Multi-select options (e.g. "Remember me", multiple selection in lists).
+- Indeterminate for "select all" when some children are selected.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-checkbox` (or `input[type="checkbox"]` with Brn/Hlm) | Checkbox; use with `ngModel` or reactive forms. |
+
+## Variants & options
+
+- **disabled**, **required**; **indeterminate** for tri-state.
+- Always pair with a visible label (or `aria-label` / `aria-labelledby`).
+
+## Related
+
+- [Form Field](form-field.mdx) — label + hint + error wrapper.
+- [Switch](switch.mdx) — toggle for boolean settings.

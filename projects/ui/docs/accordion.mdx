@@ -1,0 +1,32 @@
+# Accordion
+
+**Storybook:** `Components/Accordion`
+
+## Overview
+
+Accordion container for expandable/collapsible sections. Use with `hlm-accordion-item`, `hlm-accordion-trigger`, and `hlm-accordion-content`. Set `type="single"` for one open at a time, `type="multiple"` for several open. Optionally add `ng-icon` with `hlmAccordionIcon` for a rotating chevron.
+
+## When to use
+
+- FAQs, help sections, or any content where only some sections should be visible at once.
+- When you need single (one open) or multiple (many open) behavior.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `div hlmAccordion` | Container; set `type="single"` or `type="multiple"`. |
+| `hlm-accordion-item` | Wraps one section (trigger + content). |
+| `button hlmAccordionTrigger` | Clickable header that expands/collapses. |
+| `hlm-accordion-content` | Collapsible body content. |
+| `hlmAccordionIcon` (on `ng-icon`) | Optional rotating chevron. |
+
+## Variants & options
+
+- **type:** `single` (one open) | `multiple` (multiple open).
+- Use `role="heading"` and `aria-level` on items for accessibility.
+
+## Related
+
+- [Collapsible](collapsible.mdx) — single expand/collapse panel.
+- [Tabs](tabs.mdx) — switch between panels without stacking.

@@ -1,0 +1,28 @@
+# Context Menu
+
+**Storybook:** `Components/Context Menu`
+
+## Overview
+
+Right-click menu. Put `[hlmContextMenuTrigger]="templateRef"` on an element and pass a template ref to a menu (e.g. div with hlmDropdownMenu). Use CDK menu items (e.g. hlmDropdownMenuItem) inside the template. Supports align, side, and disabled.
+
+## When to use
+
+- Right-click (context) actions on rows, cards, or selected text.
+- Copy, open in new tab, delete, etc.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `[hlmContextMenuTrigger]="templateRef"` | On element that gets right-click; pass template ref to menu. |
+| Menu content | Use dropdown menu structure (e.g. `hlmDropdownMenu`, `hlmDropdownMenuItem`). |
+
+## Variants & options
+
+- **align**, **side** for position; **disabled** to disable trigger.
+
+## Related
+
+- [Dropdown Menu](dropdown-menu.mdx) — same item styling; different trigger.
+- [Menubar](menubar.mdx) — top-level nav menus.

@@ -1,0 +1,28 @@
+# Textarea
+
+**Storybook:** `Components/Textarea`
+
+## Overview
+
+Multi-line text input. Supports error variant (auto from form state, or true for always error). Use with forms; integrates with form field and error state.
+
+## When to use
+
+- Long-form text: description, comment, bio, notes.
+- Use with [Form Field](form-field.mdx) for label + hint + error.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `textarea hlmTextarea` | Styled textarea; supports `[error]`. |
+
+## Variants & options
+
+- **error:** force error styling or auto from form control validity.
+- **disabled**, **readonly**, **placeholder**; optional min/max rows.
+
+## Related
+
+- [Input](input.mdx) — single-line.
+- [Form Field](form-field.mdx) — label + hint + error.

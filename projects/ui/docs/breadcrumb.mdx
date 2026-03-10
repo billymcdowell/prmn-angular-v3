@@ -1,0 +1,33 @@
+# Breadcrumb
+
+**Storybook:** `Components/Breadcrumb`
+
+## Overview
+
+Navigation breadcrumb: list of links showing the path to the current page. Use `hlm-breadcrumb`, `hlm-breadcrumb-list`, `hlm-breadcrumb-item`, `hlm-breadcrumb-link` or `hlm-breadcrumb-page`, and `hlm-breadcrumb-separator`. Optional: `hlm-breadcrumb-ellipsis` for collapsed items.
+
+## When to use
+
+- Secondary navigation showing hierarchy (e.g. Home > Products > Category > Product).
+- Helps users understand location and go back up a level.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `nav hlm-breadcrumb` | Root. |
+| `hlm-breadcrumb-list` | List wrapper. |
+| `hlm-breadcrumb-item` | Each segment. |
+| `hlm-breadcrumb-link` | Link to parent. |
+| `hlm-breadcrumb-page` | Current page (non-link). |
+| `hlm-breadcrumb-separator` | Between items (e.g. chevron). |
+| `hlm-breadcrumb-ellipsis` | Collapsed segment (e.g. dropdown). |
+
+## Variants & options
+
+- Use `hlm-breadcrumb-ellipsis` when the path is long and you collapse middle items.
+
+## Related
+
+- [Navigation Menu](navigation-menu.mdx) — primary nav.
+- [Sidebar](sidebar.mdx) — app navigation.

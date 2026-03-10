@@ -1,0 +1,36 @@
+# Autocomplete
+
+**Storybook:** `Components/Autocomplete`
+
+## Overview
+
+Searchable dropdown: type to filter options and select one. Use `hlm-autocomplete` (or `hlm-autocomplete-search`), `hlm-autocomplete-input`, `hlm-autocomplete-content` with `*hlmAutocompletePortal`, `hlm-autocomplete-list`, `hlm-autocomplete-item`, and `hlm-autocomplete-empty`. Optional: groups, separators, labels.
+
+## When to use
+
+- Search/select when the list is long or dynamic (e.g. country, product, user picker).
+- When users should type to narrow options rather than scroll only.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-autocomplete` / `hlm-autocomplete-search` | Root. |
+| `hlm-autocomplete-input` | Input that filters and shows selection. |
+| `*hlmAutocompletePortal` | Portal for dropdown. |
+| `hlm-autocomplete-content` | Dropdown panel. |
+| `hlm-autocomplete-list` | List container. |
+| `hlm-autocomplete-item` | Option row. |
+| `hlm-autocomplete-empty` | Shown when no results. |
+
+Optional: groups, separators, labels for grouped options.
+
+## Variants & options
+
+- Supports single selection, keyboard navigation, and custom empty state.
+- Integrate with forms via `ngModel` or `formControlName`.
+
+## Related
+
+- [Combobox](combobox.mdx) — single/multi select with optional search.
+- [Select](select.mdx) — non-searchable dropdown.

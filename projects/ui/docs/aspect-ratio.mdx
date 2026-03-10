@@ -1,0 +1,27 @@
+# Aspect Ratio
+
+**Storybook:** `Components/Aspect Ratio`
+
+## Overview
+
+Maintains a consistent width/height ratio for its first child. Use for videos, images, or any content that should keep a fixed aspect ratio (e.g. 16/9, 4/3, 1/1). Pass a ratio as a number or string like `"16/9"`.
+
+## When to use
+
+- Video embeds, image galleries, or cards that must keep a fixed proportion regardless of width.
+- Avoiding layout shift when media loads.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-aspect-ratio` | Wrapper; set `[ratio]="16/9"` or `ratio="4/3"`, etc. |
+
+## Variants & options
+
+- **ratio:** number (e.g. `16/9`) or string (e.g. `"16/9"`, `"1/1"`). Common: `16/9`, `4/3`, `1/1`, `3/2`.
+
+## Related
+
+- [Card](card.mdx) — can wrap aspect-ratio for media cards.
+- [Image] — pair with responsive images.

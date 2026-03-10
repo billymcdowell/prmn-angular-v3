@@ -1,0 +1,31 @@
+# Hover Card
+
+**Storybook:** `Components/Hover Card`
+
+## Overview
+
+Hover card reveals content on hover (or focus). Use for previews, tooltips, or extra info. Trigger wraps the hover target; content is in a portal.
+
+## When to use
+
+- User/profile preview on hover (avatar + name + bio).
+- Rich tooltips or previews (e.g. link preview, card summary).
+- When content is too much for a [Tooltip](tooltip.mdx).
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-hover-card` | Root. |
+| `hlmHoverCardTrigger` | Wraps element that triggers show. |
+| `*hlmHoverCardPortal` | Portal for content. |
+| `hlm-hover-card-content` | Panel content. |
+
+## Variants & options
+
+- Delay and position configurable; use for accessibility (focus + keyboard).
+
+## Related
+
+- [Tooltip](tooltip.mdx) — short text only.
+- [Popover](popover.mdx) — click to open.

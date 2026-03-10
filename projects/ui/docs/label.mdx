@@ -1,0 +1,27 @@
+# Label
+
+**Storybook:** `Components/Label`
+
+## Overview
+
+Accessible label for form controls. Use with [hlmLabel] and optionally set [for] to associate with an input by id. Respects peer-disabled and group-data-[disabled] for disabled state styling.
+
+## When to use
+
+- Every form control should have a visible label (or aria-label). Use hlmLabel for consistent styling and association.
+- Use [for] with input id for click-to-focus.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `label hlmLabel` | Label; set `[for]="inputId"` to associate. |
+
+## Variants & options
+
+- Styling adapts when control is disabled (peer-disabled).
+
+## Related
+
+- [Form Field](form-field.mdx) — wraps label + control + hint/error.
+- [Input](input.mdx), [Checkbox](checkbox.mdx), [Switch](switch.mdx) — controls.

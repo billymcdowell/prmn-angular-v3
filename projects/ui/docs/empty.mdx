@@ -1,0 +1,32 @@
+# Empty
+
+**Storybook:** `Components/Empty`
+
+## Overview
+
+Empty state component for no-data views. Use `hlmEmpty` as container; `hlm-empty-header`, `hlm-empty-media`, `hlm-empty-title`, `hlm-empty-description`, and `hlm-empty-content` for structure.
+
+## When to use
+
+- When a list, table, or search has no results; when a section has no data yet (e.g. "No projects", "No notifications").
+- Include primary action (e.g. "Create first project") when relevant.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `div hlmEmpty` | Container. |
+| `hlm-empty-header` | Header area. |
+| `hlm-empty-media` | Optional illustration/icon. |
+| `hlm-empty-title` | Title. |
+| `hlm-empty-description` | Description. |
+| `hlm-empty-content` | Optional extra content (e.g. button). |
+
+## Variants & options
+
+- Customize media and copy per context (search vs list vs error).
+
+## Related
+
+- [Card](card.mdx) — can wrap empty state.
+- [Button](button.mdx) — primary action in empty content.

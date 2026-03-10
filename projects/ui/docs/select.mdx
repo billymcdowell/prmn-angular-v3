@@ -1,0 +1,33 @@
+# Select
+
+**Storybook:** `Components/Select`
+
+## Overview
+
+Custom select dropdown (non-native). Use brn-select with hlm-select-trigger, hlm-select-value, hlm-select-content, and hlm-option. Optional: hlm-select-label, hlm-select-group, hlm-select-separator. Trigger supports size (default, sm) and error state.
+
+## When to use
+
+- Single selection from a list when you want custom styling and option rendering (icons, descriptions).
+- When native select is too limited.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `brn-select` | Root (brain). |
+| `hlm-select-trigger` | Trigger; set size, error. |
+| `hlm-select-value` | Placeholder/selected display. |
+| `hlm-select-content` | Dropdown panel. |
+| `hlm-option` | Option. |
+| `hlm-select-label`, `hlm-select-group`, `hlm-select-separator` | Optional structure. |
+
+## Variants & options
+
+- **size:** `default` | `sm`. **error** for invalid state. Use with ngModel or formControlName.
+
+## Related
+
+- [Native Select](native-select.mdx) — native HTML select.
+- [Autocomplete](autocomplete.mdx) — searchable.
+- [Combobox](combobox.mdx) — single/multi with optional search.

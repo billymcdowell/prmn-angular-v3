@@ -1,0 +1,29 @@
+# Calendar
+
+**Storybook:** `Components/Calendar`
+
+## Overview
+
+Single-date calendar. Supports captionLayout (label, dropdown, dropdown-months, dropdown-years), min/max, disabled, dateDisabled, weekStartsOn, defaultFocusedDate.
+
+## When to use
+
+- Date picker content (single date selection). Usually used inside [Date Picker](date-picker.mdx) popover, not standalone in most UIs.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-calendar` | Calendar component; bind date, min, max, etc. |
+
+## Variants & options
+
+- **captionLayout:** `label` | `dropdown` | `dropdown-months` | `dropdown-years`.
+- **weekStartsOn:** 0 (Sun)–6 (Sat).
+- **dateDisabled:** filter disabled dates.
+- **min** / **max:** range limits.
+
+## Related
+
+- [Date Picker](date-picker.mdx) — calendar in a popover with input.
+- [Calendar Range](calendar-range.mdx) — range selection.

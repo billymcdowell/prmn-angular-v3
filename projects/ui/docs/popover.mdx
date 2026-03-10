@@ -1,0 +1,31 @@
+# Popover
+
+**Storybook:** `Components/Popover`
+
+## Overview
+
+Floating panel opened by a trigger. Use [hlmPopover] on a container, button[hlmPopoverTrigger] to open, and *hlmPopoverPortal with [hlmPopoverContent] for the panel. Supports align, sideOffset, closeOnOutsidePointerEvents, state, etc.
+
+## When to use
+
+- Click-to-open panels: filters, pickers, or extra content that shouldn’t be a full modal.
+- When you need positioning control (align, side) and optional close-on-outside-click.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `div [hlmPopover]` | Root container. |
+| `button hlmPopoverTrigger` | Trigger. |
+| `*hlmPopoverPortal` | Portal. |
+| `[hlmPopoverContent]` | Panel content. |
+
+## Variants & options
+
+- **align**, **sideOffset**, **closeOnOutsidePointerEvents**, **state** (open/closed).
+
+## Related
+
+- [Dialog](dialog.mdx) — modal.
+- [Dropdown Menu](dropdown-menu.mdx) — action menu.
+- [Tooltip](tooltip.mdx) — hover, short text.

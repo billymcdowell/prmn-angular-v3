@@ -1,0 +1,32 @@
+# Date Picker
+
+**Storybook:** `Components/Date Picker`
+
+## Overview
+
+Single date picker with calendar in a popover. Supports captionLayout (label, dropdown, dropdown-months, dropdown-years), min/max, disabled, formatDate, transformDate, and autoCloseOnSelect. Use with forms via ngModel or formControlName.
+
+## When to use
+
+- Single date selection (birthday, due date, schedule date).
+- When you want an input that opens a calendar popover.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-date-picker` | Root; bind date, min, max, etc. |
+| Trigger / input | Usually an input or button that opens the popover. |
+| Calendar | Rendered in popover (single date). |
+
+## Variants & options
+
+- **captionLayout:** `label` | `dropdown` | `dropdown-months` | `dropdown-years`.
+- **min** / **max**, **disabled**, **formatDate**, **transformDate**, **autoCloseOnSelect**.
+- Use with `ngModel` or `formControlName`.
+
+## Related
+
+- [Calendar](calendar.mdx) — calendar only.
+- [Date Range Picker](date-range-picker.mdx) — range.
+- [Date Picker Multi](date-picker-multi.mdx) — multiple dates.

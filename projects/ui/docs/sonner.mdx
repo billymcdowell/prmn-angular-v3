@@ -1,0 +1,28 @@
+# Sonner (Toaster)
+
+**Storybook:** `Components/Sonner`
+
+## Overview
+
+Toast notifications via ngx-sonner. Add hlm-toaster once (e.g. in app root), then call toast() or toast.success/error/etc. from anywhere. Supports position, theme, duration, closeButton, and custom styles.
+
+## When to use
+
+- Success/error/info toasts after actions (saved, failed, etc.).
+- When you need non-blocking, auto-dismiss notifications.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-toaster` | Add once in app (e.g. AppComponent template). |
+| `toast()`, `toast.success()`, `toast.error()`, etc. | From ngx-sonner; call from components/services. |
+
+## Variants & options
+
+- **position**, **theme**, **duration**, **closeButton**; pass options to toast() (description, action, etc.).
+
+## Related
+
+- [Alert](alert.mdx) — inline message.
+- [Alert Dialog](alert-dialog.mdx) — modal confirmation.

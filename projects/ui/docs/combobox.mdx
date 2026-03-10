@@ -1,0 +1,35 @@
+# Combobox
+
+**Storybook:** `Components/Combobox`
+
+## Overview
+
+Single or multi-select dropdown with optional search. Use `hlm-combobox` (single) or `hlm-combobox-multiple` (multi). Pair with `hlm-combobox-trigger` or `hlm-combobox-input`, `hlm-combobox-value` or `hlm-combobox-values`/chips, and `*hlmComboboxPortal` with `hlm-combobox-content`, `hlm-combobox-list`, `hlm-combobox-item`. Supports groups, labels, separators, and empty state.
+
+## When to use
+
+- Single or multi-select with optional type-to-filter (tags, categories, assignees).
+- When you need chips for multi-select and/or search.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-combobox` / `hlm-combobox-multiple` | Root (single vs multi). |
+| `hlm-combobox-trigger` / `hlm-combobox-input` | Trigger or inline input. |
+| `hlm-combobox-value` / `hlm-combobox-values` | Display selected (multi: chips). |
+| `*hlmComboboxPortal` | Portal for dropdown. |
+| `hlm-combobox-content` | Dropdown panel. |
+| `hlm-combobox-list` | List. |
+| `hlm-combobox-item` | Option. |
+
+Optional: groups, labels, separators, empty state.
+
+## Variants & options
+
+- Single vs multiple selection; optional search; integrate with forms.
+
+## Related
+
+- [Autocomplete](autocomplete.mdx) — single select with search.
+- [Select](select.mdx) — non-searchable dropdown.

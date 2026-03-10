@@ -1,0 +1,33 @@
+# Sheet
+
+**Storybook:** `Components/Sheet`
+
+## Overview
+
+Slide-out panel from the edge of the screen. Use for filters, settings, or secondary content. Supports side: top, bottom, left, right. Composed with trigger, portal, content, header, title, description, footer, and close.
+
+## When to use
+
+- Filters drawer, settings panel, or cart sidebar that slides in from the side (or top/bottom).
+- When you want overlay + panel but not a centered modal.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-sheet` | Root. |
+| `button hlmSheetTrigger` | Opens sheet. |
+| `hlm-sheet-portal` | Portal. |
+| `hlm-sheet-content` | Panel; set `side`. |
+| `hlm-sheet-header`, `hlmSheetTitle`, `hlmSheetDescription` | Header. |
+| `hlm-sheet-footer` | Footer. |
+| `hlmSheetClose` | Close button. |
+
+## Variants & options
+
+- **side:** `top` | `bottom` | `left` | `right`.
+
+## Related
+
+- [Dialog](dialog.mdx) — centered modal.
+- [Drawer] — similar pattern.

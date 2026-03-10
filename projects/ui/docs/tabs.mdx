@@ -1,0 +1,32 @@
+# Tabs
+
+**Storybook:** `Components/Tabs`
+
+## Overview
+
+Tabbed content. Use hlmTabs (with tab binding and tabActivated), hlmTabsList, hlmTabsTrigger (value), hlmTabsContent (value). Supports orientation (horizontal/vertical), variant (default/line) on list, and lazy content via hlmTabsContentLazy.
+
+## When to use
+
+- Switch between panels (e.g. Account / Password / Billing) without leaving the page.
+- When you have 2–6 sections and want tab triggers + content panels.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `div hlmTabs` | Root; bind `[tab]`, `(tabActivated)`. |
+| `hlm-tabs-list` | Trigger list; set `variant`. |
+| `button hlmTabsTrigger` | Trigger; set value. |
+| `div hlmTabsContent` | Content panel; set value. |
+| `hlmTabsContentLazy` | Lazy-load panel content. |
+| `hlm-paginated-tabs-list` | Scrollable tab list when many tabs. |
+
+## Variants & options
+
+- **orientation:** horizontal | vertical. **variant** on list: default (pill) | line.
+
+## Related
+
+- [Accordion](accordion.mdx) — expand/collapse sections.
+- [Collapsible](collapsible.mdx) — single section.

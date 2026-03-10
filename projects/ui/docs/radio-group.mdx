@@ -1,0 +1,31 @@
+# Radio Group
+
+**Storybook:** `Components/Radio Group`
+
+## Overview
+
+Single selection from a set of options. Use hlm-radio-group (or [hlmRadioGroup]) with name, optional value/disabled/required, and hlm-radio for each option. Each hlm-radio can have hlm-radio-indicator and a label.
+
+## When to use
+
+- Single choice from 2–5+ options (e.g. delivery method, plan type).
+- When all options should be visible at once (unlike select).
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-radio-group` / `[hlmRadioGroup]` | Container; bind value, name, disabled, required. |
+| `hlm-radio` | Option; bind value. |
+| `hlm-radio-indicator` | Optional custom indicator. |
+| Label | Next to each radio. |
+
+## Variants & options
+
+- **name**, **value**, **disabled**, **required**; use with ngModel or formControlName.
+
+## Related
+
+- [Checkbox](checkbox.mdx) — multi-select.
+- [Select](select.mdx) — dropdown single select.
+- [Form Field](form-field.mdx) — wrap with label/hint/error.

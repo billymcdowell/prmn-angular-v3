@@ -1,0 +1,34 @@
+# Alert Dialog
+
+**Storybook:** `Components/Alert Dialog`
+
+## Overview
+
+A modal dialog that interrupts the user with important content and expects a response. Use for confirmations, warnings, or critical decisions. Built from trigger, portal content, header (title + description), and footer (cancel + action buttons).
+
+## When to use
+
+- Delete/remove confirmations, discard-changes, or any action that needs explicit user confirmation.
+- Critical warnings before irreversible actions.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `hlm-alert-dialog` | Root. |
+| `button hlmAlertDialogTrigger` | Opens the dialog. |
+| `hlm-alert-dialog-portal` | Portals content. |
+| `hlm-alert-dialog-content` | Modal panel. |
+| `hlmAlertDialogTitle` | Title. |
+| `hlmAlertDialogDescription` | Description. |
+| `hlm-alert-dialog-footer` | Cancel + action buttons. |
+| `hlmAlertDialogClose` | Close/cancel button. |
+
+## Variants & options
+
+- Typically one primary action (e.g. "Delete") and one cancel. Use destructive button variant for dangerous actions.
+
+## Related
+
+- [Dialog](dialog.mdx) — general modal for forms or content.
+- [Alert](alert.mdx) — inline message, no modal.

@@ -1,0 +1,28 @@
+# Kbd
+
+**Storybook:** `Components/Kbd`
+
+## Overview
+
+Keyboard key primitives for showing shortcuts in UI. Use `kbd[hlmKbd]` for individual keys and `kbd[hlmKbdGroup]` to group multiple keys into a single chord.
+
+## When to use
+
+- Showing keyboard shortcuts in menus, tooltips, or help (e.g. "⌘K", "Ctrl+S").
+- When you want consistent, accessible shortcut display.
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `kbd hlmKbd` | Single key. |
+| `kbd hlmKbdGroup` | Group (e.g. Ctrl+Shift+S). |
+
+## Variants & options
+
+- Style matches theme; use semantic keys (e.g. mod for ⌘/Ctrl) if your icon set supports it.
+
+## Related
+
+- [Dropdown Menu](dropdown-menu.mdx) — shortcuts in menu items.
+- [Command](command.mdx) — command palette shortcuts.

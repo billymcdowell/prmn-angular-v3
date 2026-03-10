@@ -1,0 +1,30 @@
+# Input OTP
+
+**Storybook:** `Components/Input OTP`
+
+## Overview
+
+One-time password input built with brn-input-otp and Hlm slots. Use hlmInputOtp on brn-input-otp; add hlmInputOtpGroup and hlm-input-otp-slot for each digit. Optional hlm-input-otp-separator between groups.
+
+## When to use
+
+- Verification codes (email/SMS), 2FA, or any fixed-length digit input.
+- When you want one box per digit and optional separators (e.g. 4 groups of 4).
+
+## Key elements / API
+
+| Element / directive | Purpose |
+|--------------------|---------|
+| `brn-input-otp hlmInputOtp` | Root. |
+| `hlmInputOtpGroup` | Group of slots. |
+| `hlm-input-otp-slot` | Single digit cell. |
+| `hlm-input-otp-separator` | Optional separator between groups. |
+
+## Variants & options
+
+- Configure length and group size; use with forms for OTP value.
+
+## Related
+
+- [Input](input.mdx) — single text input.
+- [Form Field](form-field.mdx) — wrap with label/hint/error.
