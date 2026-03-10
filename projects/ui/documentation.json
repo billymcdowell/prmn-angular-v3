@@ -2740,18 +2740,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"max-w-2xl\">\n        <div hlmAspectRatio=\"16/9\">\n          <img src=\"https://placehold.co/600x400/1a1a2e/eee\" alt=\"16:9 placeholder\" />\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
-                "rawdescription": "Default 16:9 — common for video and widescreen content.",
-                "description": "<p>Default 16:9 — common for video and widescreen content.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2759,6 +2747,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <hlm-alert-dialog>\n        <button hlmAlertDialogTrigger hlmBtn variant=\"outline\">Open dialog</button>\n        <hlm-alert-dialog-content *hlmAlertDialogPortal=\"let ctx\">\n          <hlm-alert-dialog-header>\n            <h2 hlmAlertDialogTitle>Are you absolutely sure?</h2>\n            <p hlmAlertDialogDescription>\n              This action cannot be undone. This will permanently delete your account and remove your data from our servers.\n            </p>\n          </hlm-alert-dialog-header>\n          <hlm-alert-dialog-footer>\n            <button hlmAlertDialogCancel (click)=\"ctx.close()\">Cancel</button>\n            <button hlmAlertDialogAction (click)=\"ctx.close()\">Continue</button>\n          </hlm-alert-dialog-footer>\n        </hlm-alert-dialog-content>\n      </hlm-alert-dialog>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. \"Continue\", \"Confirm\").",
                 "description": "<p>Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. &quot;Continue&quot;, &quot;Confirm&quot;).</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"max-w-2xl\">\n        <div hlmAspectRatio=\"16/9\">\n          <img src=\"https://placehold.co/600x400/1a1a2e/eee\" alt=\"16:9 placeholder\" />\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
+                "rawdescription": "Default 16:9 — common for video and widescreen content.",
+                "description": "<p>Default 16:9 — common for video and widescreen content.</p>\n"
             },
             {
                 "name": "Default",
@@ -2788,18 +2788,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <nav hlmBreadcrumb>\n        <ol hlmBreadcrumbList>\n          <li hlmBreadcrumbItem>\n            <span hlmBreadcrumbPage>Home</span>\n          </li>\n        </ol>\n      </nav>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
-                "rawdescription": "Minimal: one item (current page only). Use when there is no parent path to show.",
-                "description": "<p>Minimal: one item (current page only). Use when there is no parent path to show.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/badge/hlm-badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2807,6 +2795,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `<span hlmBadge>Badge</span>`,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Default primary style. Use for the main tag or status.",
                 "description": "<p>Default primary style. Use for the main tag or status.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <nav hlmBreadcrumb>\n        <ol hlmBreadcrumbList>\n          <li hlmBreadcrumbItem>\n            <span hlmBreadcrumbPage>Home</span>\n          </li>\n        </ol>\n      </nav>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
+                "rawdescription": "Minimal: one item (current page only). Use when there is no parent path to show.",
+                "description": "<p>Minimal: one item (current page only). Use when there is no parent path to show.</p>\n"
             },
             {
                 "name": "Default",
@@ -3122,6 +3122,18 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Open popover</button>\n        <div *hlmPopoverPortal hlmPopoverContent>\n          <h4 class=\"font-medium text-sm mb-2\">Popover title</h4>\n          <p class=\"text-muted-foreground text-sm\">This is the popover content. It can contain any markup.</p>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                "rawdescription": "Basic popover: click trigger to open/close.",
+                "description": "<p>Basic popover: click trigger to open/close.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ui/src/lib/progress/hlm-progress.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3141,18 +3153,6 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmRadioGroup name=\"size\" [(ngModel)]=\"selected\">\n        <label class=\"flex items-center gap-2\">\n          <hlm-radio value=\"sm\" />\n          <span>Small</span>\n        </label>\n        <label class=\"flex items-center gap-2\">\n          <hlm-radio value=\"md\" />\n          <span>Medium</span>\n        </label>\n        <label class=\"flex items-center gap-2\">\n          <hlm-radio value=\"lg\" />\n          <span>Large</span>\n        </label>\n      </div>\n    `,\n    moduleMetadata: { imports },\n    props: { selected: 'md' },\n  }),\n}",
                 "rawdescription": "Basic radio group: pick one option.",
                 "description": "<p>Basic radio group: pick one option.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Open popover</button>\n        <div *hlmPopoverPortal hlmPopoverContent>\n          <h4 class=\"font-medium text-sm mb-2\">Popover title</h4>\n          <p class=\"text-muted-foreground text-sm\">This is the popover content. It can contain any markup.</p>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                "rawdescription": "Basic popover: click trigger to open/close.",
-                "description": "<p>Basic popover: click trigger to open/close.</p>\n"
             },
             {
                 "name": "Default",
@@ -3420,21 +3420,21 @@
                 "name": "defaultImports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmAspectRatioImports]"
-            },
-            {
-                "name": "defaultImports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmAlertDialogImports, HlmButtonImports]"
+            },
+            {
+                "name": "defaultImports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmAspectRatioImports]"
             },
             {
                 "name": "defaultImports",
@@ -3450,21 +3450,21 @@
                 "name": "defaultImports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmBreadCrumbImports]"
-            },
-            {
-                "name": "defaultImports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/badge/hlm-badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmBadgeImports]"
+            },
+            {
+                "name": "defaultImports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmBreadCrumbImports]"
             },
             {
                 "name": "defaultImports",
@@ -4710,6 +4710,16 @@
                 "name": "imports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmPopoverImports, ...HlmButtonImports]"
+            },
+            {
+                "name": "imports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ui/src/lib/progress/hlm-progress.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -4725,16 +4735,6 @@
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmRadioGroupImports, HlmLabelImports, FormsModule]"
-            },
-            {
-                "name": "imports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmPopoverImports, ...HlmButtonImports]"
             },
             {
                 "name": "imports",
@@ -5272,7 +5272,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<unknown>",
-                "defaultValue": "{\n  title: 'Examples/Showcase',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Visual showcase of the most commonly used UI components in the library, grouped by category.',\n      },\n    },\n  },\n}"
+                "defaultValue": "{\n  title: 'Examples/Showcase',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Visual showcase of the most commonly used  UI components in the library, grouped by category.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5298,21 +5298,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmAspectRatio>",
-                "defaultValue": "{\n  component: HlmAspectRatio,\n  title: 'Components/Aspect Ratio',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Maintains a consistent width/height ratio for its first child. Use for videos, images, or any content that should keep a fixed aspect ratio (e.g. 16/9, 4/3, 1/1). Pass a ratio as a number or string like \"16/9\".',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HlmAlertDialog>",
                 "defaultValue": "{\n  component: HlmAlertDialog,\n  title: 'Components/Alert Dialog',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'A modal dialog that interrupts the user with important content and expects a response. Use for confirmations, warnings, or critical decisions. Built from trigger, portal content, header (title + description), and footer (cancel + action buttons).',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmAspectRatio>",
+                "defaultValue": "{\n  component: HlmAspectRatio,\n  title: 'Components/Aspect Ratio',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Maintains a consistent width/height ratio for its first child. Use for videos, images, or any content that should keep a fixed aspect ratio (e.g. 16/9, 4/3, 1/1). Pass a ratio as a number or string like \"16/9\".',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5338,21 +5338,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmBreadcrumb>",
-                "defaultValue": "{\n  component: HlmBreadcrumb,\n  title: 'Components/Breadcrumb',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Navigation breadcrumb: list of links showing the path to the current page. Use hlm-breadcrumb, hlm-breadcrumb-list, hlm-breadcrumb-item, hlm-breadcrumb-link or hlm-breadcrumb-page, and hlm-breadcrumb-separator. Optional: hlm-breadcrumb-ellipsis for collapsed items.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/badge/hlm-badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HlmBadge>",
                 "defaultValue": "{\n  component: HlmBadge,\n  title: 'Components/Badge',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Small label or count. Use for status, categories, counts, or tags. Supports variants: default, secondary, destructive, outline, ghost, link.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmBreadcrumb>",
+                "defaultValue": "{\n  component: HlmBreadcrumb,\n  title: 'Components/Breadcrumb',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Navigation breadcrumb: list of links showing the path to the current page. Use hlm-breadcrumb, hlm-breadcrumb-list, hlm-breadcrumb-item, hlm-breadcrumb-link or hlm-breadcrumb-page, and hlm-breadcrumb-separator. Optional: hlm-breadcrumb-ellipsis for collapsed items.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5658,6 +5658,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmPopover>",
+                "defaultValue": "{\n  component: HlmPopover,\n  title: 'Components/Popover',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Floating panel opened by a trigger. Use [hlmPopover] on a container, button[hlmPopoverTrigger] to open, and *hlmPopoverPortal with [hlmPopoverContent] for the panel. Supports align, sideOffset, closeOnOutsidePointerEvents, state, etc.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ui/src/lib/progress/hlm-progress.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -5673,16 +5683,6 @@
                 "deprecationMessage": "",
                 "type": "Meta<HlmRadioGroup>",
                 "defaultValue": "{\n  component: HlmRadioGroup,\n  title: 'Components/Radio Group',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Single selection from a set of options. Use hlm-radio-group (or [hlmRadioGroup]) with name, optional value/disabled/required, and hlm-radio for each option. Each hlm-radio can have hlm-radio-indicator and a label.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmPopover>",
-                "defaultValue": "{\n  component: HlmPopover,\n  title: 'Components/Popover',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Floating panel opened by a trigger. Use [hlmPopover] on a container, button[hlmPopoverTrigger] to open, and *hlmPopoverPortal with [hlmPopoverContent] for the panel. Supports align, sideOffset, closeOnOutsidePointerEvents, state, etc.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -6426,7 +6426,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <section class=\"flex flex-col gap-10 p-6\">\n        <!-- Page header -->\n        <header class=\"space-y-2\">\n          <h1 hlmH1>UI Component Showcase</h1>\n          <p hlmLead>Explore the core primitives and components available in this UI library.</p>\n        </header>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Typography -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Typography</h2>\n          <div class=\"space-y-2\">\n            <h1 hlmH1>Heading 1</h1>\n            <h2 hlmH2>Heading 2</h2>\n            <h3 hlmH3>Heading 3</h3>\n            <h4 hlmH4>Heading 4</h4>\n            <p hlmP>Body text using the <code hlmCode>hlmP</code> directive.</p>\n            <p hlmMuted>Muted text for secondary information.</p>\n            <p hlmSmall>Small helper text.</p>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Buttons & Badges -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Buttons & Badges</h2>\n          <div class=\"flex flex-wrap items-center gap-3\">\n            <button hlmBtn>Primary</button>\n            <button hlmBtn variant=\"outline\">Outline</button>\n            <button hlmBtn variant=\"ghost\">Ghost</button>\n            <button hlmBtn variant=\"destructive\">Destructive</button>\n          </div>\n          <div class=\"flex flex-wrap items-center gap-2\">\n            <span hlmBadge>Default</span>\n            <span hlmBadge variant=\"secondary\">Secondary</span>\n            <span hlmBadge variant=\"outline\">Outline</span>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Form controls -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Form controls</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"input-example\">Input</label>\n              <input hlmInput id=\"input-example\" placeholder=\"Type something...\" />\n            </div>\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"textarea-example\">Textarea</label>\n              <textarea hlmTextarea id=\"textarea-example\" rows=\"3\" placeholder=\"Multi-line input\"></textarea>\n            </div>\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"select-example\">Select</label>\n              <brn-select id=\"select-example\" placeholder=\"Choose an option\">\n                <hlm-select-trigger>\n                  <hlm-select-value />\n                </hlm-select-trigger>\n                <hlm-select-content>\n                  <hlm-select-group>\n                    <hlm-select-label>Options</hlm-select-label>\n                    <hlm-option value=\"one\">Option one</hlm-option>\n                    <hlm-option value=\"two\">Option two</hlm-option>\n                  </hlm-select-group>\n                </hlm-select-content>\n              </brn-select>\n            </div>\n            <div class=\"space-y-3\">\n              <label class=\"flex cursor-pointer items-center gap-2\">\n                <hlm-checkbox aria-label=\"Example checkbox\" />\n                <span hlmSmall>Checkbox</span>\n              </label>\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Switch</span>\n                <button hlmSwitch type=\"button\">\n                  <span hlmSwitchThumb></span>\n                </button>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Cards & Layout -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Cards & Layout</h2>\n          <div class=\"grid gap-4 md:grid-cols-3\">\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>Simple card</h3>\n                <p hlmMuted>Use cards to group related content.</p>\n              </hlm-card-header>\n              <div hlmCardContent>\n                <p hlmP>Cards work great for dashboards, settings, and content blocks.</p>\n              </div>\n              <hlm-card-footer>\n                <button hlmBtn size=\"sm\">Action</button>\n              </hlm-card-footer>\n            </hlm-card>\n\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>With badge</h3>\n              </hlm-card-header>\n              <div hlmCardContent class=\"flex items-center justify-between\">\n                <p hlmP>Status</p>\n                <span hlmBadge variant=\"secondary\">Active</span>\n              </div>\n            </hlm-card>\n\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>With avatar</h3>\n              </hlm-card-header>\n              <div hlmCardContent class=\"flex items-center gap-3\">\n                <hlm-avatar>\n                  <span hlmAvatarFallback>JD</span>\n                </hlm-avatar>\n                <div>\n                  <p hlmP>Jane Doe</p>\n                  <p hlmMuted>Product Designer</p>\n                </div>\n              </div>\n            </hlm-card>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Navigation & Breadcrumbs -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Navigation</h2>\n          <nav hlmBreadcrumb>\n            <ol hlmBreadcrumbList>\n              <li hlmBreadcrumbItem>\n                <a hlmBreadcrumbLink href=\"#\">Home</a>\n              </li>\n              <li hlmBreadcrumbSeparator>/</li>\n              <li hlmBreadcrumbItem>\n                <a hlmBreadcrumbLink href=\"#\">Library</a>\n              </li>\n              <li hlmBreadcrumbSeparator>/</li>\n              <li hlmBreadcrumbPage>Showcase</li>\n            </ol>\n          </nav>\n\n          <div hlmTabs class=\"mt-4\" tab=\"account\">\n            <hlm-tabs-list>\n              <button hlmTabsTrigger=\"account\">Account</button>\n              <button hlmTabsTrigger=\"notifications\">Notifications</button>\n              <button hlmTabsTrigger=\"billing\">Billing</button>\n            </hlm-tabs-list>\n            <div hlmTabsContent=\"account\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Account settings and profile.</p>\n            </div>\n            <div hlmTabsContent=\"notifications\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Notification preferences.</p>\n            </div>\n            <div hlmTabsContent=\"billing\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Billing and subscription.</p>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Data display -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Data display</h2>\n          <hlm-card class=\"overflow-hidden\">\n            <hlm-card-header>\n              <h3 hlmH3>Table</h3>\n              <p hlmMuted>Compact table built from primitives.</p>\n            </hlm-card-header>\n            <div hlmCardContent class=\"overflow-x-auto\">\n              <hlm-table-container>\n                <table hlmTable>\n                  <thead hlmTHead>\n                    <tr hlmTr>\n                      <th hlmTh>Name</th>\n                      <th hlmTh class=\"text-right\">Value</th>\n                    </tr>\n                  </thead>\n                  <tbody hlmTBody>\n                    <tr hlmTr>\n                      <td hlmTd>Alpha</td>\n                      <td hlmTd class=\"text-right\">123</td>\n                    </tr>\n                    <tr hlmTr>\n                      <td hlmTd>Beta</td>\n                      <td hlmTd class=\"text-right\">456</td>\n                    </tr>\n                  </tbody>\n                </table>\n              </hlm-table-container>\n            </div>\n            <hlm-card-footer class=\"flex items-center justify-between gap-3\">\n              <p hlmSmall class=\"text-muted-foreground\">\n                Showing <span hlmCode>1–2</span> of 2 rows\n              </p>\n              <hlm-pagination>\n                <button hlmPaginationPrevious>Previous</button>\n                <hlm-pagination-content>\n                  <button hlmPaginationLink [isActive]=\"true\">1</button>\n                </hlm-pagination-content>\n                <button hlmPaginationNext>Next</button>\n              </hlm-pagination>\n            </hlm-card-footer>\n          </hlm-card>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Feedback & Overlays -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Feedback & Overlays</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-4\">\n              <div hlmAlert>\n                <hlm-alert-title>Heads up</hlm-alert-title>\n                <p hlmAlertDescription>\n                  This is an example of the alert component.\n                </p>\n              </div>\n\n              <button hlmBtn variant=\"outline\" hlmTooltip=\"Tooltip content\">\n                Hover for tooltip\n              </button>\n\n              <button hlmBtn hlmPopoverTrigger type=\"button\">\n                Open popover\n              </button>\n              <hlm-popover>\n                <hlm-popover-content class=\"max-w-xs\">\n                  <p hlmSmall>Popover content to provide additional context without leaving the page.</p>\n                </hlm-popover-content>\n              </hlm-popover>\n\n              <hlm-accordion type=\"single\" class=\"w-full\">\n                <hlm-accordion-item value=\"item-1\">\n                  <h3>\n                    <button hlmAccordionTrigger>Accordion item</button>\n                  </h3>\n                  <div hlmAccordionContent>\n                    <p hlmSmall>Use accordions to reveal more details on demand.</p>\n                  </div>\n                </hlm-accordion-item>\n              </hlm-accordion>\n            </div>\n\n            <div class=\"space-y-4\">\n              <button hlmBtn variant=\"outline\" hlmAlertDialogTrigger>\n                Open alert dialog\n              </button>\n              <hlm-alert-dialog>\n                <hlm-alert-dialog-content>\n                  <hlm-alert-dialog-header>\n                    <hlm-alert-dialog-title>Are you absolutely sure?</hlm-alert-dialog-title>\n                    <hlm-alert-dialog-description>\n                      This action cannot be undone. This will permanently delete this resource.\n                    </hlm-alert-dialog-description>\n                  </hlm-alert-dialog-header>\n                  <hlm-alert-dialog-footer>\n                    <button hlmBtn variant=\"outline\" hlmAlertDialogCancel>Cancel</button>\n                    <button hlmBtn hlmAlertDialogAction>Continue</button>\n                  </hlm-alert-dialog-footer>\n                </hlm-alert-dialog-content>\n              </hlm-alert-dialog>\n\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Progress</span>\n                <div class=\"flex-1\">\n                  <div hlmProgress [value]=\"60\"></div>\n                </div>\n              </div>\n\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Loading</span>\n                <hlm-spinner></hlm-spinner>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Advanced inputs -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Advanced inputs</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-3\">\n              <label hlmSmall>Date picker</label>\n              <date-picker-showcase-demo />\n\n              <label hlmSmall class=\"mt-4\">Autocomplete</label>\n              <hlm-autocomplete>\n                <hlm-autocomplete-input placeholder=\"Search...\" />\n                <hlm-autocomplete-content>\n                  <hlm-autocomplete-list>\n                    <hlm-autocomplete-item>First option</hlm-autocomplete-item>\n                    <hlm-autocomplete-item>Second option</hlm-autocomplete-item>\n                  </hlm-autocomplete-list>\n                </hlm-autocomplete-content>\n              </hlm-autocomplete>\n            </div>\n\n            <div class=\"space-y-3\">\n              <label hlmSmall>Combobox</label>\n              <hlm-combobox>\n                <hlm-combobox-trigger>\n                  <hlm-combobox-value placeholder=\"Select option\"></hlm-combobox-value>\n                </hlm-combobox-trigger>\n                <hlm-combobox-content>\n                  <hlm-combobox-list>\n                    <hlm-combobox-item value=\"apple\">Apple</hlm-combobox-item>\n                    <hlm-combobox-item value=\"orange\">Orange</hlm-combobox-item>\n                  </hlm-combobox-list>\n                </hlm-combobox-content>\n              </hlm-combobox>\n\n              <label hlmSmall class=\"mt-4\">Input OTP</label>\n              <hlm-input-otp [length]=\"4\"></hlm-input-otp>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Navigation & Layout primitives -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Navigation & Layout primitives</h2>\n\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-3\">\n              <nav hlmNavigationMenu>\n                <div hlmNavigationMenuList>\n                  <div hlmNavigationMenuItem>\n                    <button hlmNavigationMenuTrigger>Products</button>\n                    <div hlmNavigationMenuContent>\n                      <div class=\"grid gap-2 p-3\">\n                        <a hlmNavigationMenuLink href=\"#\">Analytics</a>\n                        <a hlmNavigationMenuLink href=\"#\">Engagement</a>\n                      </div>\n                    </div>\n                  </div>\n                  <a hlmNavigationMenuLink href=\"#\">Pricing</a>\n                  <a hlmNavigationMenuLink href=\"#\">Docs</a>\n                </div>\n              </nav>\n\n              <div class=\"flex items-center gap-2\">\n                <kbd hlmKbd>⌘</kbd>\n                <kbd hlmKbd>K</kbd>\n                <span hlmSmall>to open command menu</span>\n              </div>\n            </div>\n\n            <div class=\"space-y-3\">\n              <div class=\"flex gap-2\">\n                <button hlmBtn hlmToggle pressed=\"true\">Toggle</button>\n                <div hlmToggleGroup [value]=\"['bold']\" aria-label=\"Text formatting\">\n                  <button hlmToggleGroupItem value=\"bold\">Bold</button>\n                  <button hlmToggleGroupItem value=\"italic\">Italic</button>\n                  <button hlmToggleGroupItem value=\"underline\">Underline</button>\n                </div>\n              </div>\n\n              <hlm-scroll-area class=\"h-24 w-full border rounded-md p-3\">\n                <div class=\"space-y-2\">\n                  <p hlmSmall *ngFor=\"let item of [1,2,3,4,5,6,7,8]\">Scrollable item {{ item }}</p>\n                </div>\n              </hlm-scroll-area>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Sidebar & Shell -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Sidebar layout</h2>\n          <div class=\"border rounded-md overflow-hidden\">\n            <hlm-sidebar-wrapper>\n              <hlm-sidebar>\n                <hlm-sidebar-header>\n                  <span hlmSmall>Project</span>\n                </hlm-sidebar-header>\n                <hlm-sidebar-content>\n                  <hlm-sidebar-menu>\n                    <button hlmSidebarMenuButton>Overview</button>\n                    <button hlmSidebarMenuButton>Analytics</button>\n                    <button hlmSidebarMenuButton>Settings</button>\n                  </hlm-sidebar-menu>\n                </hlm-sidebar-content>\n              </hlm-sidebar>\n              <hlm-sidebar-inset>\n                <div class=\"p-4 space-y-2\">\n                  <h3 hlmH3>Sidebar layout</h3>\n                  <p hlmMuted>Use sidebar primitives to build app shells and dashboards.</p>\n                </div>\n              </hlm-sidebar-inset>\n            </hlm-sidebar-wrapper>\n          </div>\n        </section>\n      </section>\n    `,\n    moduleMetadata: {\n      imports: [...showcaseImports, DatePickerShowcaseDemo],\n    },\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <section class=\"flex flex-col gap-10 p-6\">\n        <!-- Page header -->\n        <header class=\"space-y-2\">\n          <h1 hlmH1>UI Component Showcase</h1>\n          <p hlmLead>Explore the core primitives and components available in this UI library.</p>\n        </header>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Typography -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Typography</h2>\n          <div class=\"space-y-2\">\n            <h1 hlmH1>Heading 1</h1>\n            <h2 hlmH2>Heading 2</h2>\n            <h3 hlmH3>Heading 3</h3>\n            <h4 hlmH4>Heading 4</h4>\n            <p hlmP>Body text using the <code hlmCode>hlmP</code> directive.</p>\n            <p hlmMuted>Muted text for secondary information.</p>\n            <p hlmSmall>Small helper text.</p>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Buttons & Badges -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Buttons & Badges</h2>\n          <div class=\"flex flex-wrap items-center gap-3\">\n            <button hlmBtn>Primary</button>\n            <button hlmBtn variant=\"outline\">Outline</button>\n            <button hlmBtn variant=\"ghost\">Ghost</button>\n            <button hlmBtn variant=\"destructive\">Destructive</button>\n          </div>\n          <div class=\"flex flex-wrap items-center gap-2\">\n            <span hlmBadge>Default</span>\n            <span hlmBadge variant=\"secondary\">Secondary</span>\n            <span hlmBadge variant=\"outline\">Outline</span>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Form controls -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Form controls</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"input-example\">Input</label>\n              <input hlmInput id=\"input-example\" placeholder=\"Type something...\" />\n            </div>\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"textarea-example\">Textarea</label>\n              <textarea hlmTextarea id=\"textarea-example\" rows=\"3\" placeholder=\"Multi-line input\"></textarea>\n            </div>\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"select-example\">Select</label>\n              <brn-select id=\"select-example\" placeholder=\"Choose an option\">\n                <hlm-select-trigger>\n                  <hlm-select-value />\n                </hlm-select-trigger>\n                <hlm-select-content>\n                  <hlm-select-group>\n                    <hlm-select-label>Options</hlm-select-label>\n                    <hlm-option value=\"one\">Option one</hlm-option>\n                    <hlm-option value=\"two\">Option two</hlm-option>\n                  </hlm-select-group>\n                </hlm-select-content>\n              </brn-select>\n            </div>\n            <div class=\"space-y-3\">\n              <label class=\"flex cursor-pointer items-center gap-2\">\n                <hlm-checkbox aria-label=\"Example checkbox\" />\n                <span hlmSmall>Checkbox</span>\n              </label>\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Switch</span>\n                <button hlmSwitch type=\"button\">\n                  <span hlmSwitchThumb></span>\n                </button>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Cards & Layout -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Cards & Layout</h2>\n          <div class=\"grid gap-4 md:grid-cols-3\">\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>Simple card</h3>\n                <p hlmMuted>Use cards to group related content.</p>\n              </hlm-card-header>\n              <div hlmCardContent>\n                <p hlmP>Cards work great for dashboards, settings, and content blocks.</p>\n              </div>\n              <hlm-card-footer>\n                <button hlmBtn size=\"sm\">Action</button>\n              </hlm-card-footer>\n            </hlm-card>\n\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>With badge</h3>\n              </hlm-card-header>\n              <div hlmCardContent class=\"flex items-center justify-between\">\n                <p hlmP>Status</p>\n                <span hlmBadge variant=\"secondary\">Active</span>\n              </div>\n            </hlm-card>\n\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>With avatar</h3>\n              </hlm-card-header>\n              <div hlmCardContent class=\"flex items-center gap-3\">\n                <hlm-avatar>\n                  <span hlmAvatarFallback>JD</span>\n                </hlm-avatar>\n                <div>\n                  <p hlmP>Jane Doe</p>\n                  <p hlmMuted>Product Designer</p>\n                </div>\n              </div>\n            </hlm-card>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Navigation & Breadcrumbs -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Navigation</h2>\n          <nav hlmBreadcrumb>\n            <ol hlmBreadcrumbList>\n              <li hlmBreadcrumbItem>\n                <a hlmBreadcrumbLink href=\"#\">Home</a>\n              </li>\n              <li hlmBreadcrumbSeparator>/</li>\n              <li hlmBreadcrumbItem>\n                <a hlmBreadcrumbLink href=\"#\">Library</a>\n              </li>\n              <li hlmBreadcrumbSeparator>/</li>\n              <li hlmBreadcrumbPage>Showcase</li>\n            </ol>\n          </nav>\n\n          <div hlmTabs class=\"mt-4\" tab=\"account\">\n            <hlm-tabs-list>\n              <button hlmTabsTrigger=\"account\">Account</button>\n              <button hlmTabsTrigger=\"notifications\">Notifications</button>\n              <button hlmTabsTrigger=\"billing\">Billing</button>\n            </hlm-tabs-list>\n            <div hlmTabsContent=\"account\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Account settings and profile.</p>\n            </div>\n            <div hlmTabsContent=\"notifications\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Notification preferences.</p>\n            </div>\n            <div hlmTabsContent=\"billing\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Billing and subscription.</p>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Data display -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Data display</h2>\n          <hlm-card class=\"overflow-hidden\">\n            <hlm-card-header>\n              <h3 hlmH3>Table</h3>\n              <p hlmMuted>Compact table built from primitives.</p>\n            </hlm-card-header>\n            <div hlmCardContent class=\"overflow-x-auto\">\n              <hlm-table-container>\n                <table hlmTable>\n                  <thead hlmTHead>\n                    <tr hlmTr>\n                      <th hlmTh>Name</th>\n                      <th hlmTh class=\"text-right\">Value</th>\n                    </tr>\n                  </thead>\n                  <tbody hlmTBody>\n                    <tr hlmTr>\n                      <td hlmTd>Alpha</td>\n                      <td hlmTd class=\"text-right\">123</td>\n                    </tr>\n                    <tr hlmTr>\n                      <td hlmTd>Beta</td>\n                      <td hlmTd class=\"text-right\">456</td>\n                    </tr>\n                  </tbody>\n                </table>\n              </hlm-table-container>\n            </div>\n            <hlm-card-footer class=\"flex items-center justify-between gap-3\">\n              <p hlmSmall class=\"text-muted-foreground\">\n                Showing <span hlmCode>1–2</span> of 2 rows\n              </p>\n              <hlm-pagination>\n                <button hlmPaginationPrevious>Previous</button>\n                <hlm-pagination-content>\n                  <button hlmPaginationLink [isActive]=\"true\">1</button>\n                </hlm-pagination-content>\n                <button hlmPaginationNext>Next</button>\n              </hlm-pagination>\n            </hlm-card-footer>\n          </hlm-card>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Feedback & Overlays -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Feedback & Overlays</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-4\">\n              <div hlmAlert>\n                <hlm-alert-title>Heads up</hlm-alert-title>\n                <p hlmAlertDescription>\n                  This is an example of the alert component.\n                </p>\n              </div>\n\n              <button hlmBtn variant=\"outline\" hlmTooltip=\"Tooltip content\">\n                Hover for tooltip\n              </button>\n\n              <div hlmPopover>\n                <button hlmBtn hlmPopoverTrigger type=\"button\">\n                  Open popover\n                </button>\n                <div *hlmPopoverPortal hlmPopoverContent class=\"max-w-xs\">\n                  <p hlmSmall>Popover content to provide additional context without leaving the page.</p>\n                </div>\n              </div>\n\n              <hlm-accordion type=\"single\" class=\"w-full\">\n                <hlm-accordion-item value=\"item-1\">\n                  <h3>\n                    <button hlmAccordionTrigger>Accordion item</button>\n                  </h3>\n                  <div hlmAccordionContent>\n                    <p hlmSmall>Use accordions to reveal more details on demand.</p>\n                  </div>\n                </hlm-accordion-item>\n              </hlm-accordion>\n            </div>\n\n            <div class=\"space-y-4\">\n              <button hlmBtn variant=\"outline\" hlmAlertDialogTrigger>\n                Open alert dialog\n              </button>\n              <hlm-alert-dialog>\n                <hlm-alert-dialog-content>\n                  <hlm-alert-dialog-header>\n                    <hlm-alert-dialog-title>Are you absolutely sure?</hlm-alert-dialog-title>\n                    <hlm-alert-dialog-description>\n                      This action cannot be undone. This will permanently delete this resource.\n                    </hlm-alert-dialog-description>\n                  </hlm-alert-dialog-header>\n                  <hlm-alert-dialog-footer>\n                    <button hlmAlertDialogCancel>Cancel</button>\n                    <button hlmAlertDialogAction>Continue</button>\n                  </hlm-alert-dialog-footer>\n                </hlm-alert-dialog-content>\n              </hlm-alert-dialog>\n\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Progress</span>\n                <div class=\"flex-1\">\n                  <div hlmProgress [value]=\"60\"></div>\n                </div>\n              </div>\n\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Loading</span>\n                <hlm-spinner></hlm-spinner>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Advanced inputs -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Advanced inputs</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-3\">\n              <label hlmSmall>Date picker</label>\n              <date-picker-showcase-demo />\n\n              <label hlmSmall class=\"mt-4\">Autocomplete</label>\n              <hlm-autocomplete>\n                <hlm-autocomplete-input placeholder=\"Search...\" />\n                <hlm-autocomplete-content>\n                  <hlm-autocomplete-list>\n                    <hlm-autocomplete-item>First option</hlm-autocomplete-item>\n                    <hlm-autocomplete-item>Second option</hlm-autocomplete-item>\n                  </hlm-autocomplete-list>\n                </hlm-autocomplete-content>\n              </hlm-autocomplete>\n            </div>\n\n            <div class=\"space-y-3\">\n              <label hlmSmall>Combobox</label>\n              <hlm-combobox>\n                <hlm-combobox-trigger>\n                  <hlm-combobox-value placeholder=\"Select option\"></hlm-combobox-value>\n                </hlm-combobox-trigger>\n                <hlm-combobox-content>\n                  <hlm-combobox-list>\n                    <hlm-combobox-item value=\"apple\">Apple</hlm-combobox-item>\n                    <hlm-combobox-item value=\"orange\">Orange</hlm-combobox-item>\n                  </hlm-combobox-list>\n                </hlm-combobox-content>\n              </hlm-combobox>\n\n              <label hlmSmall class=\"mt-4\">Input OTP</label>\n              <hlm-input-otp [length]=\"4\"></hlm-input-otp>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Navigation & Layout primitives -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Navigation & Layout primitives</h2>\n\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-3\">\n              <nav hlmNavigationMenu>\n                <ul hlmNavigationMenuList>\n                  <li hlmNavigationMenuItem>\n                    <button hlmNavigationMenuTrigger>Products</button>\n                    <div *hlmNavigationMenuPortal hlmNavigationMenuContent>\n                      <div class=\"grid gap-2 p-3\">\n                        <a hlmNavigationMenuLink href=\"#\">Analytics</a>\n                        <a hlmNavigationMenuLink href=\"#\">Engagement</a>\n                      </div>\n                    </div>\n                  </li>\n                  <li hlmNavigationMenuItem>\n                    <a hlmNavigationMenuLink href=\"#\">Pricing</a>\n                  </li>\n                  <li hlmNavigationMenuItem>\n                    <a hlmNavigationMenuLink href=\"#\">Docs</a>\n                  </li>\n                </ul>\n              </nav>\n\n              <div class=\"flex items-center gap-2\">\n                <kbd hlmKbd>⌘</kbd>\n                <kbd hlmKbd>K</kbd>\n                <span hlmSmall>to open command menu</span>\n              </div>\n            </div>\n\n            <div class=\"space-y-3\">\n              <div class=\"flex gap-2\">\n                <button hlmBtn hlmToggle pressed=\"true\">Toggle</button>\n                <div hlmToggleGroup [value]=\"['bold']\" aria-label=\"Text formatting\">\n                  <button hlmToggleGroupItem value=\"bold\">Bold</button>\n                  <button hlmToggleGroupItem value=\"italic\">Italic</button>\n                  <button hlmToggleGroupItem value=\"underline\">Underline</button>\n                </div>\n              </div>\n\n              <hlm-scroll-area class=\"h-24 w-full border rounded-md p-3\">\n                <div class=\"space-y-2\">\n                  <p hlmSmall *ngFor=\"let item of [1,2,3,4,5,6,7,8]\">Scrollable item {{ item }}</p>\n                </div>\n              </hlm-scroll-area>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Sidebar & Shell -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Sidebar layout</h2>\n          <div class=\"border rounded-md overflow-hidden\">\n            <hlm-sidebar-wrapper>\n              <hlm-sidebar>\n                <hlm-sidebar-header>\n                  <span hlmSmall>Project</span>\n                </hlm-sidebar-header>\n                <hlm-sidebar-content>\n                  <hlm-sidebar-menu>\n                    <button hlmSidebarMenuButton>Overview</button>\n                    <button hlmSidebarMenuButton>Analytics</button>\n                    <button hlmSidebarMenuButton>Settings</button>\n                  </hlm-sidebar-menu>\n                </hlm-sidebar-content>\n              </hlm-sidebar>\n              <hlm-sidebar-inset>\n                <div class=\"p-4 space-y-2\">\n                  <h3 hlmH3>Sidebar layout</h3>\n                  <p hlmMuted>Use sidebar primitives to build app shells and dashboards.</p>\n                </div>\n              </hlm-sidebar-inset>\n            </hlm-sidebar-wrapper>\n          </div>\n        </section>\n      </section>\n    `,\n    moduleMetadata: {\n      imports: [...showcaseImports, DatePickerShowcaseDemo],\n    },\n  }),\n}"
             },
             {
                 "name": "showcaseImports",
@@ -8201,8 +8201,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmAspectRatio>",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "rawtype": "StoryObj<HlmAlertDialog>",
+                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8212,8 +8212,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmAlertDialog>",
-                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                "rawtype": "StoryObj<HlmAspectRatio>",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8245,8 +8245,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmBreadcrumb>",
-                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
+                "rawtype": "StoryObj<HlmBadge>",
+                "file": "projects/ui/src/lib/badge/hlm-badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8256,8 +8256,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmBadge>",
-                "file": "projects/ui/src/lib/badge/hlm-badge.stories.ts",
+                "rawtype": "StoryObj<HlmBreadcrumb>",
+                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8597,6 +8597,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<HlmPopover>",
+                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<HlmProgress>",
                 "file": "projects/ui/src/lib/progress/hlm-progress.stories.ts",
                 "deprecated": false,
@@ -8610,17 +8621,6 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<HlmRadioGroup>",
                 "file": "projects/ui/src/lib/radio-group/hlm-radio-group.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<HlmPopover>",
-                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -13824,6 +13824,88 @@
                     "description": "<p>Two-way binding with value and valueChange — reactive display.</p>\n"
                 }
             ],
+            "projects/ui/src/lib/popover/hlm-popover.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Open popover</button>\n        <div *hlmPopoverPortal hlmPopoverContent>\n          <h4 class=\"font-medium text-sm mb-2\">Popover title</h4>\n          <p class=\"text-muted-foreground text-sm\">This is the popover content. It can contain any markup.</p>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Basic popover: click trigger to open/close.",
+                    "description": "<p>Basic popover: click trigger to open/close.</p>\n"
+                },
+                {
+                    "name": "imports",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[HlmPopoverImports, ...HlmButtonImports]"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<HlmPopover>",
+                    "defaultValue": "{\n  component: HlmPopover,\n  title: 'Components/Popover',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Floating panel opened by a trigger. Use [hlmPopover] on a container, button[hlmPopoverTrigger] to open, and *hlmPopoverPortal with [hlmPopoverContent] for the panel. Supports align, sideOffset, closeOnOutsidePointerEvents, state, etc.',\n      },\n    },\n  },\n}"
+                },
+                {
+                    "name": "MultiplePopovers",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"flex gap-2\">\n        <div hlmPopover>\n          <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Popover 1</button>\n          <div *hlmPopoverPortal hlmPopoverContent>\n            <p class=\"text-sm\">Content for first popover.</p>\n          </div>\n        </div>\n        <div hlmPopover>\n          <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Popover 2</button>\n          <div *hlmPopoverPortal hlmPopoverContent>\n            <p class=\"text-sm\">Content for second popover.</p>\n          </div>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Multiple popovers on the same page.",
+                    "description": "<p>Multiple popovers on the same page.</p>\n"
+                },
+                {
+                    "name": "RichContent",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>View offer</button>\n        <div *hlmPopoverPortal hlmPopoverContent class=\"w-80 p-0 overflow-hidden\">\n          <div class=\"bg-muted h-24 w-full\" />\n          <div class=\"p-4\">\n            <h4 class=\"font-semibold text-sm\">Special offer</h4>\n            <p class=\"text-muted-foreground mt-1 text-xs\">Get 20% off your next order. Use code POP20 at checkout.</p>\n            <button hlmBtn size=\"sm\" class=\"mt-3 w-full\">Claim offer</button>\n          </div>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Rich content: image, title, description, and CTA.",
+                    "description": "<p>Rich content: image, title, description, and CTA.</p>\n"
+                },
+                {
+                    "name": "WithActions",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Actions</button>\n        <div *hlmPopoverPortal hlmPopoverContent class=\"w-48 p-1\">\n          <button class=\"hover:bg-accent hover:text-accent-foreground w-full rounded-sm px-2 py-1.5 text-left text-sm\">Edit</button>\n          <button class=\"hover:bg-accent hover:text-accent-foreground w-full rounded-sm px-2 py-1.5 text-left text-sm\">Duplicate</button>\n          <button class=\"hover:bg-accent hover:text-accent-foreground w-full rounded-sm px-2 py-1.5 text-left text-sm\">Share</button>\n          <hr class=\"my-1 border-border\" />\n          <button class=\"hover:bg-accent hover:text-accent-foreground w-full rounded-sm px-2 py-1.5 text-left text-sm text-destructive\">Delete</button>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Popover with list of actions (e.g. menu).",
+                    "description": "<p>Popover with list of actions (e.g. menu).</p>\n"
+                },
+                {
+                    "name": "WithForm",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Filter</button>\n        <div *hlmPopoverPortal hlmPopoverContent class=\"w-64\">\n          <p class=\"font-medium text-sm mb-3\">Filter by</p>\n          <div class=\"space-y-2\">\n            <label class=\"flex items-center gap-2 text-sm\">\n              <input type=\"checkbox\" class=\"h-4 w-4 rounded border-input\" />\n              Option A\n            </label>\n            <label class=\"flex items-center gap-2 text-sm\">\n              <input type=\"checkbox\" class=\"h-4 w-4 rounded border-input\" />\n              Option B\n            </label>\n            <label class=\"flex items-center gap-2 text-sm\">\n              <input type=\"checkbox\" class=\"h-4 w-4 rounded border-input\" />\n              Option C\n            </label>\n          </div>\n          <div class=\"mt-4 flex justify-end gap-2\">\n            <button hlmBtn variant=\"ghost\" size=\"sm\">Reset</button>\n            <button hlmBtn size=\"sm\">Apply</button>\n          </div>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Popover with form content — e.g. settings or filters.",
+                    "description": "<p>Popover with form content — e.g. settings or filters.</p>\n"
+                }
+            ],
             "projects/ui/src/lib/radio-group/hlm-radio-group.stories.ts": [
                 {
                     "name": "Default",
@@ -13928,88 +14010,6 @@
                     "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"space-y-2\">\n        <div hlmRadioGroup name=\"notify\" [(ngModel)]=\"selected\" (valueChange)=\"onChange($event)\">\n          <label class=\"flex items-center gap-2\">\n            <hlm-radio value=\"email\" />\n            <span>Email</span>\n          </label>\n          <label class=\"flex items-center gap-2\">\n            <hlm-radio value=\"sms\" />\n            <span>SMS</span>\n          </label>\n          <label class=\"flex items-center gap-2\">\n            <hlm-radio value=\"push\" />\n            <span>Push</span>\n          </label>\n        </div>\n        <p class=\"text-muted-foreground text-sm\">Selected: {{ selected }}</p>\n      </div>\n    `,\n    moduleMetadata: { imports },\n    props: {\n      selected: 'email',\n      onChange: (v: string) => console.log('Selected:', v),\n    },\n  }),\n}",
                     "rawdescription": "Value change event — log or react to selection.",
                     "description": "<p>Value change event — log or react to selection.</p>\n"
-                }
-            ],
-            "projects/ui/src/lib/popover/hlm-popover.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Open popover</button>\n        <div *hlmPopoverPortal hlmPopoverContent>\n          <h4 class=\"font-medium text-sm mb-2\">Popover title</h4>\n          <p class=\"text-muted-foreground text-sm\">This is the popover content. It can contain any markup.</p>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Basic popover: click trigger to open/close.",
-                    "description": "<p>Basic popover: click trigger to open/close.</p>\n"
-                },
-                {
-                    "name": "imports",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "[]",
-                    "defaultValue": "[HlmPopoverImports, ...HlmButtonImports]"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<HlmPopover>",
-                    "defaultValue": "{\n  component: HlmPopover,\n  title: 'Components/Popover',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Floating panel opened by a trigger. Use [hlmPopover] on a container, button[hlmPopoverTrigger] to open, and *hlmPopoverPortal with [hlmPopoverContent] for the panel. Supports align, sideOffset, closeOnOutsidePointerEvents, state, etc.',\n      },\n    },\n  },\n}"
-                },
-                {
-                    "name": "MultiplePopovers",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"flex gap-2\">\n        <div hlmPopover>\n          <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Popover 1</button>\n          <div *hlmPopoverPortal hlmPopoverContent>\n            <p class=\"text-sm\">Content for first popover.</p>\n          </div>\n        </div>\n        <div hlmPopover>\n          <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Popover 2</button>\n          <div *hlmPopoverPortal hlmPopoverContent>\n            <p class=\"text-sm\">Content for second popover.</p>\n          </div>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Multiple popovers on the same page.",
-                    "description": "<p>Multiple popovers on the same page.</p>\n"
-                },
-                {
-                    "name": "RichContent",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>View offer</button>\n        <div *hlmPopoverPortal hlmPopoverContent class=\"w-80 p-0 overflow-hidden\">\n          <div class=\"bg-muted h-24 w-full\" />\n          <div class=\"p-4\">\n            <h4 class=\"font-semibold text-sm\">Special offer</h4>\n            <p class=\"text-muted-foreground mt-1 text-xs\">Get 20% off your next order. Use code POP20 at checkout.</p>\n            <button hlmBtn size=\"sm\" class=\"mt-3 w-full\">Claim offer</button>\n          </div>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Rich content: image, title, description, and CTA.",
-                    "description": "<p>Rich content: image, title, description, and CTA.</p>\n"
-                },
-                {
-                    "name": "WithActions",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Actions</button>\n        <div *hlmPopoverPortal hlmPopoverContent class=\"w-48 p-1\">\n          <button class=\"hover:bg-accent hover:text-accent-foreground w-full rounded-sm px-2 py-1.5 text-left text-sm\">Edit</button>\n          <button class=\"hover:bg-accent hover:text-accent-foreground w-full rounded-sm px-2 py-1.5 text-left text-sm\">Duplicate</button>\n          <button class=\"hover:bg-accent hover:text-accent-foreground w-full rounded-sm px-2 py-1.5 text-left text-sm\">Share</button>\n          <hr class=\"my-1 border-border\" />\n          <button class=\"hover:bg-accent hover:text-accent-foreground w-full rounded-sm px-2 py-1.5 text-left text-sm text-destructive\">Delete</button>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Popover with list of actions (e.g. menu).",
-                    "description": "<p>Popover with list of actions (e.g. menu).</p>\n"
-                },
-                {
-                    "name": "WithForm",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Filter</button>\n        <div *hlmPopoverPortal hlmPopoverContent class=\"w-64\">\n          <p class=\"font-medium text-sm mb-3\">Filter by</p>\n          <div class=\"space-y-2\">\n            <label class=\"flex items-center gap-2 text-sm\">\n              <input type=\"checkbox\" class=\"h-4 w-4 rounded border-input\" />\n              Option A\n            </label>\n            <label class=\"flex items-center gap-2 text-sm\">\n              <input type=\"checkbox\" class=\"h-4 w-4 rounded border-input\" />\n              Option B\n            </label>\n            <label class=\"flex items-center gap-2 text-sm\">\n              <input type=\"checkbox\" class=\"h-4 w-4 rounded border-input\" />\n              Option C\n            </label>\n          </div>\n          <div class=\"mt-4 flex justify-end gap-2\">\n            <button hlmBtn variant=\"ghost\" size=\"sm\">Reset</button>\n            <button hlmBtn size=\"sm\">Apply</button>\n          </div>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Popover with form content — e.g. settings or filters.",
-                    "description": "<p>Popover with form content — e.g. settings or filters.</p>\n"
                 }
             ],
             "projects/ui/src/lib/select/hlm-select.stories.ts": [
@@ -15093,7 +15093,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<unknown>",
-                    "defaultValue": "{\n  title: 'Examples/Showcase',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Visual showcase of the most commonly used UI components in the library, grouped by category.',\n      },\n    },\n  },\n}"
+                    "defaultValue": "{\n  title: 'Examples/Showcase',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Visual showcase of the most commonly used  UI components in the library, grouped by category.',\n      },\n    },\n  },\n}"
                 },
                 {
                     "name": "Showcase",
@@ -15103,7 +15103,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <section class=\"flex flex-col gap-10 p-6\">\n        <!-- Page header -->\n        <header class=\"space-y-2\">\n          <h1 hlmH1>UI Component Showcase</h1>\n          <p hlmLead>Explore the core primitives and components available in this UI library.</p>\n        </header>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Typography -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Typography</h2>\n          <div class=\"space-y-2\">\n            <h1 hlmH1>Heading 1</h1>\n            <h2 hlmH2>Heading 2</h2>\n            <h3 hlmH3>Heading 3</h3>\n            <h4 hlmH4>Heading 4</h4>\n            <p hlmP>Body text using the <code hlmCode>hlmP</code> directive.</p>\n            <p hlmMuted>Muted text for secondary information.</p>\n            <p hlmSmall>Small helper text.</p>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Buttons & Badges -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Buttons & Badges</h2>\n          <div class=\"flex flex-wrap items-center gap-3\">\n            <button hlmBtn>Primary</button>\n            <button hlmBtn variant=\"outline\">Outline</button>\n            <button hlmBtn variant=\"ghost\">Ghost</button>\n            <button hlmBtn variant=\"destructive\">Destructive</button>\n          </div>\n          <div class=\"flex flex-wrap items-center gap-2\">\n            <span hlmBadge>Default</span>\n            <span hlmBadge variant=\"secondary\">Secondary</span>\n            <span hlmBadge variant=\"outline\">Outline</span>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Form controls -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Form controls</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"input-example\">Input</label>\n              <input hlmInput id=\"input-example\" placeholder=\"Type something...\" />\n            </div>\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"textarea-example\">Textarea</label>\n              <textarea hlmTextarea id=\"textarea-example\" rows=\"3\" placeholder=\"Multi-line input\"></textarea>\n            </div>\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"select-example\">Select</label>\n              <brn-select id=\"select-example\" placeholder=\"Choose an option\">\n                <hlm-select-trigger>\n                  <hlm-select-value />\n                </hlm-select-trigger>\n                <hlm-select-content>\n                  <hlm-select-group>\n                    <hlm-select-label>Options</hlm-select-label>\n                    <hlm-option value=\"one\">Option one</hlm-option>\n                    <hlm-option value=\"two\">Option two</hlm-option>\n                  </hlm-select-group>\n                </hlm-select-content>\n              </brn-select>\n            </div>\n            <div class=\"space-y-3\">\n              <label class=\"flex cursor-pointer items-center gap-2\">\n                <hlm-checkbox aria-label=\"Example checkbox\" />\n                <span hlmSmall>Checkbox</span>\n              </label>\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Switch</span>\n                <button hlmSwitch type=\"button\">\n                  <span hlmSwitchThumb></span>\n                </button>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Cards & Layout -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Cards & Layout</h2>\n          <div class=\"grid gap-4 md:grid-cols-3\">\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>Simple card</h3>\n                <p hlmMuted>Use cards to group related content.</p>\n              </hlm-card-header>\n              <div hlmCardContent>\n                <p hlmP>Cards work great for dashboards, settings, and content blocks.</p>\n              </div>\n              <hlm-card-footer>\n                <button hlmBtn size=\"sm\">Action</button>\n              </hlm-card-footer>\n            </hlm-card>\n\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>With badge</h3>\n              </hlm-card-header>\n              <div hlmCardContent class=\"flex items-center justify-between\">\n                <p hlmP>Status</p>\n                <span hlmBadge variant=\"secondary\">Active</span>\n              </div>\n            </hlm-card>\n\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>With avatar</h3>\n              </hlm-card-header>\n              <div hlmCardContent class=\"flex items-center gap-3\">\n                <hlm-avatar>\n                  <span hlmAvatarFallback>JD</span>\n                </hlm-avatar>\n                <div>\n                  <p hlmP>Jane Doe</p>\n                  <p hlmMuted>Product Designer</p>\n                </div>\n              </div>\n            </hlm-card>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Navigation & Breadcrumbs -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Navigation</h2>\n          <nav hlmBreadcrumb>\n            <ol hlmBreadcrumbList>\n              <li hlmBreadcrumbItem>\n                <a hlmBreadcrumbLink href=\"#\">Home</a>\n              </li>\n              <li hlmBreadcrumbSeparator>/</li>\n              <li hlmBreadcrumbItem>\n                <a hlmBreadcrumbLink href=\"#\">Library</a>\n              </li>\n              <li hlmBreadcrumbSeparator>/</li>\n              <li hlmBreadcrumbPage>Showcase</li>\n            </ol>\n          </nav>\n\n          <div hlmTabs class=\"mt-4\" tab=\"account\">\n            <hlm-tabs-list>\n              <button hlmTabsTrigger=\"account\">Account</button>\n              <button hlmTabsTrigger=\"notifications\">Notifications</button>\n              <button hlmTabsTrigger=\"billing\">Billing</button>\n            </hlm-tabs-list>\n            <div hlmTabsContent=\"account\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Account settings and profile.</p>\n            </div>\n            <div hlmTabsContent=\"notifications\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Notification preferences.</p>\n            </div>\n            <div hlmTabsContent=\"billing\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Billing and subscription.</p>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Data display -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Data display</h2>\n          <hlm-card class=\"overflow-hidden\">\n            <hlm-card-header>\n              <h3 hlmH3>Table</h3>\n              <p hlmMuted>Compact table built from primitives.</p>\n            </hlm-card-header>\n            <div hlmCardContent class=\"overflow-x-auto\">\n              <hlm-table-container>\n                <table hlmTable>\n                  <thead hlmTHead>\n                    <tr hlmTr>\n                      <th hlmTh>Name</th>\n                      <th hlmTh class=\"text-right\">Value</th>\n                    </tr>\n                  </thead>\n                  <tbody hlmTBody>\n                    <tr hlmTr>\n                      <td hlmTd>Alpha</td>\n                      <td hlmTd class=\"text-right\">123</td>\n                    </tr>\n                    <tr hlmTr>\n                      <td hlmTd>Beta</td>\n                      <td hlmTd class=\"text-right\">456</td>\n                    </tr>\n                  </tbody>\n                </table>\n              </hlm-table-container>\n            </div>\n            <hlm-card-footer class=\"flex items-center justify-between gap-3\">\n              <p hlmSmall class=\"text-muted-foreground\">\n                Showing <span hlmCode>1–2</span> of 2 rows\n              </p>\n              <hlm-pagination>\n                <button hlmPaginationPrevious>Previous</button>\n                <hlm-pagination-content>\n                  <button hlmPaginationLink [isActive]=\"true\">1</button>\n                </hlm-pagination-content>\n                <button hlmPaginationNext>Next</button>\n              </hlm-pagination>\n            </hlm-card-footer>\n          </hlm-card>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Feedback & Overlays -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Feedback & Overlays</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-4\">\n              <div hlmAlert>\n                <hlm-alert-title>Heads up</hlm-alert-title>\n                <p hlmAlertDescription>\n                  This is an example of the alert component.\n                </p>\n              </div>\n\n              <button hlmBtn variant=\"outline\" hlmTooltip=\"Tooltip content\">\n                Hover for tooltip\n              </button>\n\n              <button hlmBtn hlmPopoverTrigger type=\"button\">\n                Open popover\n              </button>\n              <hlm-popover>\n                <hlm-popover-content class=\"max-w-xs\">\n                  <p hlmSmall>Popover content to provide additional context without leaving the page.</p>\n                </hlm-popover-content>\n              </hlm-popover>\n\n              <hlm-accordion type=\"single\" class=\"w-full\">\n                <hlm-accordion-item value=\"item-1\">\n                  <h3>\n                    <button hlmAccordionTrigger>Accordion item</button>\n                  </h3>\n                  <div hlmAccordionContent>\n                    <p hlmSmall>Use accordions to reveal more details on demand.</p>\n                  </div>\n                </hlm-accordion-item>\n              </hlm-accordion>\n            </div>\n\n            <div class=\"space-y-4\">\n              <button hlmBtn variant=\"outline\" hlmAlertDialogTrigger>\n                Open alert dialog\n              </button>\n              <hlm-alert-dialog>\n                <hlm-alert-dialog-content>\n                  <hlm-alert-dialog-header>\n                    <hlm-alert-dialog-title>Are you absolutely sure?</hlm-alert-dialog-title>\n                    <hlm-alert-dialog-description>\n                      This action cannot be undone. This will permanently delete this resource.\n                    </hlm-alert-dialog-description>\n                  </hlm-alert-dialog-header>\n                  <hlm-alert-dialog-footer>\n                    <button hlmBtn variant=\"outline\" hlmAlertDialogCancel>Cancel</button>\n                    <button hlmBtn hlmAlertDialogAction>Continue</button>\n                  </hlm-alert-dialog-footer>\n                </hlm-alert-dialog-content>\n              </hlm-alert-dialog>\n\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Progress</span>\n                <div class=\"flex-1\">\n                  <div hlmProgress [value]=\"60\"></div>\n                </div>\n              </div>\n\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Loading</span>\n                <hlm-spinner></hlm-spinner>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Advanced inputs -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Advanced inputs</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-3\">\n              <label hlmSmall>Date picker</label>\n              <date-picker-showcase-demo />\n\n              <label hlmSmall class=\"mt-4\">Autocomplete</label>\n              <hlm-autocomplete>\n                <hlm-autocomplete-input placeholder=\"Search...\" />\n                <hlm-autocomplete-content>\n                  <hlm-autocomplete-list>\n                    <hlm-autocomplete-item>First option</hlm-autocomplete-item>\n                    <hlm-autocomplete-item>Second option</hlm-autocomplete-item>\n                  </hlm-autocomplete-list>\n                </hlm-autocomplete-content>\n              </hlm-autocomplete>\n            </div>\n\n            <div class=\"space-y-3\">\n              <label hlmSmall>Combobox</label>\n              <hlm-combobox>\n                <hlm-combobox-trigger>\n                  <hlm-combobox-value placeholder=\"Select option\"></hlm-combobox-value>\n                </hlm-combobox-trigger>\n                <hlm-combobox-content>\n                  <hlm-combobox-list>\n                    <hlm-combobox-item value=\"apple\">Apple</hlm-combobox-item>\n                    <hlm-combobox-item value=\"orange\">Orange</hlm-combobox-item>\n                  </hlm-combobox-list>\n                </hlm-combobox-content>\n              </hlm-combobox>\n\n              <label hlmSmall class=\"mt-4\">Input OTP</label>\n              <hlm-input-otp [length]=\"4\"></hlm-input-otp>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Navigation & Layout primitives -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Navigation & Layout primitives</h2>\n\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-3\">\n              <nav hlmNavigationMenu>\n                <div hlmNavigationMenuList>\n                  <div hlmNavigationMenuItem>\n                    <button hlmNavigationMenuTrigger>Products</button>\n                    <div hlmNavigationMenuContent>\n                      <div class=\"grid gap-2 p-3\">\n                        <a hlmNavigationMenuLink href=\"#\">Analytics</a>\n                        <a hlmNavigationMenuLink href=\"#\">Engagement</a>\n                      </div>\n                    </div>\n                  </div>\n                  <a hlmNavigationMenuLink href=\"#\">Pricing</a>\n                  <a hlmNavigationMenuLink href=\"#\">Docs</a>\n                </div>\n              </nav>\n\n              <div class=\"flex items-center gap-2\">\n                <kbd hlmKbd>⌘</kbd>\n                <kbd hlmKbd>K</kbd>\n                <span hlmSmall>to open command menu</span>\n              </div>\n            </div>\n\n            <div class=\"space-y-3\">\n              <div class=\"flex gap-2\">\n                <button hlmBtn hlmToggle pressed=\"true\">Toggle</button>\n                <div hlmToggleGroup [value]=\"['bold']\" aria-label=\"Text formatting\">\n                  <button hlmToggleGroupItem value=\"bold\">Bold</button>\n                  <button hlmToggleGroupItem value=\"italic\">Italic</button>\n                  <button hlmToggleGroupItem value=\"underline\">Underline</button>\n                </div>\n              </div>\n\n              <hlm-scroll-area class=\"h-24 w-full border rounded-md p-3\">\n                <div class=\"space-y-2\">\n                  <p hlmSmall *ngFor=\"let item of [1,2,3,4,5,6,7,8]\">Scrollable item {{ item }}</p>\n                </div>\n              </hlm-scroll-area>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Sidebar & Shell -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Sidebar layout</h2>\n          <div class=\"border rounded-md overflow-hidden\">\n            <hlm-sidebar-wrapper>\n              <hlm-sidebar>\n                <hlm-sidebar-header>\n                  <span hlmSmall>Project</span>\n                </hlm-sidebar-header>\n                <hlm-sidebar-content>\n                  <hlm-sidebar-menu>\n                    <button hlmSidebarMenuButton>Overview</button>\n                    <button hlmSidebarMenuButton>Analytics</button>\n                    <button hlmSidebarMenuButton>Settings</button>\n                  </hlm-sidebar-menu>\n                </hlm-sidebar-content>\n              </hlm-sidebar>\n              <hlm-sidebar-inset>\n                <div class=\"p-4 space-y-2\">\n                  <h3 hlmH3>Sidebar layout</h3>\n                  <p hlmMuted>Use sidebar primitives to build app shells and dashboards.</p>\n                </div>\n              </hlm-sidebar-inset>\n            </hlm-sidebar-wrapper>\n          </div>\n        </section>\n      </section>\n    `,\n    moduleMetadata: {\n      imports: [...showcaseImports, DatePickerShowcaseDemo],\n    },\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <section class=\"flex flex-col gap-10 p-6\">\n        <!-- Page header -->\n        <header class=\"space-y-2\">\n          <h1 hlmH1>UI Component Showcase</h1>\n          <p hlmLead>Explore the core primitives and components available in this UI library.</p>\n        </header>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Typography -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Typography</h2>\n          <div class=\"space-y-2\">\n            <h1 hlmH1>Heading 1</h1>\n            <h2 hlmH2>Heading 2</h2>\n            <h3 hlmH3>Heading 3</h3>\n            <h4 hlmH4>Heading 4</h4>\n            <p hlmP>Body text using the <code hlmCode>hlmP</code> directive.</p>\n            <p hlmMuted>Muted text for secondary information.</p>\n            <p hlmSmall>Small helper text.</p>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Buttons & Badges -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Buttons & Badges</h2>\n          <div class=\"flex flex-wrap items-center gap-3\">\n            <button hlmBtn>Primary</button>\n            <button hlmBtn variant=\"outline\">Outline</button>\n            <button hlmBtn variant=\"ghost\">Ghost</button>\n            <button hlmBtn variant=\"destructive\">Destructive</button>\n          </div>\n          <div class=\"flex flex-wrap items-center gap-2\">\n            <span hlmBadge>Default</span>\n            <span hlmBadge variant=\"secondary\">Secondary</span>\n            <span hlmBadge variant=\"outline\">Outline</span>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Form controls -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Form controls</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"input-example\">Input</label>\n              <input hlmInput id=\"input-example\" placeholder=\"Type something...\" />\n            </div>\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"textarea-example\">Textarea</label>\n              <textarea hlmTextarea id=\"textarea-example\" rows=\"3\" placeholder=\"Multi-line input\"></textarea>\n            </div>\n            <div class=\"space-y-2\">\n              <label hlmSmall for=\"select-example\">Select</label>\n              <brn-select id=\"select-example\" placeholder=\"Choose an option\">\n                <hlm-select-trigger>\n                  <hlm-select-value />\n                </hlm-select-trigger>\n                <hlm-select-content>\n                  <hlm-select-group>\n                    <hlm-select-label>Options</hlm-select-label>\n                    <hlm-option value=\"one\">Option one</hlm-option>\n                    <hlm-option value=\"two\">Option two</hlm-option>\n                  </hlm-select-group>\n                </hlm-select-content>\n              </brn-select>\n            </div>\n            <div class=\"space-y-3\">\n              <label class=\"flex cursor-pointer items-center gap-2\">\n                <hlm-checkbox aria-label=\"Example checkbox\" />\n                <span hlmSmall>Checkbox</span>\n              </label>\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Switch</span>\n                <button hlmSwitch type=\"button\">\n                  <span hlmSwitchThumb></span>\n                </button>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Cards & Layout -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Cards & Layout</h2>\n          <div class=\"grid gap-4 md:grid-cols-3\">\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>Simple card</h3>\n                <p hlmMuted>Use cards to group related content.</p>\n              </hlm-card-header>\n              <div hlmCardContent>\n                <p hlmP>Cards work great for dashboards, settings, and content blocks.</p>\n              </div>\n              <hlm-card-footer>\n                <button hlmBtn size=\"sm\">Action</button>\n              </hlm-card-footer>\n            </hlm-card>\n\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>With badge</h3>\n              </hlm-card-header>\n              <div hlmCardContent class=\"flex items-center justify-between\">\n                <p hlmP>Status</p>\n                <span hlmBadge variant=\"secondary\">Active</span>\n              </div>\n            </hlm-card>\n\n            <hlm-card>\n              <hlm-card-header>\n                <h3 hlmH3>With avatar</h3>\n              </hlm-card-header>\n              <div hlmCardContent class=\"flex items-center gap-3\">\n                <hlm-avatar>\n                  <span hlmAvatarFallback>JD</span>\n                </hlm-avatar>\n                <div>\n                  <p hlmP>Jane Doe</p>\n                  <p hlmMuted>Product Designer</p>\n                </div>\n              </div>\n            </hlm-card>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Navigation & Breadcrumbs -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Navigation</h2>\n          <nav hlmBreadcrumb>\n            <ol hlmBreadcrumbList>\n              <li hlmBreadcrumbItem>\n                <a hlmBreadcrumbLink href=\"#\">Home</a>\n              </li>\n              <li hlmBreadcrumbSeparator>/</li>\n              <li hlmBreadcrumbItem>\n                <a hlmBreadcrumbLink href=\"#\">Library</a>\n              </li>\n              <li hlmBreadcrumbSeparator>/</li>\n              <li hlmBreadcrumbPage>Showcase</li>\n            </ol>\n          </nav>\n\n          <div hlmTabs class=\"mt-4\" tab=\"account\">\n            <hlm-tabs-list>\n              <button hlmTabsTrigger=\"account\">Account</button>\n              <button hlmTabsTrigger=\"notifications\">Notifications</button>\n              <button hlmTabsTrigger=\"billing\">Billing</button>\n            </hlm-tabs-list>\n            <div hlmTabsContent=\"account\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Account settings and profile.</p>\n            </div>\n            <div hlmTabsContent=\"notifications\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Notification preferences.</p>\n            </div>\n            <div hlmTabsContent=\"billing\" class=\"mt-2\">\n              <p class=\"text-sm text-muted-foreground\">Billing and subscription.</p>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Data display -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Data display</h2>\n          <hlm-card class=\"overflow-hidden\">\n            <hlm-card-header>\n              <h3 hlmH3>Table</h3>\n              <p hlmMuted>Compact table built from primitives.</p>\n            </hlm-card-header>\n            <div hlmCardContent class=\"overflow-x-auto\">\n              <hlm-table-container>\n                <table hlmTable>\n                  <thead hlmTHead>\n                    <tr hlmTr>\n                      <th hlmTh>Name</th>\n                      <th hlmTh class=\"text-right\">Value</th>\n                    </tr>\n                  </thead>\n                  <tbody hlmTBody>\n                    <tr hlmTr>\n                      <td hlmTd>Alpha</td>\n                      <td hlmTd class=\"text-right\">123</td>\n                    </tr>\n                    <tr hlmTr>\n                      <td hlmTd>Beta</td>\n                      <td hlmTd class=\"text-right\">456</td>\n                    </tr>\n                  </tbody>\n                </table>\n              </hlm-table-container>\n            </div>\n            <hlm-card-footer class=\"flex items-center justify-between gap-3\">\n              <p hlmSmall class=\"text-muted-foreground\">\n                Showing <span hlmCode>1–2</span> of 2 rows\n              </p>\n              <hlm-pagination>\n                <button hlmPaginationPrevious>Previous</button>\n                <hlm-pagination-content>\n                  <button hlmPaginationLink [isActive]=\"true\">1</button>\n                </hlm-pagination-content>\n                <button hlmPaginationNext>Next</button>\n              </hlm-pagination>\n            </hlm-card-footer>\n          </hlm-card>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Feedback & Overlays -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Feedback & Overlays</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-4\">\n              <div hlmAlert>\n                <hlm-alert-title>Heads up</hlm-alert-title>\n                <p hlmAlertDescription>\n                  This is an example of the alert component.\n                </p>\n              </div>\n\n              <button hlmBtn variant=\"outline\" hlmTooltip=\"Tooltip content\">\n                Hover for tooltip\n              </button>\n\n              <div hlmPopover>\n                <button hlmBtn hlmPopoverTrigger type=\"button\">\n                  Open popover\n                </button>\n                <div *hlmPopoverPortal hlmPopoverContent class=\"max-w-xs\">\n                  <p hlmSmall>Popover content to provide additional context without leaving the page.</p>\n                </div>\n              </div>\n\n              <hlm-accordion type=\"single\" class=\"w-full\">\n                <hlm-accordion-item value=\"item-1\">\n                  <h3>\n                    <button hlmAccordionTrigger>Accordion item</button>\n                  </h3>\n                  <div hlmAccordionContent>\n                    <p hlmSmall>Use accordions to reveal more details on demand.</p>\n                  </div>\n                </hlm-accordion-item>\n              </hlm-accordion>\n            </div>\n\n            <div class=\"space-y-4\">\n              <button hlmBtn variant=\"outline\" hlmAlertDialogTrigger>\n                Open alert dialog\n              </button>\n              <hlm-alert-dialog>\n                <hlm-alert-dialog-content>\n                  <hlm-alert-dialog-header>\n                    <hlm-alert-dialog-title>Are you absolutely sure?</hlm-alert-dialog-title>\n                    <hlm-alert-dialog-description>\n                      This action cannot be undone. This will permanently delete this resource.\n                    </hlm-alert-dialog-description>\n                  </hlm-alert-dialog-header>\n                  <hlm-alert-dialog-footer>\n                    <button hlmAlertDialogCancel>Cancel</button>\n                    <button hlmAlertDialogAction>Continue</button>\n                  </hlm-alert-dialog-footer>\n                </hlm-alert-dialog-content>\n              </hlm-alert-dialog>\n\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Progress</span>\n                <div class=\"flex-1\">\n                  <div hlmProgress [value]=\"60\"></div>\n                </div>\n              </div>\n\n              <div class=\"flex items-center gap-3\">\n                <span hlmSmall>Loading</span>\n                <hlm-spinner></hlm-spinner>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Advanced inputs -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Advanced inputs</h2>\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-3\">\n              <label hlmSmall>Date picker</label>\n              <date-picker-showcase-demo />\n\n              <label hlmSmall class=\"mt-4\">Autocomplete</label>\n              <hlm-autocomplete>\n                <hlm-autocomplete-input placeholder=\"Search...\" />\n                <hlm-autocomplete-content>\n                  <hlm-autocomplete-list>\n                    <hlm-autocomplete-item>First option</hlm-autocomplete-item>\n                    <hlm-autocomplete-item>Second option</hlm-autocomplete-item>\n                  </hlm-autocomplete-list>\n                </hlm-autocomplete-content>\n              </hlm-autocomplete>\n            </div>\n\n            <div class=\"space-y-3\">\n              <label hlmSmall>Combobox</label>\n              <hlm-combobox>\n                <hlm-combobox-trigger>\n                  <hlm-combobox-value placeholder=\"Select option\"></hlm-combobox-value>\n                </hlm-combobox-trigger>\n                <hlm-combobox-content>\n                  <hlm-combobox-list>\n                    <hlm-combobox-item value=\"apple\">Apple</hlm-combobox-item>\n                    <hlm-combobox-item value=\"orange\">Orange</hlm-combobox-item>\n                  </hlm-combobox-list>\n                </hlm-combobox-content>\n              </hlm-combobox>\n\n              <label hlmSmall class=\"mt-4\">Input OTP</label>\n              <hlm-input-otp [length]=\"4\"></hlm-input-otp>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Navigation & Layout primitives -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Navigation & Layout primitives</h2>\n\n          <div class=\"grid gap-4 md:grid-cols-2\">\n            <div class=\"space-y-3\">\n              <nav hlmNavigationMenu>\n                <ul hlmNavigationMenuList>\n                  <li hlmNavigationMenuItem>\n                    <button hlmNavigationMenuTrigger>Products</button>\n                    <div *hlmNavigationMenuPortal hlmNavigationMenuContent>\n                      <div class=\"grid gap-2 p-3\">\n                        <a hlmNavigationMenuLink href=\"#\">Analytics</a>\n                        <a hlmNavigationMenuLink href=\"#\">Engagement</a>\n                      </div>\n                    </div>\n                  </li>\n                  <li hlmNavigationMenuItem>\n                    <a hlmNavigationMenuLink href=\"#\">Pricing</a>\n                  </li>\n                  <li hlmNavigationMenuItem>\n                    <a hlmNavigationMenuLink href=\"#\">Docs</a>\n                  </li>\n                </ul>\n              </nav>\n\n              <div class=\"flex items-center gap-2\">\n                <kbd hlmKbd>⌘</kbd>\n                <kbd hlmKbd>K</kbd>\n                <span hlmSmall>to open command menu</span>\n              </div>\n            </div>\n\n            <div class=\"space-y-3\">\n              <div class=\"flex gap-2\">\n                <button hlmBtn hlmToggle pressed=\"true\">Toggle</button>\n                <div hlmToggleGroup [value]=\"['bold']\" aria-label=\"Text formatting\">\n                  <button hlmToggleGroupItem value=\"bold\">Bold</button>\n                  <button hlmToggleGroupItem value=\"italic\">Italic</button>\n                  <button hlmToggleGroupItem value=\"underline\">Underline</button>\n                </div>\n              </div>\n\n              <hlm-scroll-area class=\"h-24 w-full border rounded-md p-3\">\n                <div class=\"space-y-2\">\n                  <p hlmSmall *ngFor=\"let item of [1,2,3,4,5,6,7,8]\">Scrollable item {{ item }}</p>\n                </div>\n              </hlm-scroll-area>\n            </div>\n          </div>\n        </section>\n\n        <hlm-separator></hlm-separator>\n\n        <!-- Sidebar & Shell -->\n        <section class=\"space-y-4\">\n          <h2 hlmH2>Sidebar layout</h2>\n          <div class=\"border rounded-md overflow-hidden\">\n            <hlm-sidebar-wrapper>\n              <hlm-sidebar>\n                <hlm-sidebar-header>\n                  <span hlmSmall>Project</span>\n                </hlm-sidebar-header>\n                <hlm-sidebar-content>\n                  <hlm-sidebar-menu>\n                    <button hlmSidebarMenuButton>Overview</button>\n                    <button hlmSidebarMenuButton>Analytics</button>\n                    <button hlmSidebarMenuButton>Settings</button>\n                  </hlm-sidebar-menu>\n                </hlm-sidebar-content>\n              </hlm-sidebar>\n              <hlm-sidebar-inset>\n                <div class=\"p-4 space-y-2\">\n                  <h3 hlmH3>Sidebar layout</h3>\n                  <p hlmMuted>Use sidebar primitives to build app shells and dashboards.</p>\n                </div>\n              </hlm-sidebar-inset>\n            </hlm-sidebar-wrapper>\n          </div>\n        </section>\n      </section>\n    `,\n    moduleMetadata: {\n      imports: [...showcaseImports, DatePickerShowcaseDemo],\n    },\n  }),\n}"
                 },
                 {
                     "name": "showcaseImports",
@@ -15236,19 +15236,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmAspectRatio>",
-                    "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts": [
                 {
                     "name": "Story",
@@ -15256,6 +15243,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmAlertDialog>",
                     "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmAspectRatio>",
+                    "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15288,19 +15288,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmBreadcrumb>",
-                    "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/badge/hlm-badge.stories.ts": [
                 {
                     "name": "Story",
@@ -15308,6 +15295,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmBadge>",
                     "file": "projects/ui/src/lib/badge/hlm-badge.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmBreadcrumb>",
+                    "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15704,6 +15704,19 @@
                     "kind": 184
                 }
             ],
+            "projects/ui/src/lib/popover/hlm-popover.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmPopover>",
+                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
             "projects/ui/src/lib/progress/hlm-progress.stories.ts": [
                 {
                     "name": "Story",
@@ -15724,19 +15737,6 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmRadioGroup>",
                     "file": "projects/ui/src/lib/radio-group/hlm-radio-group.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "projects/ui/src/lib/popover/hlm-popover.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmPopover>",
-                    "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
