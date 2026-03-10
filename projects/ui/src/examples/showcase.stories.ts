@@ -63,7 +63,7 @@ const meta: Meta<unknown> = {
     docs: {
       description: {
         component:
-          'Visual showcase of the most commonly used UI components in the library, grouped by category.',
+          'Visual showcase of the most commonly used  UI components in the library, grouped by category.',
       },
     },
   },
