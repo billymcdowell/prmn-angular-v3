@@ -1,0 +1,27 @@
+import { computed, Directive, effect, input, untracked } from '@angular/core';
+import { injectCustomClassSettable } from '@spartan-ng/brain/core';
+import { BrnDialogOverlay } from '@spartan-ng/brain/dialog';
+import { hlm } from '../utils';
+import { ClassValue } from 'clsx';
+
+export const hlmDialogOverlayClass =
+	'data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 bg-black/50';
+
+@Directive({
+	selector: '[hlmDialogOverlay],hlm-dialog-overlay',
+	hostDirectives: [BrnDialogOverlay],
+})
+export class HlmDialogOverlay {
+	private readonly _classSettable = injectCustomClassSettable({ optional: true, host: true });
+
+	// eslint-disable-next-line @angular-eslint/no-input-rename
+	public readonly userClass = input<ClassValue>('', { alias: 'class' });
+	protected readonly _computedClass = computed(() => hlm(hlmDialogOverlayClass, this.userClass()));
+
+	constructor() {
+		effect(() => {
+			const newClass = this._computedClass();
+			untracked(() => this._classSettable?.setClassToCustomElement(newClass));
+		});
+	}
+}
