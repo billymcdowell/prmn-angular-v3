@@ -31,7 +31,10 @@ jobs:
         run: npm ci --force
 
       - name: Build
-        run: npm run build-storybook
+        run: npm run build-storybook:gh
+
+      - name: Add base href to storybook-static
+        run: npm run postbuild:storybook
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
