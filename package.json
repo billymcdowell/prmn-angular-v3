@@ -10,7 +10,7 @@
     "storybook": "ng run ui:storybook",
     "build-storybook": "ng run ui:build-storybook",
     "build-storybook:gh": "STORYBOOK_PUBLIC_PATH=/prmn-angular-v3 ng run ui:build-storybook",
-    "postbuild:storybook": "perl -i -p -e 's#<head>#<head>\n\t\t<base href='/prmn-angular-v3/'>#' ./storybook-static/index.html"
+    "postbuild:build-storybook:gh": "perl -i -p -e 's#<head>#<head>\n\t\t<base href='/prmn-angular-v3/'>#' ./storybook-static/index.html"
   },
   "prettier": {
     "printWidth": 100,
@@ -57,6 +57,7 @@
     "@compodoc/compodoc": "^1.2.1",
     "@storybook/addon-a11y": "^10.2.17",
     "@storybook/addon-docs": "^10.2.17",
+    "@storybook/addon-mdx-gfm": "^8.6.14",
     "@storybook/angular": "^10.2.17",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/jasmine": "~5.1.0",

@@ -2716,18 +2716,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n\targs: { variant: 'default' },\n\trender: (args) => ({\n\t\tprops: args,\n\t\ttemplate: `\n\t\t\t<div hlmAlert [variant]=\"variant\">\n\t\t\t\t<hlm-alert-title>Alert title</hlm-alert-title>\n\t\t\t\t<p hlmAlertDescription>This is the default alert with a title and description.</p>\n\t\t\t</div>\n\t\t`,\n\t\tmoduleMetadata: { imports: defaultImports },\n\t}),\n}",
-                "rawdescription": "Default variant: neutral background, suitable for general information.",
-                "description": "<p>Default variant: neutral background, suitable for general information.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/accordion/hlm-accordion.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2740,6 +2728,18 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n\targs: { variant: 'default' },\n\trender: (args) => ({\n\t\tprops: args,\n\t\ttemplate: `\n\t\t\t<div hlmAlert [variant]=\"variant\">\n\t\t\t\t<hlm-alert-title>Alert title</hlm-alert-title>\n\t\t\t\t<p hlmAlertDescription>This is the default alert with a title and description.</p>\n\t\t\t</div>\n\t\t`,\n\t\tmoduleMetadata: { imports: defaultImports },\n\t}),\n}",
+                "rawdescription": "Default variant: neutral background, suitable for general information.",
+                "description": "<p>Default variant: neutral background, suitable for general information.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2747,18 +2747,6 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <hlm-alert-dialog>\n        <button hlmAlertDialogTrigger hlmBtn variant=\"outline\">Open dialog</button>\n        <hlm-alert-dialog-content *hlmAlertDialogPortal=\"let ctx\">\n          <hlm-alert-dialog-header>\n            <h2 hlmAlertDialogTitle>Are you absolutely sure?</h2>\n            <p hlmAlertDialogDescription>\n              This action cannot be undone. This will permanently delete your account and remove your data from our servers.\n            </p>\n          </hlm-alert-dialog-header>\n          <hlm-alert-dialog-footer>\n            <button hlmAlertDialogCancel (click)=\"ctx.close()\">Cancel</button>\n            <button hlmAlertDialogAction (click)=\"ctx.close()\">Continue</button>\n          </hlm-alert-dialog-footer>\n        </hlm-alert-dialog-content>\n      </hlm-alert-dialog>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. \"Continue\", \"Confirm\").",
                 "description": "<p>Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. &quot;Continue&quot;, &quot;Confirm&quot;).</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"max-w-2xl\">\n        <div hlmAspectRatio=\"16/9\">\n          <img src=\"https://placehold.co/600x400/1a1a2e/eee\" alt=\"16:9 placeholder\" />\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
-                "rawdescription": "Default 16:9 — common for video and widescreen content.",
-                "description": "<p>Default 16:9 — common for video and widescreen content.</p>\n"
             },
             {
                 "name": "Default",
@@ -2783,6 +2771,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <hlm-avatar>\n        <img hlmAvatarImage src=\"https://placehold.co/80x80/6366f1/fff?text=JD\" alt=\"User\" />\n        <span hlmAvatarFallback>JD</span>\n      </hlm-avatar>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Image only. When the image loads, it is shown; otherwise the fallback is used.",
                 "description": "<p>Image only. When the image loads, it is shown; otherwise the fallback is used.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"max-w-2xl\">\n        <div hlmAspectRatio=\"16/9\">\n          <img src=\"https://placehold.co/600x400/1a1a2e/eee\" alt=\"16:9 placeholder\" />\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
+                "rawdescription": "Default 16:9 — common for video and widescreen content.",
+                "description": "<p>Default 16:9 — common for video and widescreen content.</p>\n"
             },
             {
                 "name": "Default",
@@ -3038,18 +3038,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <input hlmInput type=\"text\" placeholder=\"Enter text...\" class=\"max-w-sm\" />\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                "rawdescription": "Basic text input. Use with form controls or standalone.",
-                "description": "<p>Basic text input. Use with form controls or standalone.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/input-group/hlm-input-group.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3069,6 +3057,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <brn-input-otp hlmInputOtp maxLength=\"6\">\n        <div hlmInputOtpGroup>\n          <hlm-input-otp-slot [index]=\"0\" />\n          <hlm-input-otp-slot [index]=\"1\" />\n          <hlm-input-otp-slot [index]=\"2\" />\n          <hlm-input-otp-slot [index]=\"3\" />\n          <hlm-input-otp-slot [index]=\"4\" />\n          <hlm-input-otp-slot [index]=\"5\" />\n        </div>\n      </brn-input-otp>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
                 "rawdescription": "Basic 6-digit OTP. Each slot is one character; focus and type to fill.",
                 "description": "<p>Basic 6-digit OTP. Each slot is one character; focus and type to fill.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <input hlmInput type=\"text\" placeholder=\"Enter text...\" class=\"max-w-sm\" />\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                "rawdescription": "Basic text input. Use with form controls or standalone.",
+                "description": "<p>Basic text input. Use with form controls or standalone.</p>\n"
             },
             {
                 "name": "Default",
@@ -3110,18 +3110,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/pagination/hlm-pagination.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <nav hlmPagination [attr.aria-label]=\"'Example pagination'\">\n        <ul hlmPaginationContent>\n          <li hlmPaginationItem>\n            <hlm-pagination-previous [attr.aria-label]=\"'Previous page'\" />\n          </li>\n          <li hlmPaginationItem>\n            <a hlmPaginationLink [isActive]=\"true\">1</a>\n          </li>\n          <li hlmPaginationItem>\n            <a hlmPaginationLink>2</a>\n          </li>\n          <li hlmPaginationItem>\n            <a hlmPaginationLink>3</a>\n          </li>\n          <li hlmPaginationItem>\n            <hlm-pagination-next [attr.aria-label]=\"'Next page'\" />\n          </li>\n        </ul>\n      </nav>\n    `,\n    moduleMetadata: { imports: paginationImports },\n  }),\n}",
-                "rawdescription": "Minimal: previous, page numbers, next using directives only.",
-                "description": "<p>Minimal: previous, page numbers, next using directives only.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3129,6 +3117,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmPopover>\n        <button hlmBtn variant=\"outline\" hlmPopoverTrigger>Open popover</button>\n        <div *hlmPopoverPortal hlmPopoverContent>\n          <h4 class=\"font-medium text-sm mb-2\">Popover title</h4>\n          <p class=\"text-muted-foreground text-sm\">This is the popover content. It can contain any markup.</p>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
                 "rawdescription": "Basic popover: click trigger to open/close.",
                 "description": "<p>Basic popover: click trigger to open/close.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/pagination/hlm-pagination.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <nav hlmPagination [attr.aria-label]=\"'Example pagination'\">\n        <ul hlmPaginationContent>\n          <li hlmPaginationItem>\n            <hlm-pagination-previous [attr.aria-label]=\"'Previous page'\" />\n          </li>\n          <li hlmPaginationItem>\n            <a hlmPaginationLink [isActive]=\"true\">1</a>\n          </li>\n          <li hlmPaginationItem>\n            <a hlmPaginationLink>2</a>\n          </li>\n          <li hlmPaginationItem>\n            <a hlmPaginationLink>3</a>\n          </li>\n          <li hlmPaginationItem>\n            <hlm-pagination-next [attr.aria-label]=\"'Next page'\" />\n          </li>\n        </ul>\n      </nav>\n    `,\n    moduleMetadata: { imports: paginationImports },\n  }),\n}",
+                "rawdescription": "Minimal: previous, page numbers, next using directives only.",
+                "description": "<p>Minimal: previous, page numbers, next using directives only.</p>\n"
             },
             {
                 "name": "Default",
@@ -3194,18 +3194,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmSidebarWrapper>\n        <hlm-sidebar>\n          <hlm-sidebar-header>\n            <span class=\"font-semibold\">App</span>\n          </hlm-sidebar-header>\n          <hlm-sidebar-content>\n            <hlm-sidebar-menu>\n              <hlm-sidebar-group>\n                <hlm-sidebar-group-label>Main</hlm-sidebar-group-label>\n                <hlm-sidebar-group-content>\n                  <hlm-sidebar-menu-item>\n                    <button hlmSidebarMenuButton>\n                      <ng-icon name=\"lucideHome\" />\n                      <span>Home</span>\n                    </button>\n                  </hlm-sidebar-menu-item>\n                  <hlm-sidebar-menu-item>\n                    <button hlmSidebarMenuButton>\n                      <ng-icon name=\"lucideFileText\" />\n                      <span>Documents</span>\n                    </button>\n                  </hlm-sidebar-menu-item>\n                </hlm-sidebar-group-content>\n              </hlm-sidebar-group>\n            </hlm-sidebar-menu>\n          </hlm-sidebar-content>\n          <hlm-sidebar-footer>\n            <button hlmSidebarMenuButton>\n              <ng-icon name=\"lucideSettings\" />\n              <span>Settings</span>\n            </button>\n          </hlm-sidebar-footer>\n        </hlm-sidebar>\n        <hlm-sidebar-inset>\n          <header class=\"flex h-14 items-center gap-2 border-b px-4\">\n            <button hlmSidebarTrigger aria-label=\"Toggle sidebar\"></button>\n            <span class=\"text-sm font-medium\">Main content</span>\n          </header>\n          <main class=\"flex-1 p-4\">\n            <p class=\"text-muted-foreground text-sm\">Page content goes here. Sidebar can be toggled with the trigger.</p>\n          </main>\n        </hlm-sidebar-inset>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports, providers: iconProviders },\n  }),\n}",
-                "rawdescription": "Default sidebar with header, menu group, items, and footer. Use sidebar trigger to toggle (desktop: collapse, mobile: open sheet).",
-                "description": "<p>Default sidebar with header, menu group, items, and footer. Use sidebar trigger to toggle (desktop: collapse, mobile: open sheet).</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3213,6 +3201,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmSkeleton class=\"h-12 w-full rounded-md\"></div>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Basic skeleton block. Use with fixed or percentage width/height as needed.",
                 "description": "<p>Basic skeleton block. Use with fixed or percentage width/height as needed.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div hlmSidebarWrapper>\n        <hlm-sidebar>\n          <hlm-sidebar-header>\n            <span class=\"font-semibold\">App</span>\n          </hlm-sidebar-header>\n          <hlm-sidebar-content>\n            <hlm-sidebar-menu>\n              <hlm-sidebar-group>\n                <hlm-sidebar-group-label>Main</hlm-sidebar-group-label>\n                <hlm-sidebar-group-content>\n                  <hlm-sidebar-menu-item>\n                    <button hlmSidebarMenuButton>\n                      <ng-icon name=\"lucideHome\" />\n                      <span>Home</span>\n                    </button>\n                  </hlm-sidebar-menu-item>\n                  <hlm-sidebar-menu-item>\n                    <button hlmSidebarMenuButton>\n                      <ng-icon name=\"lucideFileText\" />\n                      <span>Documents</span>\n                    </button>\n                  </hlm-sidebar-menu-item>\n                </hlm-sidebar-group-content>\n              </hlm-sidebar-group>\n            </hlm-sidebar-menu>\n          </hlm-sidebar-content>\n          <hlm-sidebar-footer>\n            <button hlmSidebarMenuButton>\n              <ng-icon name=\"lucideSettings\" />\n              <span>Settings</span>\n            </button>\n          </hlm-sidebar-footer>\n        </hlm-sidebar>\n        <hlm-sidebar-inset>\n          <header class=\"flex h-14 items-center gap-2 border-b px-4\">\n            <button hlmSidebarTrigger aria-label=\"Toggle sidebar\"></button>\n            <span class=\"text-sm font-medium\">Main content</span>\n          </header>\n          <main class=\"flex-1 p-4\">\n            <p class=\"text-muted-foreground text-sm\">Page content goes here. Sidebar can be toggled with the trigger.</p>\n          </main>\n        </hlm-sidebar-inset>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports, providers: iconProviders },\n  }),\n}",
+                "rawdescription": "Default sidebar with header, menu group, items, and footer. Use sidebar trigger to toggle (desktop: collapse, mobile: open sheet).",
+                "description": "<p>Default sidebar with header, menu group, items, and footer. Use sidebar trigger to toggle (desktop: collapse, mobile: open sheet).</p>\n"
             },
             {
                 "name": "Default",
@@ -3230,18 +3230,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/sonner/hlm-toaster.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `<story-sonner-demo />`,\n    moduleMetadata: { imports: [StorySonnerDemo] },\n  }),\n}",
-                "rawdescription": "Toaster with buttons to trigger different toast types. Add hlm-toaster once; use toast() in your app to show notifications.",
-                "description": "<p>Toaster with buttons to trigger different toast types. Add hlm-toaster once; use toast() in your app to show notifications.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/spinner/hlm-spinner.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3249,6 +3237,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `<hlm-spinner></hlm-spinner>`,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Default spinner with default icon and \"Loading\" aria-label.",
                 "description": "<p>Default spinner with default icon and &quot;Loading&quot; aria-label.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/sonner/hlm-toaster.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `<story-sonner-demo />`,\n    moduleMetadata: { imports: [StorySonnerDemo] },\n  }),\n}",
+                "rawdescription": "Toaster with buttons to trigger different toast types. Add hlm-toaster once; use toast() in your app to show notifications.",
+                "description": "<p>Toaster with buttons to trigger different toast types. Add hlm-toaster once; use toast() in your app to show notifications.</p>\n"
             },
             {
                 "name": "Default",
@@ -3400,21 +3400,21 @@
                 "name": "defaultImports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmAlertImports]"
-            },
-            {
-                "name": "defaultImports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/accordion/hlm-accordion.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmAccordionImports]"
+            },
+            {
+                "name": "defaultImports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmAlertImports]"
             },
             {
                 "name": "defaultImports",
@@ -3430,21 +3430,21 @@
                 "name": "defaultImports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmAspectRatioImports]"
-            },
-            {
-                "name": "defaultImports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/avatar/hlm-avatar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmAvatarImports]"
+            },
+            {
+                "name": "defaultImports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmAspectRatioImports]"
             },
             {
                 "name": "defaultImports",
@@ -3580,21 +3580,21 @@
                 "name": "defaultImports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmSidebarImports, HlmIconImports]"
-            },
-            {
-                "name": "defaultImports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmSkeletonImports]"
+            },
+            {
+                "name": "defaultImports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmSidebarImports, HlmIconImports]"
             },
             {
                 "name": "defaultImports",
@@ -4396,21 +4396,21 @@
                 "name": "iconProviders",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[provideIcons({ lucideInfo, lucideAlertCircle })]"
-            },
-            {
-                "name": "iconProviders",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/accordion/hlm-accordion.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[provideIcons({ lucideChevronDown, lucideHelpCircle, lucideFileText })]"
+            },
+            {
+                "name": "iconProviders",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[provideIcons({ lucideInfo, lucideAlertCircle })]"
             },
             {
                 "name": "iconProviders",
@@ -4640,16 +4640,6 @@
                 "name": "imports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmInputImports]"
-            },
-            {
-                "name": "imports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/input-group/hlm-input-group.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -4665,6 +4655,16 @@
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[BrnInputOtp, ReactiveFormsModule, ...HlmInputOtpImports]"
+            },
+            {
+                "name": "imports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmInputImports]"
             },
             {
                 "name": "imports",
@@ -4740,21 +4740,21 @@
                 "name": "imports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/resizable/hlm-resizable.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmResizableImports]"
-            },
-            {
-                "name": "imports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/scroll-area/hlm-scroll-area.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmScrollAreaImports]"
+            },
+            {
+                "name": "imports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/resizable/hlm-resizable.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmResizableImports]"
             },
             {
                 "name": "InButton",
@@ -5278,16 +5278,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmAlert>",
-                "defaultValue": "{\n\ttitle: 'Components/Alert',\n\tcomponent: HlmAlert,\n\tparameters: {\n\t\tdocs: {\n\t\t\tdescription: {\n\t\t\t\tcomponent:\n\t\t\t\t\t'Alert for important messages. Use variant \"default\" for neutral info and \"destructive\" for errors or warnings. Optional: hlmAlertTitle, hlmAlertDescription, hlmAlertIcon.',\n\t\t\t},\n\t\t},\n\t},\n\targTypes: {\n\t\tvariant: {\n\t\t\tcontrol: 'select',\n\t\t\toptions: ['default', 'destructive'],\n\t\t\tdescription: 'Visual style of the alert.',\n\t\t},\n\t},\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/accordion/hlm-accordion.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -5298,21 +5288,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<HlmAlertDialog>",
-                "defaultValue": "{\n  component: HlmAlertDialog,\n  title: 'Components/Alert Dialog',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'A modal dialog that interrupts the user with important content and expects a response. Use for confirmations, warnings, or critical decisions. Built from trigger, portal content, header (title + description), and footer (cancel + action buttons).',\n      },\n    },\n  },\n}"
+                "type": "Meta<HlmAlert>",
+                "defaultValue": "{\n\ttitle: 'Components/Alert',\n\tcomponent: HlmAlert,\n\tparameters: {\n\t\tdocs: {\n\t\t\tdescription: {\n\t\t\t\tcomponent:\n\t\t\t\t\t'Alert for important messages. Use variant \"default\" for neutral info and \"destructive\" for errors or warnings. Optional: hlmAlertTitle, hlmAlertDescription, hlmAlertIcon.',\n\t\t\t},\n\t\t},\n\t},\n\targTypes: {\n\t\tvariant: {\n\t\t\tcontrol: 'select',\n\t\t\toptions: ['default', 'destructive'],\n\t\t\tdescription: 'Visual style of the alert.',\n\t\t},\n\t},\n}"
             },
             {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<HlmAspectRatio>",
-                "defaultValue": "{\n  component: HlmAspectRatio,\n  title: 'Components/Aspect Ratio',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Maintains a consistent width/height ratio for its first child. Use for videos, images, or any content that should keep a fixed aspect ratio (e.g. 16/9, 4/3, 1/1). Pass a ratio as a number or string like \"16/9\".',\n      },\n    },\n  },\n}"
+                "type": "Meta<HlmAlertDialog>",
+                "defaultValue": "{\n  component: HlmAlertDialog,\n  title: 'Components/Alert Dialog',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'A modal dialog that interrupts the user with important content and expects a response. Use for confirmations, warnings, or critical decisions. Built from trigger, portal content, header (title + description), and footer (cancel + action buttons).',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5333,6 +5323,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<HlmAvatar>",
                 "defaultValue": "{\n  component: HlmAvatar,\n  title: 'Components/Avatar',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'User avatar: image with fallback when the image fails or is loading. Use hlm-avatar, hlm-avatar-image (img), and hlm-avatar-fallback. Optional: hlm-avatar-badge, hlm-avatar-group, hlm-avatar-group-count. Sizes: default, sm, lg.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmAspectRatio>",
+                "defaultValue": "{\n  component: HlmAspectRatio,\n  title: 'Components/Aspect Ratio',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Maintains a consistent width/height ratio for its first child. Use for videos, images, or any content that should keep a fixed aspect ratio (e.g. 16/9, 4/3, 1/1). Pass a ratio as a number or string like \"16/9\".',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5568,16 +5568,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta",
-                "defaultValue": "{\n  title: 'Components/Input',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Text input directive with error variant (auto from control validity, or force true). Use hlmInput on input elements. Works with hlm-form-field for label, hint, and error.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/input-group/hlm-input-group.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -5593,6 +5583,16 @@
                 "deprecationMessage": "",
                 "type": "Meta",
                 "defaultValue": "{\n  title: 'Components/Input OTP',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'One-time password input built with brn-input-otp and Hlm slots. Use hlmInputOtp on brn-input-otp; add hlmInputOtpGroup and hlm-input-otp-slot for each digit. Optional hlm-input-otp-separator between groups.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta",
+                "defaultValue": "{\n  title: 'Components/Input',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Text input directive with error variant (auto from control validity, or force true). Use hlmInput on input elements. Works with hlm-form-field for label, hint, and error.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5648,21 +5648,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/pagination/hlm-pagination.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmPagination>",
-                "defaultValue": "{\n  component: HlmPagination,\n  title: 'Components/Pagination',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Pagination nav with previous/next, page links, and ellipsis. Use hlmPagination, hlmPaginationContent, hlmPaginationItem, hlmPaginationLink, hlm-pagination-previous, hlm-pagination-next, hlm-pagination-ellipsis. For full numbered pagination with page size, use hlm-numbered-pagination.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HlmPopover>",
                 "defaultValue": "{\n  component: HlmPopover,\n  title: 'Components/Popover',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Floating panel opened by a trigger. Use [hlmPopover] on a container, button[hlmPopoverTrigger] to open, and *hlmPopoverPortal with [hlmPopoverContent] for the panel. Supports align, sideOffset, closeOnOutsidePointerEvents, state, etc.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/pagination/hlm-pagination.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmPagination>",
+                "defaultValue": "{\n  component: HlmPagination,\n  title: 'Components/Pagination',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Pagination nav with previous/next, page links, and ellipsis. Use hlmPagination, hlmPaginationContent, hlmPaginationItem, hlmPaginationLink, hlm-pagination-previous, hlm-pagination-next, hlm-pagination-ellipsis. For full numbered pagination with page size, use hlm-numbered-pagination.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5688,21 +5688,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/resizable/hlm-resizable.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta",
-                "defaultValue": "{\n  title: 'Components/Resizable',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Resizable panel group built on `@spartan-ng/brain/resizable`. Use `hlm-resizable-group` with `hlm-resizable-panel` and `hlm-resizable-handle` to create split views.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/scroll-area/hlm-scroll-area.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta",
                 "defaultValue": "{\n  title: 'Components/Scroll Area',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Styled wrapper around `ng-scrollbar` for consistently themed scroll areas. Use for long lists, code blocks, or scrollable panels inside cards and dialogs.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/resizable/hlm-resizable.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta",
+                "defaultValue": "{\n  title: 'Components/Resizable',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Resizable panel group built on `@spartan-ng/brain/resizable`. Use `hlm-resizable-group` with `hlm-resizable-panel` and `hlm-resizable-handle` to create split views.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5738,21 +5738,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmSidebar>",
-                "defaultValue": "{\n  component: HlmSidebar,\n  title: 'Components/Sidebar',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'App sidebar with header, menu groups, menu items, footer, and optional trigger. Supports collapsible (offcanvas, icon, none), variant (sidebar, floating, inset), and side (left, right). On mobile, renders as a sheet.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HlmSkeleton>",
                 "defaultValue": "{\n  component: HlmSkeleton,\n  title: 'Components/Skeleton',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Placeholder that shows a pulsing animation while content is loading. Use for cards, avatars, text lines, or custom shapes. Respects prefers-reduced-motion (motion-safe:animate-pulse).',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmSidebar>",
+                "defaultValue": "{\n  component: HlmSidebar,\n  title: 'Components/Sidebar',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'App sidebar with header, menu groups, menu items, footer, and optional trigger. Supports collapsible (offcanvas, icon, none), variant (sidebar, floating, inset), and side (left, right). On mobile, renders as a sheet.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5768,21 +5768,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/sonner/hlm-toaster.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmToaster>",
-                "defaultValue": "{\n  component: HlmToaster,\n  title: 'Components/Sonner',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Toast notifications via ngx-sonner. Add hlm-toaster once (e.g. in app root), then call toast() or toast.success/error/etc. from anywhere. Supports position, theme, duration, closeButton, and custom styles.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/spinner/hlm-spinner.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HlmSpinner>",
                 "defaultValue": "{\n  component: HlmSpinner,\n  title: 'Components/Spinner',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Loading indicator. Use icon (default: lucideLoader), aria-label for accessibility, and size via CSS (e.g. class). Respects prefers-reduced-motion.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/sonner/hlm-toaster.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmToaster>",
+                "defaultValue": "{\n  component: HlmToaster,\n  title: 'Components/Sonner',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Toast notifications via ngx-sonner. Add hlm-toaster once (e.g. in app root), then call toast() or toast.success/error/etc. from anywhere. Supports position, theme, duration, closeButton, and custom styles.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -6240,7 +6240,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n    withThemeByClassName({\n      themes: {\n        light: 'light',\n        dark: 'dark',\n      },\n      defaultTheme: 'light',\n    }),\n  ],\n}"
+                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n    docs: {\n      codePanel: true,\n    },\n  },\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n    withThemeByClassName({\n      themes: {\n        light: 'light',\n        dark: 'dark',\n      },\n      defaultTheme: 'light',\n    }),\n  ],\n}"
             },
             {
                 "name": "PrimaryOnRight",
@@ -8179,17 +8179,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<AlertVariants>",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<HlmAccordion>",
                 "file": "projects/ui/src/lib/accordion/hlm-accordion.stories.ts",
                 "deprecated": false,
@@ -8201,8 +8190,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmAlertDialog>",
-                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                "rawtype": "StoryObj<AlertVariants>",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8212,8 +8201,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmAspectRatio>",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "rawtype": "StoryObj<HlmAlertDialog>",
+                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8236,6 +8225,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<HlmAvatar>",
                 "file": "projects/ui/src/lib/avatar/hlm-avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<HlmAspectRatio>",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8499,17 +8499,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj",
-                "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj",
                 "file": "projects/ui/src/lib/input-group/hlm-input-group.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -8522,6 +8511,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj",
                 "file": "projects/ui/src/lib/input-otp/hlm-input-otp.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj",
+                "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8586,8 +8586,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmPagination>",
-                "file": "projects/ui/src/lib/pagination/hlm-pagination.stories.ts",
+                "rawtype": "StoryObj<HlmPopover>",
+                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8597,8 +8597,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmPopover>",
-                "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                "rawtype": "StoryObj<HlmPagination>",
+                "file": "projects/ui/src/lib/pagination/hlm-pagination.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8631,7 +8631,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj",
-                "file": "projects/ui/src/lib/resizable/hlm-resizable.stories.ts",
+                "file": "projects/ui/src/lib/scroll-area/hlm-scroll-area.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8642,7 +8642,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj",
-                "file": "projects/ui/src/lib/scroll-area/hlm-scroll-area.stories.ts",
+                "file": "projects/ui/src/lib/resizable/hlm-resizable.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8685,8 +8685,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmSidebar>",
-                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
+                "rawtype": "StoryObj<HlmSkeleton>",
+                "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8696,8 +8696,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmSkeleton>",
-                "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
+                "rawtype": "StoryObj<HlmSidebar>",
+                "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8718,8 +8718,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmToaster>",
-                "file": "projects/ui/src/lib/sonner/hlm-toaster.stories.ts",
+                "rawtype": "StoryObj<HlmSpinner>",
+                "file": "projects/ui/src/lib/spinner/hlm-spinner.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8729,8 +8729,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmSpinner>",
-                "file": "projects/ui/src/lib/spinner/hlm-spinner.stories.ts",
+                "rawtype": "StoryObj<HlmToaster>",
+                "file": "projects/ui/src/lib/sonner/hlm-toaster.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -13412,100 +13412,6 @@
                     "description": "<p>Trigger accepts showDelay, hideDelay, sideOffset, align via BrnHoverCardTrigger inputs.\nThis example uses default timing; customize in your app as needed.</p>\n"
                 }
             ],
-            "projects/ui/src/lib/input/hlm-input.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <input hlmInput type=\"text\" placeholder=\"Enter text...\" class=\"max-w-sm\" />\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Basic text input. Use with form controls or standalone.",
-                    "description": "<p>Basic text input. Use with form controls or standalone.</p>\n"
-                },
-                {
-                    "name": "ErrorVariant",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"flex flex-col gap-4 max-w-sm\">\n        <input hlmInput placeholder=\"With error\" [error]=\"true\" />\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Error variant: force error styling with [error]=\"true\". Use when not using form validation.",
-                    "description": "<p>Error variant: force error styling with [error]=&quot;true&quot;. Use when not using form validation.</p>\n"
-                },
-                {
-                    "name": "FormLayout",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"space-y-4 max-w-sm\">\n        <div>\n          <label class=\"mb-1.5 block text-sm font-medium\">Name</label>\n          <input hlmInput placeholder=\"Your name\" />\n        </div>\n        <div>\n          <label class=\"mb-1.5 block text-sm font-medium\">Email</label>\n          <input hlmInput type=\"email\" placeholder=\"you@example.com\" />\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Multiple inputs in a layout.",
-                    "description": "<p>Multiple inputs in a layout.</p>\n"
-                },
-                {
-                    "name": "imports",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "[]",
-                    "defaultValue": "[HlmInputImports]"
-                },
-                {
-                    "name": "InputTypes",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"flex flex-col gap-4 max-w-sm\">\n        <input hlmInput type=\"text\" placeholder=\"Text\" />\n        <input hlmInput type=\"email\" placeholder=\"Email\" />\n        <input hlmInput type=\"password\" placeholder=\"Password\" />\n        <input hlmInput type=\"number\" placeholder=\"Number\" />\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Input types: text, email, password, number.",
-                    "description": "<p>Input types: text, email, password, number.</p>\n"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta",
-                    "defaultValue": "{\n  title: 'Components/Input',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Text input directive with error variant (auto from control validity, or force true). Use hlmInput on input elements. Works with hlm-form-field for label, hint, and error.',\n      },\n    },\n  },\n}"
-                },
-                {
-                    "name": "States",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"flex flex-col gap-4 max-w-sm\">\n        <input hlmInput placeholder=\"Disabled\" disabled />\n        <input hlmInput placeholder=\"Read only\" readonly value=\"Cannot edit\" />\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Disabled and readonly states.",
-                    "description": "<p>Disabled and readonly states.</p>\n"
-                },
-                {
-                    "name": "WithValue",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <input hlmInput placeholder=\"Placeholder\" value=\"Pre-filled value\" class=\"max-w-sm\" />\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
-                    "rawdescription": "Placeholder and value. Error is usually driven by form control (error=\"auto\").",
-                    "description": "<p>Placeholder and value. Error is usually driven by form control (error=&quot;auto&quot;).</p>\n"
-                }
-            ],
             "projects/ui/src/lib/input-otp/hlm-input-otp.stories.ts": [
                 {
                     "name": "Default",
@@ -13598,6 +13504,100 @@
                     "defaultValue": "{\n  render: () => ({\n    template: `\n      <brn-input-otp hlmInputOtp maxLength=\"6\">\n        <div hlmInputOtpGroup>\n          <hlm-input-otp-slot [index]=\"0\" />\n          <hlm-input-otp-slot [index]=\"1\" />\n          <hlm-input-otp-slot [index]=\"2\" />\n        </div>\n        <hlm-input-otp-separator />\n        <div hlmInputOtpGroup>\n          <hlm-input-otp-slot [index]=\"3\" />\n          <hlm-input-otp-slot [index]=\"4\" />\n          <hlm-input-otp-slot [index]=\"5\" />\n        </div>\n      </brn-input-otp>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
                     "rawdescription": "OTP with separator between two groups of three (e.g. XXX-XXX).",
                     "description": "<p>OTP with separator between two groups of three (e.g. XXX-XXX).</p>\n"
+                }
+            ],
+            "projects/ui/src/lib/input/hlm-input.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <input hlmInput type=\"text\" placeholder=\"Enter text...\" class=\"max-w-sm\" />\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Basic text input. Use with form controls or standalone.",
+                    "description": "<p>Basic text input. Use with form controls or standalone.</p>\n"
+                },
+                {
+                    "name": "ErrorVariant",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"flex flex-col gap-4 max-w-sm\">\n        <input hlmInput placeholder=\"With error\" [error]=\"true\" />\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Error variant: force error styling with [error]=\"true\". Use when not using form validation.",
+                    "description": "<p>Error variant: force error styling with [error]=&quot;true&quot;. Use when not using form validation.</p>\n"
+                },
+                {
+                    "name": "FormLayout",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"space-y-4 max-w-sm\">\n        <div>\n          <label class=\"mb-1.5 block text-sm font-medium\">Name</label>\n          <input hlmInput placeholder=\"Your name\" />\n        </div>\n        <div>\n          <label class=\"mb-1.5 block text-sm font-medium\">Email</label>\n          <input hlmInput type=\"email\" placeholder=\"you@example.com\" />\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Multiple inputs in a layout.",
+                    "description": "<p>Multiple inputs in a layout.</p>\n"
+                },
+                {
+                    "name": "imports",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[HlmInputImports]"
+                },
+                {
+                    "name": "InputTypes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"flex flex-col gap-4 max-w-sm\">\n        <input hlmInput type=\"text\" placeholder=\"Text\" />\n        <input hlmInput type=\"email\" placeholder=\"Email\" />\n        <input hlmInput type=\"password\" placeholder=\"Password\" />\n        <input hlmInput type=\"number\" placeholder=\"Number\" />\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Input types: text, email, password, number.",
+                    "description": "<p>Input types: text, email, password, number.</p>\n"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta",
+                    "defaultValue": "{\n  title: 'Components/Input',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Text input directive with error variant (auto from control validity, or force true). Use hlmInput on input elements. Works with hlm-form-field for label, hint, and error.',\n      },\n    },\n  },\n}"
+                },
+                {
+                    "name": "States",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"flex flex-col gap-4 max-w-sm\">\n        <input hlmInput placeholder=\"Disabled\" disabled />\n        <input hlmInput placeholder=\"Read only\" readonly value=\"Cannot edit\" />\n      </div>\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Disabled and readonly states.",
+                    "description": "<p>Disabled and readonly states.</p>\n"
+                },
+                {
+                    "name": "WithValue",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <input hlmInput placeholder=\"Placeholder\" value=\"Pre-filled value\" class=\"max-w-sm\" />\n    `,\n    moduleMetadata: { imports },\n  }),\n}",
+                    "rawdescription": "Placeholder and value. Error is usually driven by form control (error=\"auto\").",
+                    "description": "<p>Placeholder and value. Error is usually driven by form control (error=&quot;auto&quot;).</p>\n"
                 }
             ],
             "projects/ui/src/lib/label/hlm-label.stories.ts": [
@@ -15125,7 +15125,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n    withThemeByClassName({\n      themes: {\n        light: 'light',\n        dark: 'dark',\n      },\n      defaultTheme: 'light',\n    }),\n  ],\n}"
+                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n    docs: {\n      codePanel: true,\n    },\n  },\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n    withThemeByClassName({\n      themes: {\n        light: 'light',\n        dark: 'dark',\n      },\n      defaultTheme: 'light',\n    }),\n  ],\n}"
                 }
             ]
         },
@@ -15210,19 +15210,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/alert/hlm-alert.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<AlertVariants>",
-                    "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/accordion/hlm-accordion.stories.ts": [
                 {
                     "name": "Story",
@@ -15236,6 +15223,19 @@
                     "kind": 184
                 }
             ],
+            "projects/ui/src/lib/alert/hlm-alert.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<AlertVariants>",
+                    "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
             "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts": [
                 {
                     "name": "Story",
@@ -15243,19 +15243,6 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmAlertDialog>",
                     "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmAspectRatio>",
-                    "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15282,6 +15269,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmAvatar>",
                     "file": "projects/ui/src/lib/avatar/hlm-avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmAspectRatio>",
+                    "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15587,19 +15587,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/input/hlm-input.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj",
-                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/input-group/hlm-input-group.stories.ts": [
                 {
                     "name": "Story",
@@ -15620,6 +15607,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj",
                     "file": "projects/ui/src/lib/input-otp/hlm-input-otp.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/input/hlm-input.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj",
+                    "file": "projects/ui/src/lib/input/hlm-input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15691,19 +15691,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/pagination/hlm-pagination.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmPagination>",
-                    "file": "projects/ui/src/lib/pagination/hlm-pagination.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/popover/hlm-popover.stories.ts": [
                 {
                     "name": "Story",
@@ -15711,6 +15698,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmPopover>",
                     "file": "projects/ui/src/lib/popover/hlm-popover.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/pagination/hlm-pagination.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmPagination>",
+                    "file": "projects/ui/src/lib/pagination/hlm-pagination.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15743,19 +15743,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/resizable/hlm-resizable.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj",
-                    "file": "projects/ui/src/lib/resizable/hlm-resizable.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/scroll-area/hlm-scroll-area.stories.ts": [
                 {
                     "name": "Story",
@@ -15763,6 +15750,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj",
                     "file": "projects/ui/src/lib/scroll-area/hlm-scroll-area.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/resizable/hlm-resizable.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj",
+                    "file": "projects/ui/src/lib/resizable/hlm-resizable.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15808,19 +15808,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmSidebar>",
-                    "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts": [
                 {
                     "name": "Story",
@@ -15828,6 +15815,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmSkeleton>",
                     "file": "projects/ui/src/lib/skeleton/hlm-skeleton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmSidebar>",
+                    "file": "projects/ui/src/lib/sidebar/hlm-sidebar.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15847,19 +15847,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/sonner/hlm-toaster.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmToaster>",
-                    "file": "projects/ui/src/lib/sonner/hlm-toaster.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/spinner/hlm-spinner.stories.ts": [
                 {
                     "name": "Story",
@@ -15867,6 +15854,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmSpinner>",
                     "file": "projects/ui/src/lib/spinner/hlm-spinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/sonner/hlm-toaster.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmToaster>",
+                    "file": "projects/ui/src/lib/sonner/hlm-toaster.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
