@@ -40,7 +40,8 @@
               "projects/ui"
             ],
             "styles": ["projects/ui/src/styles/styles.css"],
-            "port": 6006
+            "port": 6006,
+            "previewUrl": "/prmn-angular-v3/iframe.html"
           }
         },
         "build-storybook": {
@@ -56,7 +57,8 @@
               "projects/ui"
             ],
             "outputDir": "storybook-static",
-            "styles": ["projects/ui/src/styles/styles.css"]
+            "styles": ["projects/ui/src/styles/styles.css"],
+            "previewUrl": "/prmn-angular-v3/iframe.html"
           }
         }
       }

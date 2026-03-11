@@ -2728,6 +2728,18 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"max-w-2xl\">\n        <div hlmAspectRatio=\"16/9\">\n          <img src=\"https://placehold.co/600x400/1a1a2e/eee\" alt=\"16:9 placeholder\" />\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
+                "rawdescription": "Default 16:9 — common for video and widescreen content.",
+                "description": "<p>Default 16:9 — common for video and widescreen content.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2740,13 +2752,13 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"max-w-2xl\">\n        <div hlmAspectRatio=\"16/9\">\n          <img src=\"https://placehold.co/600x400/1a1a2e/eee\" alt=\"16:9 placeholder\" />\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
-                "rawdescription": "Default 16:9 — common for video and widescreen content.",
-                "description": "<p>Default 16:9 — common for video and widescreen content.</p>\n"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <hlm-alert-dialog>\n        <button hlmAlertDialogTrigger hlmBtn variant=\"outline\">Open dialog</button>\n        <hlm-alert-dialog-content *hlmAlertDialogPortal=\"let ctx\">\n          <hlm-alert-dialog-header>\n            <h2 hlmAlertDialogTitle>Are you absolutely sure?</h2>\n            <p hlmAlertDialogDescription>\n              This action cannot be undone. This will permanently delete your account and remove your data from our servers.\n            </p>\n          </hlm-alert-dialog-header>\n          <hlm-alert-dialog-footer>\n            <button hlmAlertDialogCancel (click)=\"ctx.close()\">Cancel</button>\n            <button hlmAlertDialogAction (click)=\"ctx.close()\">Continue</button>\n          </hlm-alert-dialog-footer>\n        </hlm-alert-dialog-content>\n      </hlm-alert-dialog>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
+                "rawdescription": "Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. \"Continue\", \"Confirm\").",
+                "description": "<p>Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. &quot;Continue&quot;, &quot;Confirm&quot;).</p>\n"
             },
             {
                 "name": "Default",
@@ -2764,13 +2776,13 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <hlm-alert-dialog>\n        <button hlmAlertDialogTrigger hlmBtn variant=\"outline\">Open dialog</button>\n        <hlm-alert-dialog-content *hlmAlertDialogPortal=\"let ctx\">\n          <hlm-alert-dialog-header>\n            <h2 hlmAlertDialogTitle>Are you absolutely sure?</h2>\n            <p hlmAlertDialogDescription>\n              This action cannot be undone. This will permanently delete your account and remove your data from our servers.\n            </p>\n          </hlm-alert-dialog-header>\n          <hlm-alert-dialog-footer>\n            <button hlmAlertDialogCancel (click)=\"ctx.close()\">Cancel</button>\n            <button hlmAlertDialogAction (click)=\"ctx.close()\">Continue</button>\n          </hlm-alert-dialog-footer>\n        </hlm-alert-dialog-content>\n      </hlm-alert-dialog>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
-                "rawdescription": "Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. \"Continue\", \"Confirm\").",
-                "description": "<p>Basic confirmation: one primary action and cancel.\nUse for non-destructive confirmations (e.g. &quot;Continue&quot;, &quot;Confirm&quot;).</p>\n"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <nav hlmBreadcrumb>\n        <ol hlmBreadcrumbList>\n          <li hlmBreadcrumbItem>\n            <span hlmBreadcrumbPage>Home</span>\n          </li>\n        </ol>\n      </nav>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
+                "rawdescription": "Minimal: one item (current page only). Use when there is no parent path to show.",
+                "description": "<p>Minimal: one item (current page only). Use when there is no parent path to show.</p>\n"
             },
             {
                 "name": "Default",
@@ -2795,18 +2807,6 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `<span hlmBadge>Badge</span>`,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Default primary style. Use for the main tag or status.",
                 "description": "<p>Default primary style. Use for the main tag or status.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <nav hlmBreadcrumb>\n        <ol hlmBreadcrumbList>\n          <li hlmBreadcrumbItem>\n            <span hlmBreadcrumbPage>Home</span>\n          </li>\n        </ol>\n      </nav>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
-                "rawdescription": "Minimal: one item (current page only). Use when there is no parent path to show.",
-                "description": "<p>Minimal: one item (current page only). Use when there is no parent path to show.</p>\n"
             },
             {
                 "name": "Default",
@@ -3158,18 +3158,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/select/hlm-select.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"grid w-full max-w-xs gap-2\">\n        <label hlmLabel for=\"fruit-select\">Fruit</label>\n        <brn-select [(ngModel)]=\"value\" placeholder=\"Select a fruit\">\n          <hlm-select-trigger id=\"fruit-select\">\n            <hlm-select-value />\n          </hlm-select-trigger>\n          <hlm-select-content>\n            <hlm-option value=\"apple\">Apple</hlm-option>\n            <hlm-option value=\"banana\">Banana</hlm-option>\n            <hlm-option value=\"orange\">Orange</hlm-option>\n            <hlm-option value=\"grape\">Grape</hlm-option>\n          </hlm-select-content>\n        </brn-select>\n      </div>\n    `,\n    moduleMetadata: { imports: selectImports },\n    props: { value: '' },\n  }),\n}",
-                "rawdescription": "Basic select with a few options.",
-                "description": "<p>Basic select with a few options.</p>\n"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/separator/hlm-separator.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3177,6 +3165,18 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"space-y-4\">\n        <div>\n          <h4 class=\"text-sm font-medium\">Section above</h4>\n          <p class=\"text-muted-foreground text-sm\">Content in the first section.</p>\n        </div>\n        <div hlmSeparator></div>\n        <div>\n          <h4 class=\"text-sm font-medium\">Section below</h4>\n          <p class=\"text-muted-foreground text-sm\">Content in the second section.</p>\n        </div>\n      </div>\n    `,\n    moduleMetadata: { imports: defaultImports },\n  }),\n}",
                 "rawdescription": "Default horizontal separator. Draws a full-width line between sections.",
                 "description": "<p>Default horizontal separator. Draws a full-width line between sections.</p>\n"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/select/hlm-select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div class=\"grid w-full max-w-xs gap-2\">\n        <label hlmLabel for=\"fruit-select\">Fruit</label>\n        <brn-select [(ngModel)]=\"value\" placeholder=\"Select a fruit\">\n          <hlm-select-trigger id=\"fruit-select\">\n            <hlm-select-value />\n          </hlm-select-trigger>\n          <hlm-select-content>\n            <hlm-option value=\"apple\">Apple</hlm-option>\n            <hlm-option value=\"banana\">Banana</hlm-option>\n            <hlm-option value=\"orange\">Orange</hlm-option>\n            <hlm-option value=\"grape\">Grape</hlm-option>\n          </hlm-select-content>\n        </brn-select>\n      </div>\n    `,\n    moduleMetadata: { imports: selectImports },\n    props: { value: '' },\n  }),\n}",
+                "rawdescription": "Basic select with a few options.",
+                "description": "<p>Basic select with a few options.</p>\n"
             },
             {
                 "name": "Default",
@@ -3410,16 +3410,6 @@
                 "name": "defaultImports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmAlertImports]"
-            },
-            {
-                "name": "defaultImports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3430,11 +3420,31 @@
                 "name": "defaultImports",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmAlertImports]"
+            },
+            {
+                "name": "defaultImports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmAlertDialogImports, HlmButtonImports]"
+            },
+            {
+                "name": "defaultImports",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[HlmBreadCrumbImports]"
             },
             {
                 "name": "defaultImports",
@@ -3455,16 +3465,6 @@
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[HlmBadgeImports]"
-            },
-            {
-                "name": "defaultImports",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "[]",
-                "defaultValue": "[HlmBreadCrumbImports]"
             },
             {
                 "name": "defaultImports",
@@ -5288,6 +5288,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmAspectRatio>",
+                "defaultValue": "{\n  component: HlmAspectRatio,\n  title: 'Components/Aspect Ratio',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Maintains a consistent width/height ratio for its first child. Use for videos, images, or any content that should keep a fixed aspect ratio (e.g. 16/9, 4/3, 1/1). Pass a ratio as a number or string like \"16/9\".',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -5298,11 +5308,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<HlmAspectRatio>",
-                "defaultValue": "{\n  component: HlmAspectRatio,\n  title: 'Components/Aspect Ratio',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Maintains a consistent width/height ratio for its first child. Use for videos, images, or any content that should keep a fixed aspect ratio (e.g. 16/9, 4/3, 1/1). Pass a ratio as a number or string like \"16/9\".',\n      },\n    },\n  },\n}"
+                "type": "Meta<HlmAlertDialog>",
+                "defaultValue": "{\n  component: HlmAlertDialog,\n  title: 'Components/Alert Dialog',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'A modal dialog that interrupts the user with important content and expects a response. Use for confirmations, warnings, or critical decisions. Built from trigger, portal content, header (title + description), and footer (cancel + action buttons).',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5318,11 +5328,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<HlmAlertDialog>",
-                "defaultValue": "{\n  component: HlmAlertDialog,\n  title: 'Components/Alert Dialog',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'A modal dialog that interrupts the user with important content and expects a response. Use for confirmations, warnings, or critical decisions. Built from trigger, portal content, header (title + description), and footer (cancel + action buttons).',\n      },\n    },\n  },\n}"
+                "type": "Meta<HlmBreadcrumb>",
+                "defaultValue": "{\n  component: HlmBreadcrumb,\n  title: 'Components/Breadcrumb',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Navigation breadcrumb: list of links showing the path to the current page. Use hlm-breadcrumb, hlm-breadcrumb-list, hlm-breadcrumb-item, hlm-breadcrumb-link or hlm-breadcrumb-page, and hlm-breadcrumb-separator. Optional: hlm-breadcrumb-ellipsis for collapsed items.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5343,16 +5353,6 @@
                 "deprecationMessage": "",
                 "type": "Meta<HlmBadge>",
                 "defaultValue": "{\n  component: HlmBadge,\n  title: 'Components/Badge',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Small label or count. Use for status, categories, counts, or tags. Supports variants: default, secondary, destructive, outline, ghost, link.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmBreadcrumb>",
-                "defaultValue": "{\n  component: HlmBreadcrumb,\n  title: 'Components/Breadcrumb',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Navigation breadcrumb: list of links showing the path to the current page. Use hlm-breadcrumb, hlm-breadcrumb-list, hlm-breadcrumb-item, hlm-breadcrumb-link or hlm-breadcrumb-page, and hlm-breadcrumb-separator. Optional: hlm-breadcrumb-ellipsis for collapsed items.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -5708,21 +5708,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/select/hlm-select.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HlmSelect>",
-                "defaultValue": "{\n  component: HlmSelect,\n  title: 'Components/Select',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Custom select dropdown (non-native). Use brn-select with hlm-select-trigger, hlm-select-value, hlm-select-content, and hlm-option. Optional: hlm-select-label, hlm-select-group, hlm-select-separator. Trigger supports size (default, sm) and error state.',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/separator/hlm-separator.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HlmSeparator>",
                 "defaultValue": "{\n  component: HlmSeparator,\n  title: 'Components/Separator',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Visual divider between content. Use orientation=\"horizontal\" (default) for a horizontal line, orientation=\"vertical\" for a vertical line. Set decorative=\"true\" when the separator is purely visual and not meaningful to screen readers.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/select/hlm-select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HlmSelect>",
+                "defaultValue": "{\n  component: HlmSelect,\n  title: 'Components/Select',\n  parameters: {\n    docs: {\n      description: {\n        component:\n          'Custom select dropdown (non-native). Use brn-select with hlm-select-trigger, hlm-select-value, hlm-select-content, and hlm-option. Optional: hlm-select-label, hlm-select-group, hlm-select-separator. Trigger supports size (default, sm) and error state.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -8190,6 +8190,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<HlmAspectRatio>",
+                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<AlertVariants>",
                 "file": "projects/ui/src/lib/alert/hlm-alert.stories.ts",
                 "deprecated": false,
@@ -8201,8 +8212,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmAspectRatio>",
-                "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                "rawtype": "StoryObj<HlmAlertDialog>",
+                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8223,8 +8234,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmAlertDialog>",
-                "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                "rawtype": "StoryObj<HlmBreadcrumb>",
+                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8247,17 +8258,6 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<HlmBadge>",
                 "file": "projects/ui/src/lib/badge/hlm-badge.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<HlmBreadcrumb>",
-                "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8652,8 +8652,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmSelect>",
-                "file": "projects/ui/src/lib/select/hlm-select.stories.ts",
+                "rawtype": "StoryObj<HlmSeparator>",
+                "file": "projects/ui/src/lib/separator/hlm-separator.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -8663,8 +8663,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HlmSeparator>",
-                "file": "projects/ui/src/lib/separator/hlm-separator.stories.ts",
+                "rawtype": "StoryObj<HlmSelect>",
+                "file": "projects/ui/src/lib/select/hlm-select.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -15223,6 +15223,19 @@
                     "kind": 184
                 }
             ],
+            "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmAspectRatio>",
+                    "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
             "projects/ui/src/lib/alert/hlm-alert.stories.ts": [
                 {
                     "name": "Story",
@@ -15236,13 +15249,13 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts": [
+            "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmAspectRatio>",
-                    "file": "projects/ui/src/lib/aspect-ratio/hlm-aspect-ratio.stories.ts",
+                    "rawtype": "StoryObj<HlmAlertDialog>",
+                    "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15262,13 +15275,13 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts": [
+            "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmAlertDialog>",
-                    "file": "projects/ui/src/lib/alert-dialog/hlm-alert-dialog.stories.ts",
+                    "rawtype": "StoryObj<HlmBreadcrumb>",
+                    "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15295,19 +15308,6 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmBadge>",
                     "file": "projects/ui/src/lib/badge/hlm-badge.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmBreadcrumb>",
-                    "file": "projects/ui/src/lib/breadcrumb/hlm-breadcrumb.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -15769,19 +15769,6 @@
                     "kind": 184
                 }
             ],
-            "projects/ui/src/lib/select/hlm-select.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HlmSelect>",
-                    "file": "projects/ui/src/lib/select/hlm-select.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/ui/src/lib/separator/hlm-separator.stories.ts": [
                 {
                     "name": "Story",
@@ -15789,6 +15776,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HlmSeparator>",
                     "file": "projects/ui/src/lib/separator/hlm-separator.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/ui/src/lib/select/hlm-select.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HlmSelect>",
+                    "file": "projects/ui/src/lib/select/hlm-select.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
