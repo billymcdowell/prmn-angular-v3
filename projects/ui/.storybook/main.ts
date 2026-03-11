@@ -13,5 +13,9 @@ const config: StorybookConfig = {
     '@storybook/addon-mdx-gfm'
   ],
   "framework": "@storybook/angular",
+  "webpackFinal": async (config) => {
+    config.output!.publicPath = '/prmn-angular-v3/';
+    return config;
+  }
 };
 export default config;
