@@ -1,12 +1,26 @@
 {
-  "name": "ui",
+  "name": "@billy_mcdowell/prmn-angular-v3",
+  "private": false,
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^20.3.0",
     "@angular/core": "^20.3.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "@spartan-ng/brain": "^0.0.1-alpha.649",
+    "@ng-icons/core": "^33.1.0",
+    "@ng-icons/lucide": "^33.1.0",
+    "embla-carousel-angular": "^21.0.0",
+    "ngx-sonner": "^3.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "4.2.1",
+    "@tailwindcss/postcss": "^4.2.1"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  }
 }
