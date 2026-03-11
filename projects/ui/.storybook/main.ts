@@ -23,17 +23,9 @@ const config: StorybookConfig = {
     "@storybook/addon-themes",
   ],
   "framework": "@storybook/angular",
-  webpackFinal: async (webpackConfig) => {
-    if (storybookPublicPath) {
-      webpackConfig.output = { ...(webpackConfig.output ?? {}), publicPath: storybookPublicPath };
-    }
-    return webpackConfig;
-  },
-  managerWebpack: async (webpackConfig) => {
-    if (storybookPublicPath) {
-      webpackConfig.output = { ...(webpackConfig.output ?? {}), publicPath: storybookPublicPath };
-    }
-    return webpackConfig;
-  },
+  "previewHead": (head) => `
+  ${head}
+  <base href="/prmn-angular-v3/" />
+`,
 };
 export default config;
