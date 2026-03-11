@@ -12,6 +12,10 @@ const config: StorybookConfig = {
     "@storybook/addon-themes",
     '@storybook/addon-mdx-gfm'
   ],
-  "framework": "@storybook/angular"
+  "framework": "@storybook/angular",
+  "previewHead": (head) => `
+   ${head}
+    <base href="/prmn-angular-v3/">
+  `,
 };
 export default config;
